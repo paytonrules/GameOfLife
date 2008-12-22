@@ -11,9 +11,11 @@
 
 @interface Board : NSObject {
 	int sideLength;
+	bool isCellAlive;
 }
 
 -(bool) isCellAliveAt: (int) x by: (int) y;
 -(void) bringToLifeAt: (int) x by: (int) y;
+-(void) killCellAt: (int) x by: (int) y;
 
 @end

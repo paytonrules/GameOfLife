@@ -49,5 +49,14 @@
 	STAssertTrue(alive, @"");
 }
 
+-(void)testKillCell {
+	[itsBoard bringToLifeAt: 1 by: 1];
+	[itsBoard killCellAt: 1 by: 1];
+	
+	bool alive = [itsBoard isCellAliveAt: 1 by: 1];
+
+	STAssertFalse(alive, @"");
+}
+
 
 @end
