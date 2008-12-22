@@ -13,7 +13,6 @@
 -(id)init {
 	super;
 	sideLength = 15;
-	isCellAlive = false;
 	return self;
 }
 
@@ -21,15 +20,15 @@
 	if(x >= sideLength || y >= sideLength || x < 0 || y < 0) {
 		[NSException raise: @"Out of Range" format: @"out of range"];
 	}
-	return isCellAlive;
+	return board[x][y];
 }
 
 -(void) bringToLifeAt: (int) x by: (int) y {
-	isCellAlive = true;
+	board[x][y] = true;
 }
 
 -(void) killCellAt: (int) x by: (int) y {
-	isCellAlive = false;
+	board[x][y] = false;
 }
 
 @end

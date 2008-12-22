@@ -58,5 +58,23 @@
 	STAssertFalse(alive, @"");
 }
 
+-(void)testSetSecondCellAlive {
+	[itsBoard bringToLifeAt: 10 by: 10];
+	
+	bool first_alive = [itsBoard isCellAliveAt: 1 by: 1];
+	bool second_alive = [itsBoard isCellAliveAt: 10 by: 10];
+	
+	STAssertFalse(first_alive, @"");
+	STAssertTrue(second_alive, @"");
+}
+
+-(void)testKillSecondCell {
+	[itsBoard bringToLifeAt: 10 by: 10];
+	[itsBoard killCellAt: 10 by: 10];
+	
+	bool alive = [itsBoard isCellAliveAt: 10 by: 10];
+	
+	STAssertFalse(alive, @"");
+}
 
 @end

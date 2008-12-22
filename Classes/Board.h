@@ -11,7 +11,7 @@
 
 @interface Board : NSObject {
 	int sideLength;
-	bool isCellAlive;
+	bool board[15][15];
 }
 
 -(bool) isCellAliveAt: (int) x by: (int) y;

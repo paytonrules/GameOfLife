@@ -18,5 +18,7 @@
 -(void)testBelowZeroInY;
 -(void)testSetCellStateAlive;
 -(void)testKillCell;
+-(void)testSetSecondCellAlive;
+-(void)testKillSecondCell;
 
 @end
