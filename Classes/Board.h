@@ -2,7 +2,7 @@
 //  Board.h
 //  GameOfLife
 //
-//  Created by Eric Meyer on 11/24/08.
+//  Created by Eric Meyer on 12/23/08.
 //  Copyright 2008 __MyCompanyName__. All rights reserved.
 //
 
@@ -10,12 +10,7 @@
 
 
 @interface Board : NSObject {
-	int sideLength;
-	bool board[15][15];
-}
 
--(bool) isCellAliveAt: (int) x by: (int) y;
--(void) bringToLifeAt: (int) x by: (int) y;
--(void) killCellAt: (int) x by: (int) y;
+}
 
 @end

@@ -228,8 +228,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -277,8 +275,18 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>10</integer>
+									<integer>8</integer>
+									<integer>0</integer>
+								</array>
+								<array>
 									<integer>20</integer>
-									<integer>13</integer>
+									<integer>15</integer>
+									<integer>0</integer>
+								</array>
+								<array>
+									<integer>21</integer>
+									<integer>15</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -315,12 +323,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Game.h</string>
+								<string>GOLBoardTest.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,23 +338,30 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Game.h</string>
+										<string>GOLBoardTest.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>F87BA6DE0F0025DE00310F64</string>
+										<string>F8D15DAD0F01A76B008A8974</string>
 										<key>history</key>
 										<array>
 											<string>F862C0490EDAFB3E00EB670B</string>
 											<string>F89C4C8F0EDB00D10060BB11</string>
-											<string>F8795BA80F0013EC004300C2</string>
-											<string>F8795BA90F0013EC004300C2</string>
-											<string>F8795BAA0F0013EC004300C2</string>
-											<string>F8795BAB0F0013EC004300C2</string>
-											<string>F8795BAC0F0013EC004300C2</string>
-											<string>F8795BAD0F0013EC004300C2</string>
-											<string>F8795BBE0F0015BD004300C2</string>
-											<string>F8795BC20F0015BD004300C2</string>
+											<string>F87BA7190F003DF200310F64</string>
+											<string>F8B753550F01553900839756</string>
+											<string>F8B753A50F0158F400839756</string>
+											<string>F8B753CC0F015AEB00839756</string>
+											<string>F8B754050F015B3200839756</string>
+											<string>F8B754190F01607800839756</string>
+											<string>F8B7541A0F01607800839756</string>
+											<string>F8B7541B0F01607800839756</string>
+											<string>F8B7541C0F01607800839756</string>
+											<string>F81B31FB0F0163B0002E79F9</string>
+											<string>F81B31FC0F0163B0002E79F9</string>
+											<string>F81B31FD0F0163B0002E79F9</string>
+											<string>F883BD4A0F01A75A00B686BC</string>
+											<string>F883BD4B0F01A75A00B686BC</string>
+											<string>F883BD4E0F01A75A00B686BC</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -358,6 +375,13 @@
 											<string>F8795BB40F0013EC004300C2</string>
 											<string>F8795BBB0F0013EC004300C2</string>
 											<string>F8795BC10F0015BD004300C2</string>
+											<string>F87BA7230F003DF200310F64</string>
+											<string>F8B7535A0F01553900839756</string>
+											<string>F8B753B40F0158F400839756</string>
+											<string>F8B753D30F015AEB00839756</string>
+											<string>F8B753D40F015AEB00839756</string>
+											<string>F8B753D70F015AEB00839756</string>
+											<string>F8B754070F015B3200839756</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -415,9 +439,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>F87BA6DF0F0025DE00310F64</string>
+				<string>F8D15DAE0F01A76B008A8974</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>F87BA6E00F0025DE00310F64</string>
+				<string>F8D15DAF0F01A76B008A8974</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -551,6 +575,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>/Users/ericmeyer/Projects/GameOfLife/GameOfLife.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -570,14 +595,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GameTest.h</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -633,7 +656,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>F862BFE00EDAF5EE00EB670B</string>
-				<string>F8795B410F0008CD004300C2</string>
+				<string>F883BD4F0F01A75A00B686BC</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -753,13 +776,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>F8795B420F0008CD004300C2</string>
+				<string>F8D15DB00F01A76B008A8974</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>F8795B430F0008CD004300C2</string>
-				<string>F8795B440F0008CD004300C2</string>
-				<string>F8795B450F0008CD004300C2</string>
-				<string>F8795B460F0008CD004300C2</string>
-				<string>F8795B470F0008CD004300C2</string>
+				<string>F8D15DB10F01A76B008A8974</string>
+				<string>F8D15DB20F01A76B008A8974</string>
+				<string>F8D15DB30F01A76B008A8974</string>
+				<string>F8D15DB40F01A76B008A8974</string>
+				<string>F8D15DB50F01A76B008A8974</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -923,7 +946,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>F8795B480F0008CD004300C2</string>
+				<string>F883BD560F01A75A00B686BC</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -933,7 +956,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

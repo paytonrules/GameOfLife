@@ -18,12 +18,15 @@
 		F862BFFC0EDAF65300EB670B /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F862BFF80EDAF65300EB670B /* GTMIPhoneUnitTestDelegate.m */; };
 		F862BFFD0EDAF65300EB670B /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F862BFF90EDAF65300EB670B /* GTMIPhoneUnitTestMain.m */; };
 		F862BFFE0EDAF65300EB670B /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F862BFFB0EDAF65300EB670B /* GTMSenTestCase.m */; };
-		F862C00E0EDAF7EF00EB670B /* BoardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F862C00D0EDAF7EF00EB670B /* BoardTest.m */; };
-		F862C0290EDAF95100EB670B /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = F862C0280EDAF95100EB670B /* Board.m */; };
-		F862C02A0EDAF95100EB670B /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = F862C0280EDAF95100EB670B /* Board.m */; };
+		F862C00E0EDAF7EF00EB670B /* GOLBoardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F862C00D0EDAF7EF00EB670B /* GOLBoardTest.m */; };
+		F862C0290EDAF95100EB670B /* GOLBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F862C0280EDAF95100EB670B /* GOLBoard.m */; };
+		F862C02A0EDAF95100EB670B /* GOLBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F862C0280EDAF95100EB670B /* GOLBoard.m */; };
 		F8795B990F001372004300C2 /* GameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795B980F001372004300C2 /* GameTest.m */; };
 		F8795BA10F0013CB004300C2 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795BA00F0013CB004300C2 /* Game.m */; };
 		F8795BA20F0013CB004300C2 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795BA00F0013CB004300C2 /* Game.m */; };
+		F8B753BF0F01599E00839756 /* BoardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B753BE0F01599E00839756 /* BoardTest.m */; };
+		F8B753C30F015A4700839756 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B753C20F015A4700839756 /* Board.m */; };
+		F8B753C40F015A4700839756 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B753C20F015A4700839756 /* Board.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,14 +51,18 @@
 		F862BFFA0EDAF65300EB670B /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = "<group>"; };
 		F862BFFB0EDAF65300EB670B /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
 		F862BFFF0EDAF66500EB670B /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		F862C00C0EDAF7EF00EB670B /* BoardTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardTest.h; sourceTree = "<group>"; };
-		F862C00D0EDAF7EF00EB670B /* BoardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardTest.m; sourceTree = "<group>"; };
-		F862C0270EDAF95100EB670B /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
-		F862C0280EDAF95100EB670B /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
+		F862C00C0EDAF7EF00EB670B /* GOLBoardTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOLBoardTest.h; sourceTree = "<group>"; };
+		F862C00D0EDAF7EF00EB670B /* GOLBoardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOLBoardTest.m; sourceTree = "<group>"; };
+		F862C0270EDAF95100EB670B /* GOLBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOLBoard.h; sourceTree = "<group>"; };
+		F862C0280EDAF95100EB670B /* GOLBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOLBoard.m; sourceTree = "<group>"; };
 		F8795B970F001372004300C2 /* GameTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTest.h; sourceTree = "<group>"; };
 		F8795B980F001372004300C2 /* GameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTest.m; sourceTree = "<group>"; };
 		F8795B9F0F0013CB004300C2 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		F8795BA00F0013CB004300C2 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		F8B753BD0F01599E00839756 /* BoardTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardTest.h; sourceTree = "<group>"; };
+		F8B753BE0F01599E00839756 /* BoardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardTest.m; sourceTree = "<group>"; };
+		F8B753C10F015A4700839756 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		F8B753C20F015A4700839756 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +93,12 @@
 				1D3623250D0F684500981E51 /* GameOfLifeAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* GameOfLifeViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* GameOfLifeViewController.m */,
-				F862C0270EDAF95100EB670B /* Board.h */,
-				F862C0280EDAF95100EB670B /* Board.m */,
+				F862C0270EDAF95100EB670B /* GOLBoard.h */,
+				F862C0280EDAF95100EB670B /* GOLBoard.m */,
 				F8795B9F0F0013CB004300C2 /* Game.h */,
 				F8795BA00F0013CB004300C2 /* Game.m */,
+				F8B753C10F015A4700839756 /* Board.h */,
+				F8B753C20F015A4700839756 /* Board.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -150,10 +159,12 @@
 		F862BFEC0EDAF60F00EB670B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				F862C00C0EDAF7EF00EB670B /* BoardTest.h */,
-				F862C00D0EDAF7EF00EB670B /* BoardTest.m */,
+				F862C00C0EDAF7EF00EB670B /* GOLBoardTest.h */,
+				F862C00D0EDAF7EF00EB670B /* GOLBoardTest.m */,
 				F8795B970F001372004300C2 /* GameTest.h */,
 				F8795B980F001372004300C2 /* GameTest.m */,
+				F8B753BD0F01599E00839756 /* BoardTest.h */,
+				F8B753BE0F01599E00839756 /* BoardTest.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -270,8 +281,9 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* GameOfLifeAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* GameOfLifeViewController.m in Sources */,
-				F862C02A0EDAF95100EB670B /* Board.m in Sources */,
+				F862C02A0EDAF95100EB670B /* GOLBoard.m in Sources */,
 				F8795BA20F0013CB004300C2 /* Game.m in Sources */,
+				F8B753C40F015A4700839756 /* Board.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,10 +294,12 @@
 				F862BFFC0EDAF65300EB670B /* GTMIPhoneUnitTestDelegate.m in Sources */,
 				F862BFFD0EDAF65300EB670B /* GTMIPhoneUnitTestMain.m in Sources */,
 				F862BFFE0EDAF65300EB670B /* GTMSenTestCase.m in Sources */,
-				F862C00E0EDAF7EF00EB670B /* BoardTest.m in Sources */,
-				F862C0290EDAF95100EB670B /* Board.m in Sources */,
+				F862C00E0EDAF7EF00EB670B /* GOLBoardTest.m in Sources */,
+				F862C0290EDAF95100EB670B /* GOLBoard.m in Sources */,
 				F8795B990F001372004300C2 /* GameTest.m in Sources */,
 				F8795BA10F0013CB004300C2 /* Game.m in Sources */,
+				F8B753BF0F01599E00839756 /* BoardTest.m in Sources */,
+				F8B753C30F015A4700839756 /* Board.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

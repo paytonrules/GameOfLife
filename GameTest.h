@@ -7,10 +7,10 @@
 //
 
 #import "GTMSenTestCase.h"
-#import "Game.h"
 
 @interface GameTest : SenTestCase {
-	Game *itsGame;
 }
+
+-(void)testSetBoard;
 
 @end

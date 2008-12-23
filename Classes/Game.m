@@ -8,7 +8,17 @@
 
 #import "Game.h"
 
-
 @implementation Game
+
+-(Board*)board {
+	return myBoard;
+}
+
+-(void)setBoard:(Board*) board {
+	myBoard = board;
+}
+
+-(void)advanceGeneration {
+}
 
 @end
