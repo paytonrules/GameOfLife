@@ -275,17 +275,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>10</integer>
-									<integer>8</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>20</integer>
-									<integer>15</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>21</integer>
+									<integer>23</integer>
 									<integer>15</integer>
 									<integer>0</integer>
 								</array>
@@ -330,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GOLBoardTest.m</string>
+								<string>Game.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -338,30 +328,31 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GOLBoardTest.m</string>
+										<string>Game.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>F8D15DAD0F01A76B008A8974</string>
+										<string>F873C3EE0F091AD2003D7476</string>
 										<key>history</key>
 										<array>
 											<string>F862C0490EDAFB3E00EB670B</string>
 											<string>F89C4C8F0EDB00D10060BB11</string>
 											<string>F87BA7190F003DF200310F64</string>
-											<string>F8B753550F01553900839756</string>
 											<string>F8B753A50F0158F400839756</string>
-											<string>F8B753CC0F015AEB00839756</string>
-											<string>F8B754050F015B3200839756</string>
-											<string>F8B754190F01607800839756</string>
-											<string>F8B7541A0F01607800839756</string>
-											<string>F8B7541B0F01607800839756</string>
-											<string>F8B7541C0F01607800839756</string>
-											<string>F81B31FB0F0163B0002E79F9</string>
-											<string>F81B31FC0F0163B0002E79F9</string>
-											<string>F81B31FD0F0163B0002E79F9</string>
-											<string>F883BD4A0F01A75A00B686BC</string>
-											<string>F883BD4B0F01A75A00B686BC</string>
-											<string>F883BD4E0F01A75A00B686BC</string>
+											<string>F8D15DCA0F057584008A8974</string>
+											<string>F8D15E3E0F05CFC7008A8974</string>
+											<string>F8D15E970F05D1FC008A8974</string>
+											<string>F8D15E980F05D1FC008A8974</string>
+											<string>F8DFF99E0F0610F3001BB5E0</string>
+											<string>F8DFF99F0F0610F3001BB5E0</string>
+											<string>F8DFF9A00F0610F3001BB5E0</string>
+											<string>F8DFF9A10F0610F3001BB5E0</string>
+											<string>F8DFF9A20F0610F3001BB5E0</string>
+											<string>F8DFF9A30F0610F3001BB5E0</string>
+											<string>F8DFF9A40F0610F3001BB5E0</string>
+											<string>F8DFF9A50F0610F3001BB5E0</string>
+											<string>F8DFF9A60F0610F3001BB5E0</string>
+											<string>F8DFF9CB0F0610F3001BB5E0</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -382,6 +373,7 @@
 											<string>F8B753D40F015AEB00839756</string>
 											<string>F8B753D70F015AEB00839756</string>
 											<string>F8B754070F015B3200839756</string>
+											<string>F8D15E9F0F05D1FC008A8974</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -439,9 +431,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>F8D15DAE0F01A76B008A8974</string>
+				<string>F873C3EF0F091AD2003D7476</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>F8D15DAF0F01A76B008A8974</string>
+				<string>F873C3F00F091AD2003D7476</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -575,7 +567,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>/Users/ericmeyer/Projects/GameOfLife/GameOfLife.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -656,7 +647,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>F862BFE00EDAF5EE00EB670B</string>
-				<string>F883BD4F0F01A75A00B686BC</string>
+				<string>F8DFF97F0F05D2FE001BB5E0</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -776,13 +767,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>F8D15DB00F01A76B008A8974</string>
+				<string>F8DFF9800F05D2FE001BB5E0</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>F8D15DB10F01A76B008A8974</string>
-				<string>F8D15DB20F01A76B008A8974</string>
-				<string>F8D15DB30F01A76B008A8974</string>
-				<string>F8D15DB40F01A76B008A8974</string>
-				<string>F8D15DB50F01A76B008A8974</string>
+				<string>F8DFF9810F05D2FE001BB5E0</string>
+				<string>F8DFF9820F05D2FE001BB5E0</string>
+				<string>F8DFF9830F05D2FE001BB5E0</string>
+				<string>F8DFF9840F05D2FE001BB5E0</string>
+				<string>F8DFF9850F05D2FE001BB5E0</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -946,7 +937,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>F883BD560F01A75A00B686BC</string>
+				<string>F8DFF9860F05D2FE001BB5E0</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

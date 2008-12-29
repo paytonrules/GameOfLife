@@ -14,6 +14,7 @@
 	bool board[15][15];
 }
 
+-(void)copyBoard: (GOLBoard*)board;
 -(bool)isCellAliveAt: (int) x by: (int) y;
 -(void)bringToLifeAt: (int) x by: (int) y;
 -(void)killCellAt: (int) x by: (int) y;

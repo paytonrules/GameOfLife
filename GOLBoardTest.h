@@ -9,7 +9,7 @@
 #import "GTMSenTestCase.h"
 
 @interface GOLBoardTest : SenTestCase {
-	Board *itsBoard;
+	GOLBoard *itsBoard;
 }
 -(void)testDeadCellsOnInit;
 -(void)testOutOfRangeInX;
@@ -31,5 +31,6 @@
 -(void)testOneLivingNeighborLeft;
 -(void)testEightLivingNeighbors;
 -(void)testLivingNeighborsForCorner;
+-(void)testCopyBoard;
 
 @end

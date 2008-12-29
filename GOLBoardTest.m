@@ -160,10 +160,33 @@
 	
 	STAssertEquals(8, living_neighbors, @"Expected 8 living neighbors, but got %d", living_neighbors);
 }
+
 -(void)testLivingNeighborsForCorner {
 	int living_neighbors = [itsBoard livingNeighborsAt: 0 by: 0];
 	
 	STAssertEquals(0, living_neighbors, @"Expected 0 living neighbors, but got %d", living_neighbors);
+}
+
+-(void)testSpotShouldNotCountItself {
+	[itsBoard bringToLifeAt: 1 by: 1];
+	
+	int living_neighbors = [itsBoard livingNeighborsAt: 1 by: 1];
+	
+	STAssertEquals(0, living_neighbors, @"Expected 0 living neighbors, but got %d", living_neighbors);
+}
+
+-(void)testCopyBoard {
+	[itsBoard bringToLifeAt: 1 by: 0];
+	[itsBoard bringToLifeAt: 2 by: 1];
+
+	GOLBoard* new_board = [[GOLBoard alloc] init];
+	[new_board copyBoard: itsBoard];
+	
+	bool firstAlive = [new_board isCellAliveAt: 1 by: 0];
+	bool secondAlive = [new_board isCellAliveAt: 1 by: 0];
+	
+	STAssertTrue(firstAlive, @"");
+	STAssertTrue(secondAlive, @"");
 }
 
 @end

@@ -10,11 +10,11 @@
 #import "GOLBoard.h"
 
 @interface Game : NSObject {
-	Board* myBoard;
+	GOLBoard* myBoard;
 }
 
--(Board*)board;
--(void)setBoard:(Board*) board;
+-(GOLBoard*)board;
+-(void)setBoard:(GOLBoard*) board;
 -(void)advanceGeneration;
 
 @end

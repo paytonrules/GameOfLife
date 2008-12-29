@@ -16,6 +16,15 @@
 	return self;
 }
 
+-(void)copyBoard: (GOLBoard*)originalBoard {
+	for(int x=0; x<sideLength; x++) {
+		for(int y=0; y<sideLength; y++) {
+			if([originalBoard isCellAliveAt: x by: y])
+				[self bringToLifeAt: x by: y];
+		}
+	}
+}
+
 -(bool) isCellAliveAt: (int) x by: (int) y {
 	if(x >= sideLength || y >= sideLength || x < 0 || y < 0) {
 		return false;
@@ -40,8 +49,6 @@
 	if([self isCellAliveAt: (x + 1) by: (y - 1)])
 		living_neighbors++;
 	if([self isCellAliveAt: (x - 1) by: y])
-		living_neighbors++;
-	if([self isCellAliveAt: x by: y])
 		living_neighbors++;
 	if([self isCellAliveAt: (x + 1) by: y])
 		living_neighbors++;
