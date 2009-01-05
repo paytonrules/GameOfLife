@@ -3,7 +3,7 @@
 //  GameOfLife
 //
 //  Created by Eric Meyer on 11/24/08.
-//  Copyright 2008 __MyCompanyName__. All rights reserved.
+//  Copyright 2008 8th Light. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

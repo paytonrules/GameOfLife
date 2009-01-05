@@ -10,47 +10,54 @@
 
 @implementation GameOfLifeViewController
 
+@synthesize board;
 
-
-/*
-// Override initWithNibName:bundle: to load the view using a nib file then perform additional customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
++ (float) calculatePositionFor: (float) rowOrColumn {
+	return 10.0f + (20.0f * rowOrColumn);
 }
-*/
 
-/*
-// Implement loadView to create a view hierarchy programmatically.
++ (float) calculateIndexFromPosition: (float) position {
+	return (position - 10.0f) / 20.f;
+}
+
+- (void) addNewButtonAtRow: (float) row column: (float) column  {
+	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+
+	[button setFrame:CGRectMake(0.0f, 0.0f, 20.0f, 20.0f)];
+	[button setCenter:CGPointMake([GameOfLifeViewController calculatePositionFor: column], [GameOfLifeViewController calculatePositionFor:row])];
+	[button addTarget:self action:@selector(selectCell:) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:button];
+}
+
 - (void)loadView {
+	[super loadView];
+	
+	for (int row = 0; row < 15; row++) {
+		for (int column = 0; column < 15; column++)
+		{
+			[self addNewButtonAtRow: row column: column];
+		}
+	}
 }
-*/
-
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
-
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview
-    // Release anything that's not essential, such as cached data
 }
-
 
 - (void)dealloc {
     [super dealloc];
+}
+
+- (IBAction) selectCell: (id) sender {
+	
+	UIButton *button = (UIButton *)sender;
+	
+	[board bringToLifeAt:[GameOfLifeViewController calculateIndexFromPosition: button.center.x] by:[GameOfLifeViewController calculateIndexFromPosition: button.center.y]];
 }
 
 @end

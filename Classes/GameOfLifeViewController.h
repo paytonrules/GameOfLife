@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GOLBoard.h"
 
 @interface GameOfLifeViewController : UIViewController {
-
+	GOLBoard *board;
 }
 
+@property(nonatomic, retain) GOLBoard *board;
+
+- (IBAction) selectCell: (id) sender;
++ (float) calculatePositionFor: (float) rowOrColumn;
 @end
 
