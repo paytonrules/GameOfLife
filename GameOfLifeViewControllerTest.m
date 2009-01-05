@@ -9,15 +9,19 @@
 #import "GameOfLifeViewController.h"
 #import "CellButton.h"
 #import "GameOfLifeViewControllerTest.h"
+#import "ConcreteButtonControllerFactory.h"
 
 
 @implementation GameOfLifeViewControllerTest
 
 -(void)setUp {
 	itsController = [[GameOfLifeViewController alloc] init];
+	itsButtonFactory = [[ConcreteButtonControllerFactory alloc] init];
+	
+	itsController.buttonFactory = itsButtonFactory; 
 }
 
--(void)testHas225Buttons {
+-(void)testHasAllButtons {
 	STAssertEquals([[itsController.view subviews] count], (NSUInteger) 225, nil);
 }
 
@@ -36,28 +40,6 @@
 		UIButton *button = [[itsController.view subviews] objectAtIndex: column];
 		
 		STAssertEquals(button.center.x, (float) (10 + (20 * column)), nil);
-	}
-}
-
--(void)testEachButtonHasTarget {
-	for(int row = 0; row < 15; row++)
-	{
-		for(int column = 0; column < 15; column++)
-		{
-			UIButton *button = [[itsController.view subviews] objectAtIndex:(row * column)];
-			STAssertTrue([[button allTargets] containsObject:itsController], nil);
-		}
-	}
-}
-
--(void)testEachButtonHasAction {
-	for(int row = 0; row < 15; row++)
-	{
-		for(int column = 0; column < 15; column++)
-		{
-			UIButton *button = [[itsController.view subviews] objectAtIndex:(row * column)];
-			STAssertTrue([[button actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"selectCell:"], nil);
-		}
 	}
 }
 

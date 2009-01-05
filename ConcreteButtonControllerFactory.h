@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AbstractButtonControllerFactory.h"
 #import "ButtonController.h"
 
-@interface ButtonControllerFactory : NSObject <AbstractButtonControllerFactory> {
+@interface ConcreteButtonControllerFactory : NSObject {
 
 }
+
+-(ButtonController*) createButtonControllerForX: (int) x Y: (int) y at: (CGPoint) point sizeOf: (CGRect) rect;
 
 @end

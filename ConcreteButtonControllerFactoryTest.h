@@ -7,9 +7,10 @@
 //
 
 #import "GTMSenTestCase.h"
+#import "ConcreteButtonControllerFactory.h"
 
-@interface ButtonControllerFactoryTest : SenTestCase {
-	ButtonControllerFactory *itsFactory;
+@interface ConcreteButtonControllerFactoryTest : SenTestCase {
+	ConcreteButtonControllerFactory *itsFactory;
 	ButtonController				*itsController;
 	CGPoint									itsPoint;
 	CGRect									itsRect;

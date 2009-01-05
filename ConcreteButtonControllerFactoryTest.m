@@ -6,14 +6,12 @@
 //  Copyright 2009 8th Light. All rights reserved.
 //
 
-#import "ButtonControllerFactory.h"
-#import "ButtonControllerFactoryTest.h"
+#import "ConcreteButtonControllerFactoryTest.h"
 
-
-@implementation ButtonControllerFactoryTest
+@implementation ConcreteButtonControllerFactoryTest
 
 -(void) setUp {
-	itsFactory = [[ButtonControllerFactory alloc] init];
+	itsFactory = [[ConcreteButtonControllerFactory alloc] init];
 	itsPoint = CGPointMake(1.0f, 2.0f);
 	itsRect = CGRectMake(0.0f, 0.0f, 20.0f, 20.0f);
 	itsController = [itsFactory createButtonControllerForX: 1 Y:2 at:itsPoint sizeOf: itsRect];
@@ -25,23 +23,23 @@
 }
 
 -(void)testCanBeCreated {
-	STAssertNotNil(itsFactory, @"");
+	STAssertNotNil(itsFactory, nil);
 }
 
 -(void)testCreatesButtonController {
-	STAssertNotNil(itsController, @"");
+	STAssertNotNil(itsController, nil);
 }
 
 -(void)testAssignsButtonControllerXandY {
-	STAssertEquals(1, itsController.X, @"");
-	STAssertEquals(2, itsController.Y, @"");
+	STAssertEquals(1, itsController.X, nil);
+	STAssertEquals(2, itsController.Y, nil);
 }
 
 -(void)testAssignsItsView {
 	UIButton *button = (UIButton *)itsController.view;
 	
-	STAssertEquals(button.frame.size.width, 20.0f,@"");
-	STAssertEquals(button.frame.size.height, 20.0f,@"");
+	STAssertEquals(button.frame.size.width, 20.0f,nil);
+	STAssertEquals(button.frame.size.height, 20.0f,nil);
 	STAssertEquals(button.center.x, 1.0f, nil);
 	STAssertEquals(button.center.y, 2.0f, nil);
 }

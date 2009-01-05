@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		070AD5970F072F3500B77E82 /* GameOfLifeViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */; };
 		070AD5C70F07F22400B77E82 /* GameOfLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GameOfLifeViewController.m */; };
-		0780659A0F112EA400F1BFA8 /* ButtonControllerFactoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 078065990F112EA400F1BFA8 /* ButtonControllerFactoryTest.m */; };
-		0780659D0F112EB700F1BFA8 /* ButtonControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0780659C0F112EB700F1BFA8 /* ButtonControllerFactory.m */; };
-		0780659E0F112EB700F1BFA8 /* ButtonControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0780659C0F112EB700F1BFA8 /* ButtonControllerFactory.m */; };
 		078065DB0F11601000F1BFA8 /* ButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078065DA0F11601000F1BFA8 /* ButtonController.m */; };
 		078065DC0F11601000F1BFA8 /* ButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078065DA0F11601000F1BFA8 /* ButtonController.m */; };
+		07E84D830F119BFF005ACE54 /* ConcreteButtonControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */; };
+		07E84D840F119BFF005ACE54 /* ConcreteButtonControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */; };
+		07E84DAF0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E84DAE0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m */; };
 		1D3623260D0F684500981E51 /* GameOfLifeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* GameOfLifeAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -39,13 +39,12 @@
 /* Begin PBXFileReference section */
 		070AD5490F0728CB00B77E82 /* GameOfLifeViewControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOfLifeViewControllerTest.h; sourceTree = "<group>"; };
 		070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeViewControllerTest.m; sourceTree = "<group>"; };
-		078065980F112EA400F1BFA8 /* ButtonControllerFactoryTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonControllerFactoryTest.h; sourceTree = "<group>"; };
-		078065990F112EA400F1BFA8 /* ButtonControllerFactoryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonControllerFactoryTest.m; sourceTree = "<group>"; };
-		0780659B0F112EB700F1BFA8 /* ButtonControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonControllerFactory.h; sourceTree = SOURCE_ROOT; };
-		0780659C0F112EB700F1BFA8 /* ButtonControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonControllerFactory.m; sourceTree = SOURCE_ROOT; };
 		078065D90F11601000F1BFA8 /* ButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonController.h; path = ../ButtonController.h; sourceTree = "<group>"; };
 		078065DA0F11601000F1BFA8 /* ButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonController.m; path = ../ButtonController.m; sourceTree = "<group>"; };
-		0780675A0F11855C00F1BFA8 /* AbstractButtonControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractButtonControllerFactory.h; sourceTree = "<group>"; };
+		07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteButtonControllerFactory.h; sourceTree = SOURCE_ROOT; };
+		07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteButtonControllerFactory.m; sourceTree = SOURCE_ROOT; };
+		07E84DAD0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteButtonControllerFactoryTest.h; sourceTree = "<group>"; };
+		07E84DAE0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteButtonControllerFactoryTest.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* GameOfLifeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOfLifeAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* GameOfLifeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeAppDelegate.m; sourceTree = "<group>"; };
@@ -105,18 +104,24 @@
 		078067580F11848300F1BFA8 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				0780675A0F11855C00F1BFA8 /* AbstractButtonControllerFactory.h */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		07E84DC70F119F17005ACE54 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mocks;
 			sourceTree = "<group>";
 		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */,
+				07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */,
 				078065D90F11601000F1BFA8 /* ButtonController.h */,
 				078065DA0F11601000F1BFA8 /* ButtonController.m */,
-				0780659B0F112EB700F1BFA8 /* ButtonControllerFactory.h */,
-				0780659C0F112EB700F1BFA8 /* ButtonControllerFactory.m */,
 				1D3623240D0F684500981E51 /* GameOfLifeAppDelegate.h */,
 				1D3623250D0F684500981E51 /* GameOfLifeAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* GameOfLifeViewController.h */,
@@ -143,6 +148,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				07E84DC70F119F17005ACE54 /* Mocks */,
 				078067580F11848300F1BFA8 /* Protocols */,
 				F862C00F0EDAF80800EB670B /* Unit Test Framework */,
 				F862BFEC0EDAF60F00EB670B /* Tests */,
@@ -188,8 +194,8 @@
 		F862BFEC0EDAF60F00EB670B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				078065980F112EA400F1BFA8 /* ButtonControllerFactoryTest.h */,
-				078065990F112EA400F1BFA8 /* ButtonControllerFactoryTest.m */,
+				07E84DAD0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.h */,
+				07E84DAE0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m */,
 				F862C00C0EDAF7EF00EB670B /* GOLBoardTest.h */,
 				F862C00D0EDAF7EF00EB670B /* GOLBoardTest.m */,
 				F8795B970F001372004300C2 /* GameTest.h */,
@@ -317,8 +323,8 @@
 				F862C02A0EDAF95100EB670B /* GOLBoard.m in Sources */,
 				F8795BA20F0013CB004300C2 /* Game.m in Sources */,
 				F8B753C40F015A4700839756 /* Board.m in Sources */,
-				0780659D0F112EB700F1BFA8 /* ButtonControllerFactory.m in Sources */,
 				078065DC0F11601000F1BFA8 /* ButtonController.m in Sources */,
+				07E84D840F119BFF005ACE54 /* ConcreteButtonControllerFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,9 +343,9 @@
 				F8795BA10F0013CB004300C2 /* Game.m in Sources */,
 				F8B753BF0F01599E00839756 /* BoardTest.m in Sources */,
 				F8B753C30F015A4700839756 /* Board.m in Sources */,
-				0780659A0F112EA400F1BFA8 /* ButtonControllerFactoryTest.m in Sources */,
-				0780659E0F112EB700F1BFA8 /* ButtonControllerFactory.m in Sources */,
 				078065DB0F11601000F1BFA8 /* ButtonController.m in Sources */,
+				07E84D830F119BFF005ACE54 /* ConcreteButtonControllerFactory.m in Sources */,
+				07E84DAF0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

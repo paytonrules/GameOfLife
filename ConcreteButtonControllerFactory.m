@@ -6,9 +6,9 @@
 //  Copyright 2009 8th Light. All rights reserved.
 //
 
-#import "ButtonControllerFactory.h"
+#import "ConcreteButtonControllerFactory.h"
 
-@implementation ButtonControllerFactory
+@implementation ConcreteButtonControllerFactory
 
 -(ButtonController*) createButtonControllerForX: (int) x Y: (int) y at: (CGPoint) point sizeOf: (CGRect) rect 
 {
