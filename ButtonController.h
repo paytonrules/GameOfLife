@@ -1,19 +1,15 @@
 
 #import <UIKit/UIKit.h>
-#import "BoardProtocol.h"
+#import "CellProtocol.h"
 
 @interface ButtonController : UIViewController {
-	int								X;
-	int								Y;
-	id<BoardProtocol>	owner;
+	id<CellProtocol>	cell;
 }
 
-@property int X;
-@property int Y;
-@property(nonatomic, retain) id<BoardProtocol> owner;
+@property(nonatomic, retain) id<CellProtocol> cell;
 
--(id) initWithX: (int) x Y: (int) y owner: (id) newOwner;
--(void)bringToLife: (id)sender;
+-(id) initWithCell: (id) newOwner;
+-(void)bringToLife: (id) sender;
 -(void)kill: (id)sender;
 
 @end

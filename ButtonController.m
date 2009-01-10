@@ -1,26 +1,22 @@
 #import "ButtonController.h"
 
 @implementation ButtonController
-@synthesize X;
-@synthesize Y;
-@synthesize owner;
+@synthesize cell;
 
-- (id) initWithX: (int) x Y: (int) y owner: (id) newOwner {
-	self.X = x;
-	self.Y = y;
-	self.owner = newOwner;
+- (id) initWithCell: (id) newCell {
+	cell = newCell;
 	return self;
 }
 
 -(void)bringToLife: (id)sender {
-	[owner bringToLifeAt:X Y:Y];
+	[cell resurrect];
 	
 	[(UIButton *)self.view removeTarget:self action:@selector(bringToLife:) forControlEvents:UIControlEventTouchUpInside];
 	[(UIButton *)self.view addTarget:self action: @selector(kill:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 -(void)kill: (id)sender {
-	[owner killAt: X Y: Y];
+	[cell kill];
 	
 	[(UIButton *)self.view removeTarget:self action:@selector(kill:) forControlEvents:UIControlEventTouchUpInside];
 	[(UIButton *)self.view addTarget:self action: @selector(bringToLife:) forControlEvents:UIControlEventTouchUpInside];

@@ -1,10 +1,10 @@
 #import "GTMSenTestCase.h"
 #import "ButtonController.h"
-#import "MockOwner.h"
+#import "MockCell.h"
 
 @interface ButtonControllerTest : SenTestCase {
 	ButtonController	*itsController;
-	MockOwner					*itsOwner;
+	MockCell					*itsCell;
 }
 @end
 
@@ -12,26 +12,24 @@
 @implementation ButtonControllerTest
 
 -(void) setUp {
-	itsOwner = [[MockOwner alloc] init];
-	itsController = [[ButtonController alloc] initWithX: 123 Y: 456 owner: itsOwner];
+	itsCell = [[MockCell alloc] init];
+	itsController = [[ButtonController alloc] initWithCell: itsCell];
 	itsController.view = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 }
 
 -(void) tearDown {
-	[itsOwner release];
+	[itsCell release];
 	[itsController release];
 }
 
 -(void) testCustomInit {	
-	STAssertEquals(123, itsController.X, nil);
-	STAssertEquals(456, itsController.Y, nil);
-	STAssertEquals(itsOwner, itsController.owner, nil);
+	STAssertEquals(itsCell, itsController.cell, nil);
 }
 
--(void) testBringToLifeCallsOwnerBringToLife {
+-(void) testBringToLifeRessurect {
 	[itsController bringToLife: nil];
 	
-	STAssertTrue([itsOwner bringToLifeAtCalledWithX: 123 Y: 456], nil);
+	STAssertTrue(itsCell.resurrected, nil);
 }
 
 -(void) testBringToLifeChangesButtonsActionToKill {
@@ -41,10 +39,10 @@
 	STAssertTrue([[button actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"kill:"], nil);
 }
 
--(void) testKillCallsOwnerKillCellAt {
+-(void) testKillCallsKill {
 	[itsController kill: nil];
 	
-	STAssertTrue([itsOwner killAtCalledWithX: 123 Y: 456], nil);
+	STAssertTrue(itsCell.killed, nil);
 }
 
 -(void) testKillSwitchesActionToBringToLife {

@@ -14,8 +14,8 @@
 		0792AAA40F192B870021879E /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AAA30F192B870021879E /* Cell.m */; };
 		0792AAA50F192B870021879E /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AAA30F192B870021879E /* Cell.m */; };
 		0792AAA90F192BD80021879E /* CellTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AAA70F192BD80021879E /* CellTest.m */; };
+		0792AB460F1939130021879E /* MockCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AB450F1939130021879E /* MockCell.m */; };
 		079F421E0F12CF63005FE2AC /* ButtonControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F421D0F12CF63005FE2AC /* ButtonControllerTest.m */; };
-		07A214270F130C6F00E2DE05 /* MockOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A214260F130C6F00E2DE05 /* MockOwner.m */; };
 		07E84D830F119BFF005ACE54 /* ConcreteButtonControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */; };
 		07E84D840F119BFF005ACE54 /* ConcreteButtonControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */; };
 		07E84DAF0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E84DAE0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m */; };
@@ -46,14 +46,13 @@
 		070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeViewControllerTest.m; sourceTree = "<group>"; };
 		078065D90F11601000F1BFA8 /* ButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonController.h; sourceTree = "<group>"; };
 		078065DA0F11601000F1BFA8 /* ButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonController.m; sourceTree = "<group>"; };
-		0792AA8C0F1917A90021879E /* BoardProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardProtocol.h; sourceTree = "<group>"; };
 		0792AAA20F192B870021879E /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
 		0792AAA30F192B870021879E /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 		0792AAA70F192BD80021879E /* CellTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellTest.m; sourceTree = "<group>"; };
 		0792AB1B0F1935CF0021879E /* CellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellProtocol.h; sourceTree = "<group>"; };
+		0792AB440F1939130021879E /* MockCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockCell.h; sourceTree = "<group>"; };
+		0792AB450F1939130021879E /* MockCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockCell.m; sourceTree = "<group>"; };
 		079F421D0F12CF63005FE2AC /* ButtonControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonControllerTest.m; sourceTree = "<group>"; };
-		07A214250F130C6F00E2DE05 /* MockOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockOwner.h; sourceTree = "<group>"; };
-		07A214260F130C6F00E2DE05 /* MockOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockOwner.m; sourceTree = "<group>"; };
 		07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteButtonControllerFactory.h; sourceTree = "<group>"; };
 		07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteButtonControllerFactory.m; sourceTree = "<group>"; };
 		07E84DAD0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteButtonControllerFactoryTest.h; sourceTree = "<group>"; };
@@ -117,7 +116,6 @@
 		078067580F11848300F1BFA8 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				0792AA8C0F1917A90021879E /* BoardProtocol.h */,
 				0792AB1B0F1935CF0021879E /* CellProtocol.h */,
 			);
 			name = Protocols;
@@ -193,8 +191,8 @@
 		07E84DC70F119F17005ACE54 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				07A214250F130C6F00E2DE05 /* MockOwner.h */,
-				07A214260F130C6F00E2DE05 /* MockOwner.m */,
+				0792AB440F1939130021879E /* MockCell.h */,
+				0792AB450F1939130021879E /* MockCell.m */,
 			);
 			name = Mocks;
 			sourceTree = "<group>";
@@ -411,9 +409,9 @@
 				07E84D830F119BFF005ACE54 /* ConcreteButtonControllerFactory.m in Sources */,
 				07E84DAF0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m in Sources */,
 				079F421E0F12CF63005FE2AC /* ButtonControllerTest.m in Sources */,
-				07A214270F130C6F00E2DE05 /* MockOwner.m in Sources */,
 				0792AAA50F192B870021879E /* Cell.m in Sources */,
 				0792AAA90F192BD80021879E /* CellTest.m in Sources */,
+				0792AB460F1939130021879E /* MockCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

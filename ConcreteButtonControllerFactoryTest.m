@@ -1,12 +1,16 @@
-//
-//  ButtonFactoryTest.m
-//  GameOfLife
-//
-//  Created by Eric Smith on 1/4/09.
-//  Copyright 2009 8th Light. All rights reserved.
-//
+#import "GTMSenTestCase.h"
+#import "ConcreteButtonControllerFactory.h"
+#import "Cell.h"
 
-#import "ConcreteButtonControllerFactoryTest.h"
+@interface ConcreteButtonControllerFactoryTest : SenTestCase {
+	ConcreteButtonControllerFactory *itsFactory;
+	ButtonController				*itsController;
+	CGPoint									itsPoint;
+	CGRect									itsRect;
+	Cell										*itsCell;
+}
+
+@end
 
 @implementation ConcreteButtonControllerFactoryTest
 
@@ -14,12 +18,14 @@
 	itsFactory = [[ConcreteButtonControllerFactory alloc] init];
 	itsPoint = CGPointMake(1.0f, 2.0f);
 	itsRect = CGRectMake(0.0f, 0.0f, 20.0f, 20.0f);
-	itsController = [itsFactory createButtonControllerForX: 1 Y:2 at:itsPoint sizeOf: itsRect];
+	itsCell = [[Cell alloc] init];
+	itsController = [itsFactory createButtonControllerForCell:itsCell at:itsPoint sizeOf: itsRect];
 }
 
 -(void) tearDown {
 	[itsFactory release];
 	[itsController release];
+	[itsCell release];
 }
 
 -(void)testCanBeCreated {
@@ -28,11 +34,6 @@
 
 -(void)testCreatesButtonController {
 	STAssertNotNil(itsController, nil);
-}
-
--(void)testAssignsButtonControllerXandY {
-	STAssertEquals(1, itsController.X, nil);
-	STAssertEquals(2, itsController.Y, nil);
 }
 
 -(void)testAssignsItsView {
@@ -47,6 +48,6 @@
 -(void)testAssignsActionToView {
 	UIButton *button = (UIButton *)itsController.view;
 	
-	STAssertTrue([[button actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"selectCell:"], nil);
+	STAssertTrue([[button actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"bringToLife:"], nil);
 }
 @end

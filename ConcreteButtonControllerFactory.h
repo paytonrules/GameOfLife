@@ -13,6 +13,6 @@
 
 }
 
--(ButtonController*) createButtonControllerForX: (int) x Y: (int) y at: (CGPoint) point sizeOf: (CGRect) rect;
+-(ButtonController*) createButtonControllerForCell: cell at: (CGPoint) point sizeOf: (CGRect) rect;
 
 @end
