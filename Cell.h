@@ -14,5 +14,4 @@
 	bool alive;
 }
 
-@property(readonly) bool alive;
 @end

@@ -7,8 +7,13 @@
 //
 
 #import "GameOfLifeViewController.h"
-#import "GameOfLifeViewControllerTest.h"
 #import "ConcreteButtonControllerFactory.h"
+#import "GTMSenTestCase.h"
+
+@interface GameOfLifeViewControllerTest : SenTestCase {
+	GameOfLifeViewController* itsController;
+}
+@end
 
 
 @implementation GameOfLifeViewControllerTest
@@ -23,28 +28,4 @@
 	STAssertEquals([[itsController.view subviews] count], (NSUInteger) 225, nil);
 }
 
-//-(void)testSelectCellBringsCellToLife {
-//	GOLBoard	*board = [[GOLBoard alloc] init];
-//	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//	
-//	itsController.board = board;
-//	[button setCenter:CGPointMake([GameOfLifeViewController calculatePositionFor: 1], [GameOfLifeViewController calculatePositionFor:1])];	
-//	
-//	[itsController selectCell: button];
-//	
-//	STAssertTrue([board isCellAliveAt:1 by:1], nil);
-//}
-//
-//-(void)testSelectCellKillsCell {
-//	GOLBoard	*board = [[GOLBoard alloc] init];
-//	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//	[board killCellAt:1	by:1];
-//	
-//	itsController.board = board;
-//	[button setCenter:CGPointMake([GameOfLifeViewController calculatePositionFor: 1], [GameOfLifeViewController calculatePositionFor:1])];	
-//	
-//	[itsController selectCell: button];
-//	
-//	STAssertTrue([board isCellAliveAt:1 by:1], nil);
-//}
 @end

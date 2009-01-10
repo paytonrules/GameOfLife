@@ -15,6 +15,10 @@
 	return self;
 }
 
+-(id<CellProtocol>) getCellAt: (int) x by: (int) y {
+	return board[x][y];
+}
+
 -(void)copyBoard: (GOLBoard*)originalBoard {
 	for(int x=0; x<sideLength; x++) {
 		for(int y=0; y<sideLength; y++) {

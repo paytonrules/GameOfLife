@@ -21,8 +21,8 @@
 -(void)advanceGeneration {
 	GOLBoard* unchangedBoard = [[GOLBoard alloc] init];
 	[unchangedBoard copyBoard: myBoard];
-	for(int x=0; x<15; x++) {
-		for(int y=0; y<15;y++) {
+	for(int x=0; x < 15; x++) {
+		for(int y=0; y < 15;y++) {
 			int living_neighbors = [unchangedBoard livingNeighborsAt: x by: y];
 			if(living_neighbors < 2 || living_neighbors > 3)
 				[myBoard killCellAt: x by: y];

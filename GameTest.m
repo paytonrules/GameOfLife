@@ -1,12 +1,12 @@
-//
-//  GameTest.m
-//  GameOfLife
-//
-//  Created by Eric Meyer on 12/22/08.
-//  Copyright 2008 __MyCompanyName__. All rights reserved.
-//
+#import "GTMSenTestCase.h"
+#import "GOLBoard.h"
+#import "Game.h"
 
-#import "GameTest.h"
+@interface GameTest : SenTestCase {
+	GOLBoard* board;
+	Game* game;
+}
+@end
 
 @implementation GameTest
 

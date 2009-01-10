@@ -6,7 +6,12 @@
 //  Copyright 2008 __MyCompanyName__. All rights reserved.
 //
 #import "GOLBoard.h"
-#import "GOLBoardTest.h"
+#import "GTMSenTestCase.h"
+
+@interface GOLBoardTest : SenTestCase {
+	GOLBoard *itsBoard;
+}
+@end
 
 @implementation GOLBoardTest
 
@@ -187,6 +192,14 @@
 	
 	STAssertTrue(firstAlive, @"");
 	STAssertTrue(secondAlive, @"");
+}
+
+-(void)testGetCellAt {
+	[itsBoard bringToLifeAt:1 by:2];
+	
+	id<CellProtocol> cell = [itsBoard getCellAt: 1 by:2];
+	
+	STAssertTrue(cell.alive, nil);
 }
 
 @end

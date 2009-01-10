@@ -28,4 +28,8 @@
 	killed = true;
 }
 
+-(bool) alive {
+	return true;
+}
+
 @end
