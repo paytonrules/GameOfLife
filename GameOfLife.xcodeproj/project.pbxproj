@@ -51,6 +51,7 @@
 		0792AB1B0F1935CF0021879E /* CellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellProtocol.h; sourceTree = "<group>"; };
 		0792AB440F1939130021879E /* MockCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockCell.h; sourceTree = "<group>"; };
 		0792AB450F1939130021879E /* MockCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockCell.m; sourceTree = "<group>"; };
+		0792AC5A0F195BE70021879E /* ButtonControllerFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonControllerFactoryProtocol.h; sourceTree = "<group>"; };
 		079F421D0F12CF63005FE2AC /* ButtonControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonControllerTest.m; sourceTree = "<group>"; };
 		07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteButtonControllerFactory.h; sourceTree = "<group>"; };
 		07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteButtonControllerFactory.m; sourceTree = "<group>"; };
@@ -112,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				0792AB1B0F1935CF0021879E /* CellProtocol.h */,
+				0792AC5A0F195BE70021879E /* ButtonControllerFactoryProtocol.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";

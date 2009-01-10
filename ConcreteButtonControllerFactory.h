@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "ButtonController.h"
+#import "ButtonControllerFactoryProtocol.h"
 
-@interface ConcreteButtonControllerFactory : NSObject {
+@interface ConcreteButtonControllerFactory : NSObject<ButtonControllerFactoryProtocol> {
 
 }
-
--(ButtonController*) createButtonControllerForCell: cell at: (CGPoint) point sizeOf: (CGRect) rect;
 
 @end

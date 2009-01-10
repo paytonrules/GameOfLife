@@ -2453,8 +2453,8 @@
 		isa = PBXTextBookmark;
 		fRef = 07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */;
 		name = "ConcreteButtonControllerFactory.h: 16";
-		rLen = 99;
-		rLoc = 247;
+		rLen = 0;
+		rLoc = 323;
 		rType = 0;
 		vrLen = 353;
 		vrLoc = 0;
@@ -2763,8 +2763,8 @@
 		isa = PBXTextBookmark;
 		fRef = 07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */;
 		name = "ConcreteButtonControllerFactory.h: 16";
-		rLen = 99;
-		rLoc = 247;
+		rLen = 0;
+		rLoc = 323;
 		rType = 0;
 		vrLen = 353;
 		vrLoc = 0;
@@ -2813,8 +2813,8 @@
 		isa = PBXTextBookmark;
 		fRef = 07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */;
 		name = "ConcreteButtonControllerFactory.h: 16";
-		rLen = 99;
-		rLoc = 247;
+		rLen = 0;
+		rLoc = 323;
 		rType = 0;
 		vrLen = 353;
 		vrLoc = 0;
@@ -2903,8 +2903,8 @@
 		isa = PBXTextBookmark;
 		fRef = 07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */;
 		name = "ConcreteButtonControllerFactory.h: 16";
-		rLen = 99;
-		rLoc = 247;
+		rLen = 0;
+		rLoc = 323;
 		rType = 0;
 		vrLen = 353;
 		vrLoc = 0;
@@ -2923,8 +2923,8 @@
 		isa = PBXTextBookmark;
 		fRef = 07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */;
 		name = "ConcreteButtonControllerFactory.h: 16";
-		rLen = 99;
-		rLoc = 247;
+		rLen = 0;
+		rLoc = 323;
 		rType = 0;
 		vrLen = 353;
 		vrLoc = 0;
@@ -4125,6 +4125,133 @@
 		vrLen = 684;
 		vrLoc = 0;
 	};
+	0792AC5A0F195BE70021879E /* ButtonControllerFactoryProtocol.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1263, 615}}";
+			sepNavSelRange = "{79, 0}";
+			sepNavVisRange = "{0, 230}";
+		};
+	};
+	0792AC600F195C6C0021879E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */;
+		name = "GameOfLifeViewControllerTest.m: 30";
+		rLen = 0;
+		rLoc = 678;
+		rType = 0;
+		vrLen = 684;
+		vrLoc = 0;
+	};
+	0792AC610F195C6C0021879E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */;
+		name = "ConcreteButtonControllerFactory.m: 13";
+		rLen = 100;
+		rLoc = 227;
+		rType = 0;
+		vrLen = 697;
+		vrLoc = 0;
+	};
+	0792AC620F195C6C0021879E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */;
+		name = "ConcreteButtonControllerFactory.h: 16";
+		rLen = 0;
+		rLoc = 323;
+		rType = 0;
+		vrLen = 329;
+		vrLoc = 0;
+	};
+	0792AC630F195C6C0021879E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0792AC5A0F195BE70021879E /* ButtonControllerFactoryProtocol.h */;
+		name = "ButtonControllerFactoryProtocol.h: 1";
+		rLen = 0;
+		rLoc = 79;
+		rType = 0;
+		vrLen = 230;
+		vrLoc = 0;
+	};
+	0792AC640F195C6C0021879E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */;
+		name = "GameOfLifeViewControllerTest.m: 30";
+		rLen = 0;
+		rLoc = 678;
+		rType = 0;
+		vrLen = 684;
+		vrLoc = 0;
+	};
+	0792AC650F195C6C0021879E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */;
+		name = "ConcreteButtonControllerFactory.m: 13";
+		rLen = 100;
+		rLoc = 227;
+		rType = 0;
+		vrLen = 697;
+		vrLoc = 0;
+	};
+	0792AC660F195C6C0021879E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0792AC5A0F195BE70021879E /* ButtonControllerFactoryProtocol.h */;
+		name = "ButtonControllerFactoryProtocol.h: 3";
+		rLen = 0;
+		rLoc = 224;
+		rType = 0;
+		vrLen = 50;
+		vrLoc = 0;
+	};
+	0792AC670F195C6C0021879E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */;
+		name = "ConcreteButtonControllerFactory.h: 16";
+		rLen = 0;
+		rLoc = 323;
+		rType = 0;
+		vrLen = 353;
+		vrLoc = 0;
+	};
+	0792AC680F195C6C0021879E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0792AC5A0F195BE70021879E /* ButtonControllerFactoryProtocol.h */;
+		name = "ButtonControllerFactoryProtocol.h: 1";
+		rLen = 0;
+		rLoc = 79;
+		rType = 0;
+		vrLen = 230;
+		vrLoc = 0;
+	};
+	0792AC690F195C6C0021879E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */;
+		name = "ConcreteButtonControllerFactory.m: 13";
+		rLen = 100;
+		rLoc = 227;
+		rType = 0;
+		vrLen = 697;
+		vrLoc = 0;
+	};
+	0792AC6A0F195C6C0021879E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */;
+		name = "ConcreteButtonControllerFactory.h: 16";
+		rLen = 0;
+		rLoc = 323;
+		rType = 0;
+		vrLen = 329;
+		vrLoc = 0;
+	};
+	0792AC6B0F195C6C0021879E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0792AC5A0F195BE70021879E /* ButtonControllerFactoryProtocol.h */;
+		name = "ButtonControllerFactoryProtocol.h: 1";
+		rLen = 0;
+		rLoc = 79;
+		rType = 0;
+		vrLen = 230;
+		vrLoc = 0;
+	};
 	079F41AE0F12C9B3005FE2AC /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 07E84DAD0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.h */;
@@ -4267,8 +4394,8 @@
 		isa = PBXTextBookmark;
 		fRef = 07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */;
 		name = "ConcreteButtonControllerFactory.h: 16";
-		rLen = 100;
-		rLoc = 247;
+		rLen = 0;
+		rLoc = 323;
 		rType = 0;
 		vrLen = 364;
 		vrLoc = 0;
@@ -4457,14 +4584,14 @@
 	07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1263, 615}}";
-			sepNavSelRange = "{247, 99}";
-			sepNavVisRange = "{0, 353}";
+			sepNavSelRange = "{323, 0}";
+			sepNavVisRange = "{0, 329}";
 		};
 	};
 	07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1263, 615}}";
-			sepNavSelRange = "{248, 29}";
+			sepNavSelRange = "{227, 100}";
 			sepNavVisRange = "{0, 697}";
 			sepNavWindowFrame = "{{15, 5}, {624, 1018}}";
 		};
@@ -4474,7 +4601,7 @@
 		fRef = 07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */;
 		name = "ConcreteButtonControllerFactory.h: 13";
 		rLen = 0;
-		rLoc = 206;
+		rLoc = 250;
 		rType = 0;
 		vrLen = 285;
 		vrLoc = 0;
@@ -4580,6 +4707,7 @@
 		activeSDKPreference = iphonesimulator2.0;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* GameOfLife */;
 		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* GameOfLife */,
 			F862BFF00EDAF62700EB670B /* UnitTests */,
 		);
 		breakpoints = (
@@ -5079,6 +5207,18 @@
 			0792AC540F1947EE0021879E /* PBXTextBookmark */ = 0792AC540F1947EE0021879E /* PBXTextBookmark */;
 			0792AC560F1948400021879E /* PBXTextBookmark */ = 0792AC560F1948400021879E /* PBXTextBookmark */;
 			0792AC570F19484F0021879E /* PBXTextBookmark */ = 0792AC570F19484F0021879E /* PBXTextBookmark */;
+			0792AC600F195C6C0021879E /* PBXTextBookmark */ = 0792AC600F195C6C0021879E /* PBXTextBookmark */;
+			0792AC610F195C6C0021879E /* PBXTextBookmark */ = 0792AC610F195C6C0021879E /* PBXTextBookmark */;
+			0792AC620F195C6C0021879E /* PBXTextBookmark */ = 0792AC620F195C6C0021879E /* PBXTextBookmark */;
+			0792AC630F195C6C0021879E /* PBXTextBookmark */ = 0792AC630F195C6C0021879E /* PBXTextBookmark */;
+			0792AC640F195C6C0021879E /* PBXTextBookmark */ = 0792AC640F195C6C0021879E /* PBXTextBookmark */;
+			0792AC650F195C6C0021879E /* PBXTextBookmark */ = 0792AC650F195C6C0021879E /* PBXTextBookmark */;
+			0792AC660F195C6C0021879E /* PBXTextBookmark */ = 0792AC660F195C6C0021879E /* PBXTextBookmark */;
+			0792AC670F195C6C0021879E /* PBXTextBookmark */ = 0792AC670F195C6C0021879E /* PBXTextBookmark */;
+			0792AC680F195C6C0021879E /* PBXTextBookmark */ = 0792AC680F195C6C0021879E /* PBXTextBookmark */;
+			0792AC690F195C6C0021879E /* PBXTextBookmark */ = 0792AC690F195C6C0021879E /* PBXTextBookmark */;
+			0792AC6A0F195C6C0021879E /* PBXTextBookmark */ = 0792AC6A0F195C6C0021879E /* PBXTextBookmark */;
+			0792AC6B0F195C6C0021879E /* PBXTextBookmark */ = 0792AC6B0F195C6C0021879E /* PBXTextBookmark */;
 			079F41AE0F12C9B3005FE2AC = 079F41AE0F12C9B3005FE2AC /* PBXTextBookmark */;
 			079F41B50F12C9B3005FE2AC = 079F41B50F12C9B3005FE2AC /* PBXTextBookmark */;
 			079F422C0F12D10B005FE2AC = 079F422C0F12D10B005FE2AC /* PBXTextBookmark */;
