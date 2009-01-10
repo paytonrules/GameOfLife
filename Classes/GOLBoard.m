@@ -1,18 +1,17 @@
-//
-//  GOLBoard.m
-//  GameOfLife
-//
-//  Created by Eric Meyer on 11/24/08.
-//  Copyright 2008 __MyCompanyName__. All rights reserved.
-//
 
 #import "GOLBoard.h"
+#import "Cell.h"
 
 @implementation GOLBoard
 
 -(id)init {
 	super;
 	sideLength = 15;
+	for(int x=0; x < sideLength; x++) {
+		for(int y=0; y < sideLength; y++) {
+			board[x][y] = [[Cell alloc] init];
+		}
+	}
 	return self;
 }
 
@@ -29,15 +28,15 @@
 	if(x >= sideLength || y >= sideLength || x < 0 || y < 0) {
 		return false;
 	}
-	return board[x][y];
+	return [board[x][y] alive];
 }
 
 -(void) bringToLifeAt: (int) x by: (int) y {
-	board[x][y] = true;
+	[board[x][y] resurrect];
 }
 
 -(void) killCellAt: (int) x by: (int) y {
-	board[x][y] = false;
+	[board[x][y] kill];
 }
 
 -(int)livingNeighborsAt: (int) x by: (int) y {

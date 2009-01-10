@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "Board.h"
+#import "CellProtocol.h"
 
 @interface GOLBoard : Board {
 	int sideLength;
-	bool board[15][15];
+	id<CellProtocol> board[15][15];
 }
 
 -(void)copyBoard: (GOLBoard*)board;
