@@ -12,7 +12,7 @@
 
 -(ButtonController*) createButtonControllerForX: (int) x Y: (int) y at: (CGPoint) point sizeOf: (CGRect) rect 
 {
-	ButtonController *controller = [[ButtonController alloc] initWithX: x Y: y];
+	ButtonController *controller = [[ButtonController alloc] initWithX: x Y: y owner: nil];
 	
 	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	[button setFrame:rect]; 

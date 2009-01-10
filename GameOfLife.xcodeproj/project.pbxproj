@@ -11,6 +11,8 @@
 		070AD5C70F07F22400B77E82 /* GameOfLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GameOfLifeViewController.m */; };
 		078065DB0F11601000F1BFA8 /* ButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078065DA0F11601000F1BFA8 /* ButtonController.m */; };
 		078065DC0F11601000F1BFA8 /* ButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078065DA0F11601000F1BFA8 /* ButtonController.m */; };
+		079F421E0F12CF63005FE2AC /* ButtonControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F421D0F12CF63005FE2AC /* ButtonControllerTest.m */; };
+		07A214270F130C6F00E2DE05 /* MockOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A214260F130C6F00E2DE05 /* MockOwner.m */; };
 		07E84D830F119BFF005ACE54 /* ConcreteButtonControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */; };
 		07E84D840F119BFF005ACE54 /* ConcreteButtonControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */; };
 		07E84DAF0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E84DAE0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m */; };
@@ -39,22 +41,26 @@
 /* Begin PBXFileReference section */
 		070AD5490F0728CB00B77E82 /* GameOfLifeViewControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOfLifeViewControllerTest.h; sourceTree = "<group>"; };
 		070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeViewControllerTest.m; sourceTree = "<group>"; };
-		078065D90F11601000F1BFA8 /* ButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonController.h; path = ../ButtonController.h; sourceTree = "<group>"; };
-		078065DA0F11601000F1BFA8 /* ButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonController.m; path = ../ButtonController.m; sourceTree = "<group>"; };
-		07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteButtonControllerFactory.h; sourceTree = SOURCE_ROOT; };
-		07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteButtonControllerFactory.m; sourceTree = SOURCE_ROOT; };
+		078065D90F11601000F1BFA8 /* ButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonController.h; sourceTree = "<group>"; };
+		078065DA0F11601000F1BFA8 /* ButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonController.m; sourceTree = "<group>"; };
+		0792AA8C0F1917A90021879E /* BoardProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardProtocol.h; sourceTree = "<group>"; };
+		079F421D0F12CF63005FE2AC /* ButtonControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonControllerTest.m; sourceTree = "<group>"; };
+		07A214250F130C6F00E2DE05 /* MockOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockOwner.h; sourceTree = "<group>"; };
+		07A214260F130C6F00E2DE05 /* MockOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockOwner.m; sourceTree = "<group>"; };
+		07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteButtonControllerFactory.h; sourceTree = "<group>"; };
+		07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteButtonControllerFactory.m; sourceTree = "<group>"; };
 		07E84DAD0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteButtonControllerFactoryTest.h; sourceTree = "<group>"; };
 		07E84DAE0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteButtonControllerFactoryTest.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* GameOfLifeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOfLifeAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* GameOfLifeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeAppDelegate.m; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* GameOfLifeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOfLifeAppDelegate.h; path = Classes/GameOfLifeAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* GameOfLifeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameOfLifeAppDelegate.m; path = Classes/GameOfLifeAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* GameOfLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E5210DE3E06400AC0155 /* GameOfLifeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameOfLifeViewController.xib; sourceTree = "<group>"; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		28D7ACF60DDB3853001CB0EB /* GameOfLifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOfLifeViewController.h; sourceTree = "<group>"; };
-		28D7ACF70DDB3853001CB0EB /* GameOfLifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeViewController.m; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* GameOfLifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOfLifeViewController.h; path = Classes/GameOfLifeViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* GameOfLifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameOfLifeViewController.m; path = Classes/GameOfLifeViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* GameOfLife_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOfLife_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,16 +74,16 @@
 		F862BFFF0EDAF66500EB670B /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		F862C00C0EDAF7EF00EB670B /* GOLBoardTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOLBoardTest.h; sourceTree = "<group>"; };
 		F862C00D0EDAF7EF00EB670B /* GOLBoardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOLBoardTest.m; sourceTree = "<group>"; };
-		F862C0270EDAF95100EB670B /* GOLBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GOLBoard.h; sourceTree = "<group>"; };
-		F862C0280EDAF95100EB670B /* GOLBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOLBoard.m; sourceTree = "<group>"; };
+		F862C0270EDAF95100EB670B /* GOLBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GOLBoard.h; path = Classes/GOLBoard.h; sourceTree = "<group>"; };
+		F862C0280EDAF95100EB670B /* GOLBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GOLBoard.m; path = Classes/GOLBoard.m; sourceTree = "<group>"; };
 		F8795B970F001372004300C2 /* GameTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTest.h; sourceTree = "<group>"; };
 		F8795B980F001372004300C2 /* GameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTest.m; sourceTree = "<group>"; };
-		F8795B9F0F0013CB004300C2 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
-		F8795BA00F0013CB004300C2 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		F8795B9F0F0013CB004300C2 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = Classes/Game.h; sourceTree = "<group>"; };
+		F8795BA00F0013CB004300C2 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = Classes/Game.m; sourceTree = "<group>"; };
 		F8B753BD0F01599E00839756 /* BoardTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardTest.h; sourceTree = "<group>"; };
 		F8B753BE0F01599E00839756 /* BoardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardTest.m; sourceTree = "<group>"; };
-		F8B753C10F015A4700839756 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
-		F8B753C20F015A4700839756 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
+		F8B753C10F015A4700839756 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Board.h; path = Classes/Board.h; sourceTree = "<group>"; };
+		F8B753C20F015A4700839756 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Board.m; path = Classes/Board.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +110,80 @@
 		078067580F11848300F1BFA8 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				0792AA8C0F1917A90021879E /* BoardProtocol.h */,
 			);
 			name = Protocols;
+			sourceTree = "<group>";
+		};
+		079F42180F12CE7A005FE2AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F862C0270EDAF95100EB670B /* GOLBoard.h */,
+				F862C0280EDAF95100EB670B /* GOLBoard.m */,
+				F8795B9F0F0013CB004300C2 /* Game.h */,
+				F8795BA00F0013CB004300C2 /* Game.m */,
+				F8B753C10F015A4700839756 /* Board.h */,
+				F8B753C20F015A4700839756 /* Board.m */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		079F42190F12CE80005FE2AC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* GameOfLifeAppDelegate.h */,
+				1D3623250D0F684500981E51 /* GameOfLifeAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* GameOfLifeViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* GameOfLifeViewController.m */,
+				078065D90F11601000F1BFA8 /* ButtonController.h */,
+				078065DA0F11601000F1BFA8 /* ButtonController.m */,
+				07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */,
+				07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */,
+			);
+			name = "View Controllers";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		079F421A0F12CEC7005FE2AC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				079F421C0F12CF0F005FE2AC /* Mocks */,
+				070AD5490F0728CB00B77E82 /* GameOfLifeViewControllerTest.h */,
+				070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */,
+				07E84DAD0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.h */,
+				07E84DAE0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m */,
+				079F421D0F12CF63005FE2AC /* ButtonControllerTest.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		079F421B0F12CEDE005FE2AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07E84DC70F119F17005ACE54 /* Mocks */,
+				F862C00C0EDAF7EF00EB670B /* GOLBoardTest.h */,
+				F862C00D0EDAF7EF00EB670B /* GOLBoardTest.m */,
+				F8795B970F001372004300C2 /* GameTest.h */,
+				F8795B980F001372004300C2 /* GameTest.m */,
+				F8B753BD0F01599E00839756 /* BoardTest.h */,
+				F8B753BE0F01599E00839756 /* BoardTest.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		079F421C0F12CF0F005FE2AC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mocks;
 			sourceTree = "<group>";
 		};
 		07E84DC70F119F17005ACE54 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				07A214250F130C6F00E2DE05 /* MockOwner.h */,
+				07A214260F130C6F00E2DE05 /* MockOwner.m */,
 			);
 			name = Mocks;
 			sourceTree = "<group>";
@@ -118,20 +191,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				07E84D810F119BFF005ACE54 /* ConcreteButtonControllerFactory.h */,
-				07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */,
-				078065D90F11601000F1BFA8 /* ButtonController.h */,
-				078065DA0F11601000F1BFA8 /* ButtonController.m */,
-				1D3623240D0F684500981E51 /* GameOfLifeAppDelegate.h */,
-				1D3623250D0F684500981E51 /* GameOfLifeAppDelegate.m */,
-				28D7ACF60DDB3853001CB0EB /* GameOfLifeViewController.h */,
-				28D7ACF70DDB3853001CB0EB /* GameOfLifeViewController.m */,
-				F862C0270EDAF95100EB670B /* GOLBoard.h */,
-				F862C0280EDAF95100EB670B /* GOLBoard.m */,
-				F8795B9F0F0013CB004300C2 /* Game.h */,
-				F8795BA00F0013CB004300C2 /* Game.m */,
-				F8B753C10F015A4700839756 /* Board.h */,
-				F8B753C20F015A4700839756 /* Board.m */,
+				079F42180F12CE7A005FE2AC /* Models */,
+				079F42190F12CE80005FE2AC /* View Controllers */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -148,7 +209,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				07E84DC70F119F17005ACE54 /* Mocks */,
 				078067580F11848300F1BFA8 /* Protocols */,
 				F862C00F0EDAF80800EB670B /* Unit Test Framework */,
 				F862BFEC0EDAF60F00EB670B /* Tests */,
@@ -194,16 +254,8 @@
 		F862BFEC0EDAF60F00EB670B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				07E84DAD0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.h */,
-				07E84DAE0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m */,
-				F862C00C0EDAF7EF00EB670B /* GOLBoardTest.h */,
-				F862C00D0EDAF7EF00EB670B /* GOLBoardTest.m */,
-				F8795B970F001372004300C2 /* GameTest.h */,
-				F8795B980F001372004300C2 /* GameTest.m */,
-				F8B753BD0F01599E00839756 /* BoardTest.h */,
-				F8B753BE0F01599E00839756 /* BoardTest.m */,
-				070AD5490F0728CB00B77E82 /* GameOfLifeViewControllerTest.h */,
-				070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */,
+				079F421B0F12CEDE005FE2AC /* Models */,
+				079F421A0F12CEC7005FE2AC /* ViewControllers */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -346,6 +398,8 @@
 				078065DB0F11601000F1BFA8 /* ButtonController.m in Sources */,
 				07E84D830F119BFF005ACE54 /* ConcreteButtonControllerFactory.m in Sources */,
 				07E84DAF0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m in Sources */,
+				079F421E0F12CF63005FE2AC /* ButtonControllerTest.m in Sources */,
+				07A214270F130C6F00E2DE05 /* MockOwner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

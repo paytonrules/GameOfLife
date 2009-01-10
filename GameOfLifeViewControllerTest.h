@@ -7,11 +7,9 @@
 //
 
 #import "GTMSenTestCase.h"
-#import "MockButtonFactory.h"
 
 @interface GameOfLifeViewControllerTest : SenTestCase {
 	GameOfLifeViewController* itsController;
-	MockButtonFactory*				itsButtonFactory;
 }
 
 @end
