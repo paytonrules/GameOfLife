@@ -10,11 +10,11 @@
 
 @implementation Game
 
--(GOLBoard*)board {
+-(id<Board>)board {
 	return myBoard;
 }
 
--(void)setBoard:(GOLBoard*) board {
+-(void)setBoard:(id<Board>) board {
 	myBoard = board;
 }
 

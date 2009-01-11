@@ -16,7 +16,7 @@
 		{
 			CGPoint point = CGPointMake([GameOfLifeViewController calculatePositionFor: row], [GameOfLifeViewController calculatePositionFor: column]);
 			CGRect rect = CGRectMake(0.0f, 0.0f, 20.0f, 20.0f);
-			[self.view addSubview: [self.buttonFactory createButtonControllerForCell:nil at:point sizeOf:rect].view];
+		//	[self.view addSubview: [self.buttonFactory createButtonControllerForCell:nil at:point sizeOf:rect].view];
 		}
 	}
 }

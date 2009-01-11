@@ -10,16 +10,8 @@
 #import "Board.h"
 #import "CellProtocol.h"
 
-@interface GOLBoard : Board {
+@interface GOLBoard : NSObject <Board> {
 	int sideLength;
 	id<CellProtocol> board[15][15];
 }
-
--(void) copyBoard: (GOLBoard*)board;
--(bool) isCellAliveAt: (int) x by: (int) y;
--(void) bringToLifeAt: (int) x by: (int) y;
--(void) killCellAt: (int) x by: (int) y;
--(int) livingNeighborsAt: (int) x by: (int) y;
--(id<CellProtocol>) getCellAt: (int) x by: (int) y;
-
 @end

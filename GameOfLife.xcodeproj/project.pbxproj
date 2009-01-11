@@ -36,9 +36,6 @@
 		F8795B990F001372004300C2 /* GameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795B980F001372004300C2 /* GameTest.m */; };
 		F8795BA10F0013CB004300C2 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795BA00F0013CB004300C2 /* Game.m */; };
 		F8795BA20F0013CB004300C2 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795BA00F0013CB004300C2 /* Game.m */; };
-		F8B753BF0F01599E00839756 /* BoardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B753BE0F01599E00839756 /* BoardTest.m */; };
-		F8B753C30F015A4700839756 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B753C20F015A4700839756 /* Board.m */; };
-		F8B753C40F015A4700839756 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B753C20F015A4700839756 /* Board.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,9 +80,7 @@
 		F8795B980F001372004300C2 /* GameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTest.m; sourceTree = "<group>"; };
 		F8795B9F0F0013CB004300C2 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = Classes/Game.h; sourceTree = "<group>"; };
 		F8795BA00F0013CB004300C2 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = Classes/Game.m; sourceTree = "<group>"; };
-		F8B753BE0F01599E00839756 /* BoardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardTest.m; sourceTree = "<group>"; };
 		F8B753C10F015A4700839756 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Board.h; path = Classes/Board.h; sourceTree = "<group>"; };
-		F8B753C20F015A4700839756 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Board.m; path = Classes/Board.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +123,6 @@
 				F8795B9F0F0013CB004300C2 /* Game.h */,
 				F8795BA00F0013CB004300C2 /* Game.m */,
 				F8B753C10F015A4700839756 /* Board.h */,
-				F8B753C20F015A4700839756 /* Board.m */,
 			);
 			name = Models;
 			path = ..;
@@ -167,7 +161,6 @@
 				07E84DC70F119F17005ACE54 /* Mocks */,
 				F862C00D0EDAF7EF00EB670B /* GOLBoardTest.m */,
 				F8795B980F001372004300C2 /* GameTest.m */,
-				F8B753BE0F01599E00839756 /* BoardTest.m */,
 				0792AAA70F192BD80021879E /* CellTest.m */,
 			);
 			name = Models;
@@ -375,7 +368,6 @@
 				28D7ACF80DDB3853001CB0EB /* GameOfLifeViewController.m in Sources */,
 				F862C02A0EDAF95100EB670B /* GOLBoard.m in Sources */,
 				F8795BA20F0013CB004300C2 /* Game.m in Sources */,
-				F8B753C40F015A4700839756 /* Board.m in Sources */,
 				078065DC0F11601000F1BFA8 /* ButtonController.m in Sources */,
 				07E84D840F119BFF005ACE54 /* ConcreteButtonControllerFactory.m in Sources */,
 				0792AAA40F192B870021879E /* Cell.m in Sources */,
@@ -395,8 +387,6 @@
 				F862C0290EDAF95100EB670B /* GOLBoard.m in Sources */,
 				F8795B990F001372004300C2 /* GameTest.m in Sources */,
 				F8795BA10F0013CB004300C2 /* Game.m in Sources */,
-				F8B753BF0F01599E00839756 /* BoardTest.m in Sources */,
-				F8B753C30F015A4700839756 /* Board.m in Sources */,
 				078065DB0F11601000F1BFA8 /* ButtonController.m in Sources */,
 				07E84D830F119BFF005ACE54 /* ConcreteButtonControllerFactory.m in Sources */,
 				07E84DAF0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m in Sources */,
