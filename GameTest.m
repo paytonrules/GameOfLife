@@ -25,7 +25,7 @@
 -(void)testSetBoard {
 	[game setBoard: board];
 	
-	GOLBoard* new_board = [game board];
+	id<BoardProtocol> new_board = [game board];
 	
 	STAssertEquals(board, new_board, @"Expected two equal boards");
 }

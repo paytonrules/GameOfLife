@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Board.h"
+#import "BoardProtocol.h"
 #import "CellProtocol.h"
 
-@interface GOLBoard : NSObject <Board> {
+@interface GOLBoard : NSObject <BoardProtocol> {
 	int sideLength;
 	id<CellProtocol> board[15][15];
 }

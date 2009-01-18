@@ -1,7 +1,7 @@
 #import "CellProtocol.h"
 
-@protocol Board
-	-(void) copyBoard: (id<Board>)board;
+@protocol BoardProtocol
+	-(void) copyBoard: (id<BoardProtocol>)board;
 	-(bool) isCellAliveAt: (int) x by: (int) y;
 	-(void) bringToLifeAt: (int) x by: (int) y;
 	-(void) killCellAt: (int) x by: (int) y;

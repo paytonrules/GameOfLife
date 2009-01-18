@@ -19,7 +19,7 @@
 	return board[x][y];
 }
 
--(void)copyBoard: (id<Board>)originalBoard {
+-(void)copyBoard: (id<BoardProtocol>)originalBoard {
 	for(int x=0; x<sideLength; x++) {
 		for(int y=0; y<sideLength; y++) {
 			if([originalBoard isCellAliveAt: x by: y])

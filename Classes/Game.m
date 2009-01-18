@@ -10,11 +10,11 @@
 
 @implementation Game
 
--(id<Board>)board {
+-(id<BoardProtocol>)board {
 	return myBoard;
 }
 
--(void)setBoard:(id<Board>) board {
+-(void)setBoard:(id<BoardProtocol>) board {
 	myBoard = board;
 }
 

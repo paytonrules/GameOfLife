@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "GOLBoard.h"
-#import "Board.h"
+#import "BoardProtocol.h"
 
 @interface Game : NSObject {
-	id<Board> myBoard;
+	id<BoardProtocol> myBoard;
 }
 
--(id<Board>)board;
--(void)setBoard:(id<Board>) board;
+-(id<BoardProtocol>)board;
+-(void)setBoard:(id<BoardProtocol>) board;
 -(void)advanceGeneration;
 
 @end

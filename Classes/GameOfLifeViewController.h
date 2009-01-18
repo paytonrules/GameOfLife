@@ -1,15 +1,15 @@
 
 #import <UIKit/UIKit.h>
-#import "GOLBoard.h"
-#import "ConcreteButtonControllerFactory.h"
+#import "BoardProtocol.h"
+#import "ButtonControllerFactoryProtocol.h"
 
 @interface GameOfLifeViewController : UIViewController {
-	GOLBoard																	*board;
-	IBOutlet ConcreteButtonControllerFactory	*buttonFactory;
+	IBOutlet id<BoardProtocol> board;
+	IBOutlet id<ButtonControllerFactoryProtocol>	buttonFactory;
 }
 
-@property(nonatomic, retain) GOLBoard *board;
-@property(nonatomic, retain) ConcreteButtonControllerFactory *buttonFactory;
+@property(nonatomic, retain) id<BoardProtocol> board;
+@property(nonatomic, retain) id<ButtonControllerFactoryProtocol> buttonFactory;
 
 + (float) calculatePositionFor: (float) rowOrColumn;
 

@@ -10,7 +10,7 @@
 
 @implementation ConcreteButtonControllerFactory
 
--(ButtonController*) createButtonControllerForCell: cell at: (CGPoint) point sizeOf: (CGRect) rect;
+-(ButtonController*) createButtonControllerForCell: (id) cell at: (CGPoint) point sizeOf: (CGRect) rect;
 {
 	ButtonController *controller = [[ButtonController alloc] initWithCell:cell];
 	
