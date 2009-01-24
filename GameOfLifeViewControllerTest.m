@@ -21,30 +21,42 @@
 
 @implementation GameOfLifeViewControllerTest
 
--(void)setUp {
+-(void)setUp 
+{
 	itsController = [[GameOfLifeViewController alloc] init];
 	itsFactory = [[MockButtonControllerFactory alloc] init];
 	itsBoard = [[MockBoard alloc] init];
 	
 	itsController.buttonFactory = itsFactory;
 	itsController.board = itsBoard;
+	[itsController loadView];
 }
 
--(void) tearDown {
+-(void) tearDown 
+{
 	[itsFactory release];
 	[itsBoard release];
 	[itsController release];
 }
 
--(void)testHasAllButtons {
-	STAssertEquals([[itsController.view subviews] count], (NSUInteger) 225, nil);
+-(void) testHasAllButtons 
+{
+	NSArray *subviews = [itsController.view subviews];
+	
+	int count = [subviews count];
+	
+	STAssertEquals(count, 225, nil);
 }
 
--(void)testHasAllCells {
-	
-	for(int x = 0; x < 15; x++) {
-		for(int y = 0; y < 15; y++) {
+-(void) testCreatesAllButtonControllers 
+{	
+	// Mock board should have 1 row, 1 column
+	for(int x = 0; x < 15; x++) 
+	{
+		for(int y = 0; y < 15; y++) 
+		{
 			// Duplication - me no like
+			// Figured it out - this should be a seperate class
 			CGPoint point = CGPointMake([GameOfLifeViewController calculatePositionFor: x], [GameOfLifeViewController calculatePositionFor: y]);
 			CGRect rect = CGRectMake(0.0f, 0.0f, 20.0f, 20.0f);
 
@@ -52,6 +64,5 @@
 		}
 	}
 }
-
 
 @end

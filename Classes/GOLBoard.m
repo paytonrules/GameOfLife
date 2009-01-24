@@ -45,6 +45,7 @@
 
 -(int)livingNeighborsAt: (int) x by: (int) y {
 	int living_neighbors = 0;
+	
 	if([self isCellAliveAt: (x - 1) by: (y - 1)])
 		living_neighbors++;
 	if([self isCellAliveAt: x by: (y - 1)])

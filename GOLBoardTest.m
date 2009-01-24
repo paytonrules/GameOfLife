@@ -27,7 +27,7 @@
 -(void)testDeadCellsOnInit {
 	bool alive = [itsBoard isCellAliveAt: 0 by: 0];
 	
-	STAssertFalse(alive, @"", true);
+	STAssertFalse(alive, @"Expected false, but got true");
 }
 
 -(void)testOutOfRangeInX {

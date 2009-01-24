@@ -12,20 +12,24 @@
 -(void) dealloc 
 {
 	[itsViewController release];
+	[itsCreateCalls release];
 	[super dealloc];
 }
 
 +(NSString *) createStringFrom: (id) cell at: (CGPoint) point sizeOf: (CGRect) rect 
-{
-	return [NSString stringWithFormat:@"%@ %d.%d %d", cell, point.x, point.y, rect.size];
+{	
+	return [NSString stringWithFormat:@"%@ %f %f %f %f", cell, point.x, point.y, rect.size.width, rect.size.height];
 }
 
 -(ButtonController*) createButtonControllerForCell: (id) cell at: (CGPoint) point sizeOf: (CGRect) rect	
 {
+	NSLog([MockButtonControllerFactory createStringFrom:cell at:point sizeOf:rect]);
+	
 	[itsCreateCalls addObject:[MockButtonControllerFactory createStringFrom:cell at:point sizeOf:rect]];
 	
 	itsViewController = [[ButtonController alloc] init];
 	
+	// Not liking this - want a mock.  It's a demeter problem - the controller has to add the view.
 	UIButton* button = [[UIButton alloc] init];
 	itsViewController.view = button;
 	[button release];
@@ -35,7 +39,6 @@
 
 -(bool) calledWith: (id) cell at: (CGPoint) point sizeOf: (CGRect) rect 
 {
-	NSLog(@"Cell was: %@", cell);
 	return [itsCreateCalls containsObject: [MockButtonControllerFactory createStringFrom:cell at:point sizeOf:rect]];
 }
 @end

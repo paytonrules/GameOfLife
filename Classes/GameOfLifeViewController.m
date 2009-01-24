@@ -17,24 +17,27 @@
 	{
 		for (int column = 0; column < 15; column++)
 		{
+			// TODO!  Refactor these out so you can mock test.
 			CGPoint point = CGPointMake([GameOfLifeViewController calculatePositionFor: row], [GameOfLifeViewController calculatePositionFor: column]);
 			CGRect rect = CGRectMake(0.0f, 0.0f, 20.0f, 20.0f);
-		  [self.view addSubview: [self.buttonFactory createButtonControllerForCell:nil at:point sizeOf:rect].view];
+		  
+			[self.view addSubview: [self.buttonFactory createButtonControllerForCell:[board getCellAt:row by:column] at:point sizeOf:rect].view];
 		}
 	}
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+	return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview
+- (void)didReceiveMemoryWarning 
+{
+	[super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview
 }
 
 - (void)dealloc {
-    [super dealloc];
+	[super dealloc];
 }
 @end
