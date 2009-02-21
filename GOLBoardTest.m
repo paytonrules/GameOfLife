@@ -27,7 +27,7 @@
 -(void)testDeadCellsOnInit {
 	bool alive = [itsBoard isCellAliveAt: 0 by: 0];
 	
-	STAssertFalse(alive, @"Expected false, but got true");
+	STAssertFalse(alive, nil);
 }
 
 -(void)testOutOfRangeInX {
@@ -91,9 +91,9 @@
 }
 
 -(void)testZeroLivingNeighbors {
-	int living_neighbors = [itsBoard livingNeighborsAt: 1 by: 1];
+	int neighbors = [itsBoard livingNeighborsAt: 1 by: 1];
 	
-	STAssertEquals(0, living_neighbors, @"Expected 0 living neighbors, but got %d", living_neighbors);
+	STAssertEquals(0, neighbors, nil);
 }
 
 -(void)testOneLivingNeighborTopLeft {
@@ -194,10 +194,11 @@
 	STAssertTrue(secondAlive, @"");
 }
 
--(void)testGetCellAt {
+-(void)testGetCellAt 
+{
 	[itsBoard bringToLifeAt:1 by:2];
 	
-	id<CellProtocol> cell = [itsBoard getCellAt: 1 by:2];
+	Cell *cell = [itsBoard getCellAt: 1 by:2];
 	
 	STAssertTrue(cell.alive, nil);
 }

@@ -10,12 +10,12 @@
 		070AD5970F072F3500B77E82 /* GameOfLifeViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */; };
 		070AD5C70F07F22400B77E82 /* GameOfLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GameOfLifeViewController.m */; };
 		073644680F225F87005E020C /* MockBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 073644670F225F87005E020C /* MockBoard.m */; };
+		076788AF0F50C79400FEEACA /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 076788AE0F50C79400FEEACA /* button.png */; };
 		078065DB0F11601000F1BFA8 /* ButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078065DA0F11601000F1BFA8 /* ButtonController.m */; };
 		078065DC0F11601000F1BFA8 /* ButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078065DA0F11601000F1BFA8 /* ButtonController.m */; };
 		0792AAA40F192B870021879E /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AAA30F192B870021879E /* Cell.m */; };
 		0792AAA50F192B870021879E /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AAA30F192B870021879E /* Cell.m */; };
 		0792AAA90F192BD80021879E /* CellTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AAA70F192BD80021879E /* CellTest.m */; };
-		0792AB460F1939130021879E /* MockCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AB450F1939130021879E /* MockCell.m */; };
 		0792AC6E0F195CB20021879E /* MockButtonControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AC6D0F195CB20021879E /* MockButtonControllerFactory.m */; };
 		079F421E0F12CF63005FE2AC /* ButtonControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F421D0F12CF63005FE2AC /* ButtonControllerTest.m */; };
 		07E84D830F119BFF005ACE54 /* ConcreteButtonControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */; };
@@ -44,14 +44,12 @@
 		070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeViewControllerTest.m; sourceTree = "<group>"; };
 		073644660F225F87005E020C /* MockBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockBoard.h; sourceTree = "<group>"; };
 		073644670F225F87005E020C /* MockBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockBoard.m; sourceTree = "<group>"; };
+		076788AE0F50C79400FEEACA /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		078065D90F11601000F1BFA8 /* ButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonController.h; sourceTree = "<group>"; };
 		078065DA0F11601000F1BFA8 /* ButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonController.m; sourceTree = "<group>"; };
 		0792AAA20F192B870021879E /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
 		0792AAA30F192B870021879E /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 		0792AAA70F192BD80021879E /* CellTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellTest.m; sourceTree = "<group>"; };
-		0792AB1B0F1935CF0021879E /* CellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellProtocol.h; sourceTree = "<group>"; };
-		0792AB440F1939130021879E /* MockCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockCell.h; sourceTree = "<group>"; };
-		0792AB450F1939130021879E /* MockCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockCell.m; sourceTree = "<group>"; };
 		0792AC5A0F195BE70021879E /* ButtonControllerFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonControllerFactoryProtocol.h; sourceTree = "<group>"; };
 		0792AC6C0F195CB20021879E /* MockButtonControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockButtonControllerFactory.h; sourceTree = "<group>"; };
 		0792AC6D0F195CB20021879E /* MockButtonControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockButtonControllerFactory.m; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 		078067580F11848300F1BFA8 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				0792AB1B0F1935CF0021879E /* CellProtocol.h */,
 				0792AC5A0F195BE70021879E /* ButtonControllerFactoryProtocol.h */,
 				F8B753C10F015A4700839756 /* BoardProtocol.h */,
 			);
@@ -184,8 +181,6 @@
 		07E84DC70F119F17005ACE54 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				0792AB440F1939130021879E /* MockCell.h */,
-				0792AB450F1939130021879E /* MockCell.m */,
 				073644660F225F87005E020C /* MockBoard.h */,
 				073644670F225F87005E020C /* MockBoard.m */,
 			);
@@ -238,6 +233,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				076788AE0F50C79400FEEACA /* button.png */,
 				2899E5210DE3E06400AC0155 /* GameOfLifeViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
@@ -340,6 +336,7 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* GameOfLifeViewController.xib in Resources */,
+				076788AF0F50C79400FEEACA /* button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +400,6 @@
 				079F421E0F12CF63005FE2AC /* ButtonControllerTest.m in Sources */,
 				0792AAA50F192B870021879E /* Cell.m in Sources */,
 				0792AAA90F192BD80021879E /* CellTest.m in Sources */,
-				0792AB460F1939130021879E /* MockCell.m in Sources */,
 				0792AC6E0F195CB20021879E /* MockButtonControllerFactory.m in Sources */,
 				073644680F225F87005E020C /* MockBoard.m in Sources */,
 			);

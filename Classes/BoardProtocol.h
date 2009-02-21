@@ -1,4 +1,4 @@
-#import "CellProtocol.h"
+#import "Cell.h"
 
 @protocol BoardProtocol
 	-(void) copyBoard: (id<BoardProtocol>)board;
@@ -6,7 +6,7 @@
 	-(void) bringToLifeAt: (int) x by: (int) y;
 	-(void) killCellAt: (int) x by: (int) y;
 	-(int) livingNeighborsAt: (int) x by: (int) y;
-	-(id<CellProtocol>) getCellAt: (int) x by: (int) y;
+	-(Cell*) getCellAt: (int) x by: (int) y;
 @end
 
 

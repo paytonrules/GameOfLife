@@ -4,7 +4,7 @@
 -(id) init
 {
 	[super init];
-	itsCell = [[MockCell alloc] init];
+	itsCell = [[Cell alloc] init];
 	return self;
 }	
 
@@ -30,7 +30,7 @@
 	return 0;
 }
 
--(id<CellProtocol>) getCellAt: (int) x by: (int) y
+-(Cell *) getCellAt: (int) x by: (int) y
 {
 	return itsCell;
 }

@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "BoardProtocol.h"
-#import "CellProtocol.h"
 
 @interface GOLBoard : NSObject <BoardProtocol> {
 	int sideLength;
-	id<CellProtocol> board[15][15];
+	Cell *board[15][15];
 }
 @end

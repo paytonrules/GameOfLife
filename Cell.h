@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CellProtocol.h"
 
-
-@interface Cell : NSObject<CellProtocol> {
+@interface Cell : NSObject {
 	bool alive;
 }
+
+-(void) kill;
+-(void) resurrect;
+@property bool alive;
 
 @end

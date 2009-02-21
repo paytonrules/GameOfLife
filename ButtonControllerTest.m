@@ -1,54 +1,99 @@
 #import "GTMSenTestCase.h"
 #import "ButtonController.h"
-#import "MockCell.h"
+#import "Cell.h"
 
-@interface ButtonControllerTest : SenTestCase {
+@interface ButtonControllerTest : SenTestCase 
+{
 	ButtonController	*itsController;
-	MockCell					*itsCell;
+	Cell							*itsCell;
+	UIButton					*itsButton;
 }
 @end
 
 
 @implementation ButtonControllerTest
 
--(void) setUp {
-	itsCell = [[MockCell alloc] init];
+-(void) setUp 
+{
+	itsCell = [[Cell alloc] init];
 	itsController = [[ButtonController alloc] initWithCell: itsCell];
-	itsController.view = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	itsButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	itsController.view = itsButton;
 }
 
--(void) tearDown {
+-(void) tearDown 
+{
 	[itsCell release];
 	[itsController release];
 }
 
--(void) testCustomInit {	
+-(void) testCustomInit 
+{
 	STAssertEquals(itsCell, itsController.cell, nil);
 }
 
--(void) testBringToLifeRessurect {
+-(void) testBringToLifeRessurect 
+{
 	[itsController bringToLife: nil];
 	
-	STAssertTrue(itsCell.resurrected, nil);
+	STAssertTrue(itsCell.alive, nil);
 }
 
--(void) testBringToLifeChangesButtonsActionToKill {
+-(void) testBringToLifeChangesButtonsActionToKill 
+{
 	[itsController bringToLife: nil];
-	UIButton *button = (UIButton *)itsController.view;
 	
-	STAssertTrue([[button actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"kill:"], nil);
+	STAssertTrue([[itsButton actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"kill:"], nil);
 }
 
--(void) testKillCallsKill {
+-(void) testKillCallsKill 
+{
 	[itsController kill: nil];
 	
-	STAssertTrue(itsCell.killed, nil);
+	STAssertFalse(itsCell.alive, nil);
 }
 
--(void) testKillSwitchesActionToBringToLife {
+-(void) testKillSwitchesActionToBringToLife 
+{
 	[itsController kill : nil];
-	UIButton *button = (UIButton *)itsController.view;
 	
-	STAssertTrue([[button actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"bringToLife:"], nil);
+	STAssertTrue([[itsButton actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"bringToLife:"], nil);
+}
+
+-(void) testObserveValueForKeyPathSwitchesButtonAction
+{
+	NSDictionary *dictionary = [NSDictionary dictionaryWithObject: [NSNumber numberWithBool:false] forKey: NSKeyValueChangeNewKey];
+	
+	[itsController observeValueForKeyPath:@"alive" ofObject: itsCell change: dictionary context:nil];
+
+	STAssertTrue([[itsButton actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"bringToLife:"], nil);
+}
+
+-(void) testObserveValueForKeyPathSwitchesButtonActionToKill
+{
+	itsCell.alive = false;
+	NSDictionary *dictionary = [NSDictionary dictionaryWithObject: [NSNumber numberWithBool:true] forKey: NSKeyValueChangeNewKey];
+	
+	[itsController observeValueForKeyPath:@"alive" ofObject: itsCell change: dictionary context:nil];
+	
+	STAssertTrue([[itsButton actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"kill:"], nil);
+}
+
+-(void) testObservingValueOfCellAlive
+{
+	[itsCell setAlive: false];
+	
+	STAssertTrue([[itsButton actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"bringToLife:"], nil);
+	
+	[itsCell setAlive: true];
+	
+	STAssertTrue([[itsButton actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"kill:"], nil);
+}
+
+-(void) testKillChangesButtonsBackgroundColor 
+{
+	[itsCell setAlive: false];
+
+	STAssertEqualObjects([UIColor blackColor], itsButton.foregroundColor, nil);
 }
 @end

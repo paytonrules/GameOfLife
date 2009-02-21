@@ -1,10 +1,10 @@
 #import <UIKit/UIKit.h>
 #import "BoardProtocol.h"
-#import "MockCell.h"
+#import "Cell.h"
 
 @interface MockBoard : NSObject<BoardProtocol> 
 {
-	MockCell	*itsCell;
+	Cell	*itsCell;
 }
 
 @end

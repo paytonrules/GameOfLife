@@ -60,7 +60,9 @@
 			CGPoint point = CGPointMake([GameOfLifeViewController calculatePositionFor: x], [GameOfLifeViewController calculatePositionFor: y]);
 			CGRect rect = CGRectMake(0.0f, 0.0f, 20.0f, 20.0f);
 
-			STAssertTrue([itsFactory calledWith:[itsController.board getCellAt: x by: y] at:point sizeOf:rect], @"Factory not called with %d, %d", x, y);
+			Cell *cell = [itsController.board getCellAt:x by:y];
+			bool called = [itsFactory calledWith:cell at:point sizeOf:rect];
+			STAssertTrue(called, nil);
 		}
 	}
 }

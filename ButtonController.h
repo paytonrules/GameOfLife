@@ -1,12 +1,13 @@
 
 #import <UIKit/UIKit.h>
-#import "CellProtocol.h"
+#import <Foundation/NSKeyValueCoding.h>
+#import "Cell.h"
 
 @interface ButtonController : UIViewController {
-	id<CellProtocol>	cell;
+	Cell	*cell;
 }
 
-@property(nonatomic, retain) id<CellProtocol> cell;
+@property(readonly) Cell *cell;
 
 -(id) initWithCell: (id) newOwner;
 -(void)bringToLife: (id) sender;

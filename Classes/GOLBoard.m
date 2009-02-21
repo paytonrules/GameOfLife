@@ -15,7 +15,7 @@
 	return self;
 }
 
--(id<CellProtocol>) getCellAt: (int) x by: (int) y {
+-(Cell *) getCellAt: (int) x by: (int) y {
 	return board[x][y];
 }
 
