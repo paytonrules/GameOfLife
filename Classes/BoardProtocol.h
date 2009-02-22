@@ -7,6 +7,8 @@
 	-(void) killCellAt: (int) x by: (int) y;
 	-(int) livingNeighborsAt: (int) x by: (int) y;
 	-(Cell*) getCellAt: (int) x by: (int) y;
+	-(int) rows;
+	-(int) columns;
 @end
 
 

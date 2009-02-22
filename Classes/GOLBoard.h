@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "BoardProtocol.h"
 
+#define COLUMNS 16
+#define ROWS 18
+
 @interface GOLBoard : NSObject <BoardProtocol> {
-	int sideLength;
-	Cell *board[15][15];
+	Cell *board[COLUMNS][ROWS];
 }
 @end

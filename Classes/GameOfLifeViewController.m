@@ -13,9 +13,9 @@
 {
 	[super loadView];
 	
-	for (int row = 0; row < 15; row++) 
+	for (int row = 0; row < [board columns]; row++) 
 	{
-		for (int column = 0; column < 15; column++)
+		for (int column = 0; column < [board rows]; column++)
 		{
 			// TODO!  Refactor these out so you can mock test.
 			CGPoint point = CGPointMake([GameOfLifeViewController calculatePositionFor: row], [GameOfLifeViewController calculatePositionFor: column]);

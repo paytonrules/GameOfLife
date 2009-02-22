@@ -10,7 +10,10 @@
 		070AD5970F072F3500B77E82 /* GameOfLifeViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */; };
 		070AD5C70F07F22400B77E82 /* GameOfLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GameOfLifeViewController.m */; };
 		073644680F225F87005E020C /* MockBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 073644670F225F87005E020C /* MockBoard.m */; };
-		076788AF0F50C79400FEEACA /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 076788AE0F50C79400FEEACA /* button.png */; };
+		076788AF0F50C79400FEEACA /* alive_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 076788AE0F50C79400FEEACA /* alive_cell.png */; };
+		076788E90F50CF5E00FEEACA /* alive_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 076788AE0F50C79400FEEACA /* alive_cell.png */; };
+		0767890C0F50D30700FEEACA /* dead_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0767890B0F50D30700FEEACA /* dead_cell.png */; };
+		0767890D0F50D30700FEEACA /* dead_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0767890B0F50D30700FEEACA /* dead_cell.png */; };
 		078065DB0F11601000F1BFA8 /* ButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078065DA0F11601000F1BFA8 /* ButtonController.m */; };
 		078065DC0F11601000F1BFA8 /* ButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078065DA0F11601000F1BFA8 /* ButtonController.m */; };
 		0792AAA40F192B870021879E /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AAA30F192B870021879E /* Cell.m */; };
@@ -44,7 +47,8 @@
 		070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeViewControllerTest.m; sourceTree = "<group>"; };
 		073644660F225F87005E020C /* MockBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockBoard.h; sourceTree = "<group>"; };
 		073644670F225F87005E020C /* MockBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockBoard.m; sourceTree = "<group>"; };
-		076788AE0F50C79400FEEACA /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		076788AE0F50C79400FEEACA /* alive_cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alive_cell.png; sourceTree = "<group>"; };
+		0767890B0F50D30700FEEACA /* dead_cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dead_cell.png; sourceTree = "<group>"; };
 		078065D90F11601000F1BFA8 /* ButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonController.h; sourceTree = "<group>"; };
 		078065DA0F11601000F1BFA8 /* ButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonController.m; sourceTree = "<group>"; };
 		0792AAA20F192B870021879E /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
@@ -233,7 +237,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				076788AE0F50C79400FEEACA /* button.png */,
+				0767890B0F50D30700FEEACA /* dead_cell.png */,
+				076788AE0F50C79400FEEACA /* alive_cell.png */,
 				2899E5210DE3E06400AC0155 /* GameOfLifeViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
@@ -336,7 +341,8 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* GameOfLifeViewController.xib in Resources */,
-				076788AF0F50C79400FEEACA /* button.png in Resources */,
+				076788AF0F50C79400FEEACA /* alive_cell.png in Resources */,
+				0767890C0F50D30700FEEACA /* dead_cell.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +350,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076788E90F50CF5E00FEEACA /* alive_cell.png in Resources */,
+				0767890D0F50D30700FEEACA /* dead_cell.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

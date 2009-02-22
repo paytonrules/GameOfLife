@@ -31,25 +31,25 @@
 }
 
 -(void)testOutOfRangeInX {
-	bool alive = [itsBoard isCellAliveAt: 15 by: 0];
+	bool alive = [itsBoard isCellAliveAt: COLUMNS + 1 by: 0];
 	
 	STAssertFalse(alive, @"");	
 }
 
 -(void)testOutOfRangeInY {
-	bool alive = [itsBoard isCellAliveAt: 0 by: 15];
+	bool alive = [itsBoard isCellAliveAt: 0 by: ROWS + 1];
 	
 	STAssertFalse(alive, @"");
 }
 
 -(void)testBelowZeroInX {
-	bool alive = [itsBoard isCellAliveAt: -1 by: 14];
+	bool alive = [itsBoard isCellAliveAt: -1 by: 0];
 	
 	STAssertFalse(alive, @"");		
 }
 
 -(void)testBelowZeroInY {
-	bool alive = [itsBoard isCellAliveAt: 14 by: -1];
+	bool alive = [itsBoard isCellAliveAt: 0 by: -1];
 	
 	STAssertFalse(alive, @"");		
 }
@@ -201,6 +201,12 @@
 	Cell *cell = [itsBoard getCellAt: 1 by:2];
 	
 	STAssertTrue(cell.alive, nil);
+}
+
+-(void)testGetDimensions
+{
+	STAssertEquals(ROWS, [itsBoard rows], nil);
+	STAssertEquals(COLUMNS, [itsBoard columns], nil);
 }
 
 @end

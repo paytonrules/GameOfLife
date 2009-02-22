@@ -4,46 +4,72 @@
 
 @implementation GOLBoard
 
--(id)init {
+-(id)init 
+{
 	super;
-	sideLength = 15;
-	for(int x=0; x < sideLength; x++) {
-		for(int y=0; y < sideLength; y++) {
+	
+	for(int x=0; x < [self columns]; x++) 
+	{
+		for(int y=0; y < [self rows]; y++) 
+		{
 			board[x][y] = [[Cell alloc] init];
 		}
 	}
+	
 	return self;
 }
 
--(Cell *) getCellAt: (int) x by: (int) y {
+-(int) rows
+{
+	return ROWS;
+}
+
+-(int) columns
+{
+	return COLUMNS;
+}
+
+-(Cell *) getCellAt: (int) x by: (int) y 
+{
 	return board[x][y];
 }
 
--(void)copyBoard: (id<BoardProtocol>)originalBoard {
-	for(int x=0; x<sideLength; x++) {
-		for(int y=0; y<sideLength; y++) {
+-(void)copyBoard: (id<BoardProtocol>)originalBoard 
+{
+	for(int x=0; x < [self columns]; x++) 
+	{
+		for(int y=0; y < [self rows] ; y++) 
+		{
 			if([originalBoard isCellAliveAt: x by: y])
+			{
 				[self bringToLifeAt: x by: y];
+			}
 		}
 	}
 }
 
--(bool) isCellAliveAt: (int) x by: (int) y {
-	if(x >= sideLength || y >= sideLength || x < 0 || y < 0) {
+-(bool) isCellAliveAt: (int) x by: (int) y 
+{
+	if(x >= [self rows] || y >= [self columns] || x < 0 || y < 0) 
+	{
 		return false;
 	}
+	
 	return [board[x][y] alive];
 }
 
--(void) bringToLifeAt: (int) x by: (int) y {
+-(void) bringToLifeAt: (int) x by: (int) y 
+{
 	[board[x][y] resurrect];
 }
 
--(void) killCellAt: (int) x by: (int) y {
+-(void) killCellAt: (int) x by: (int) y 
+{
 	[board[x][y] kill];
 }
 
--(int)livingNeighborsAt: (int) x by: (int) y {
+-(int)livingNeighborsAt: (int) x by: (int) y 
+{
 	int living_neighbors = 0;
 	
 	if([self isCellAliveAt: (x - 1) by: (y - 1)])

@@ -45,26 +45,20 @@
 	
 	int count = [subviews count];
 	
-	STAssertEquals(count, 225, nil);
+	STAssertEquals(count, [itsBoard rows] * [itsBoard columns], nil);
 }
 
 -(void) testCreatesAllButtonControllers 
 {	
-	// Mock board should have 1 row, 1 column
-	for(int x = 0; x < 15; x++) 
-	{
-		for(int y = 0; y < 15; y++) 
-		{
-			// Duplication - me no like
-			// Figured it out - this should be a seperate class
-			CGPoint point = CGPointMake([GameOfLifeViewController calculatePositionFor: x], [GameOfLifeViewController calculatePositionFor: y]);
-			CGRect rect = CGRectMake(0.0f, 0.0f, 20.0f, 20.0f);
+	// Mock board should have 1 one button]
+	// Duplication - me no like
+	// Figured it out - this should be a seperate class
+	CGPoint point = CGPointMake([GameOfLifeViewController calculatePositionFor: 0], [GameOfLifeViewController calculatePositionFor: 0]);
+	CGRect rect = CGRectMake(0.0f, 0.0f, 20.0f, 20.0f);
 
-			Cell *cell = [itsController.board getCellAt:x by:y];
-			bool called = [itsFactory calledWith:cell at:point sizeOf:rect];
-			STAssertTrue(called, nil);
-		}
-	}
+	Cell *cell = [itsController.board getCellAt:0 by:0];
+	bool called = [itsFactory calledWith:cell at:point sizeOf:rect];
+	STAssertTrue(called, nil);
 }
 
 @end

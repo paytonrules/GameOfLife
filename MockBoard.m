@@ -35,6 +35,16 @@
 	return itsCell;
 }
 
+-(int) rows
+{
+	return 1;
+}
+
+-(int) columns
+{
+	return 1;
+}
+
 - (void)dealloc 
 {
 	[itsCell release];

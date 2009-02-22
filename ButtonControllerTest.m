@@ -90,10 +90,25 @@
 	STAssertTrue([[itsButton actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"kill:"], nil);
 }
 
--(void) testKillChangesButtonsBackgroundColor 
+-(void) testKillChangesButtonsBackgroundImage
 {
 	[itsCell setAlive: false];
 
-	STAssertEqualObjects([UIColor blackColor], itsButton.foregroundColor, nil);
+	UIImage *image = [UIImage imageNamed:@"dead_cell.png"];
+	UIImage *imageReal = [itsButton backgroundImageForState:UIControlStateNormal];
+	
+	STAssertEqualObjects(image, imageReal, nil);
 }
+
+-(void) testRessurectChangesButtonsBackgroundImage
+{
+	[itsCell setAlive: true];
+	
+	UIImage *image = [UIImage imageNamed:@"alive_cell.png"];
+	UIImage *imageReal = [itsButton backgroundImageForState:UIControlStateNormal];
+	
+	STAssertEqualObjects(image, imageReal, nil);
+}
+
+
 @end

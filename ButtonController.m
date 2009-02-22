@@ -25,6 +25,7 @@
 	
 	[(UIButton *)self.view removeTarget:self action:@selector(bringToLife:) forControlEvents:UIControlEventTouchUpInside];
 	[(UIButton *)self.view addTarget:self action: @selector(kill:) forControlEvents:UIControlEventTouchUpInside];
+	[(UIButton *)self.view setBackgroundImage:[UIImage imageNamed:@"alive_cell.png"] forState:UIControlStateNormal];
 }
 
 - (void)kill: (id)sender 
@@ -33,7 +34,7 @@
 	
 	[(UIButton *)self.view removeTarget:self action:@selector(kill:) forControlEvents:UIControlEventTouchUpInside];
 	[(UIButton *)self.view addTarget:self action: @selector(bringToLife:) forControlEvents:UIControlEventTouchUpInside];
-	((UIButton *)self.view).backgroundColor = [UIColor blackColor];
+	[(UIButton *)self.view setBackgroundImage:[UIImage imageNamed:@"dead_cell.png"] forState:UIControlStateNormal];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
