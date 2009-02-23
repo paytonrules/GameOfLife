@@ -14,7 +14,8 @@
 
 @implementation ConcreteButtonControllerFactoryTest
 
--(void) setUp {
+-(void) setUp 
+{
 	itsFactory = [[ConcreteButtonControllerFactory alloc] init];
 	itsPoint = CGPointMake(1.0f, 2.0f);
 	itsRect = CGRectMake(0.0f, 0.0f, 20.0f, 20.0f);
@@ -22,21 +23,25 @@
 	itsController = [itsFactory createButtonControllerForCell:itsCell at:itsPoint sizeOf: itsRect];
 }
 
--(void) tearDown {
+-(void) tearDown 
+{
 	[itsFactory release];
 	[itsController release];
 	[itsCell release];
 }
 
--(void)testCanBeCreated {
+-(void)testCanBeCreated 
+{
 	STAssertNotNil(itsFactory, nil);
 }
 
--(void)testCreatesButtonController {
+-(void)testCreatesButtonController 
+{
 	STAssertNotNil(itsController, nil);
 }
 
--(void)testAssignsItsView {
+-(void)testAssignsItsView 
+{
 	UIButton *button = (UIButton *)itsController.view;
 	
 	STAssertEquals(button.frame.size.width, 20.0f,nil);
@@ -45,9 +50,17 @@
 	STAssertEquals(button.center.y, 2.0f, nil);
 }
 
--(void)testAssignsActionToView {
+-(void)testAssignsActionToView 
+{
 	UIButton *button = (UIButton *)itsController.view;
 	
 	STAssertTrue([[button actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"bringToLife:"], nil);
+}
+
+-(void)testViewSetToDead
+{
+	UIButton *button = (UIButton *)itsController.view;
+	
+	STAssertEqualObjects([UIImage imageNamed:@"dead_cell.png"], [button imageForState:UIControlStateNormal], nil);
 }
 @end

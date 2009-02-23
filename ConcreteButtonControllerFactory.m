@@ -17,6 +17,8 @@
 	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	[button setFrame:rect]; 
 	[button setCenter:point];
+	[button setImage:[UIImage imageNamed:@"dead_cell.png"] forState:UIControlStateNormal];
+
 	[button addTarget:controller action:@selector(bringToLife:) forControlEvents:UIControlEventTouchUpInside];
 
 	controller.view = button;

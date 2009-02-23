@@ -95,7 +95,7 @@
 	[itsCell setAlive: false];
 
 	UIImage *image = [UIImage imageNamed:@"dead_cell.png"];
-	UIImage *imageReal = [itsButton backgroundImageForState:UIControlStateNormal];
+	UIImage *imageReal = [itsButton imageForState:UIControlStateNormal];
 	
 	STAssertEqualObjects(image, imageReal, nil);
 }
@@ -105,7 +105,7 @@
 	[itsCell setAlive: true];
 	
 	UIImage *image = [UIImage imageNamed:@"alive_cell.png"];
-	UIImage *imageReal = [itsButton backgroundImageForState:UIControlStateNormal];
+	UIImage *imageReal = [itsButton imageForState:UIControlStateNormal];
 	
 	STAssertEqualObjects(image, imageReal, nil);
 }
