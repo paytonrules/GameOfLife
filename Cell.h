@@ -12,8 +12,6 @@
 	bool alive;
 }
 
--(void) kill;
--(void) resurrect;
 @property bool alive;
 
 @end

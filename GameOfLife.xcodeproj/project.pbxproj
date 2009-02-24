@@ -51,7 +51,6 @@
 		073644670F225F87005E020C /* MockBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockBoard.m; sourceTree = "<group>"; };
 		076788AE0F50C79400FEEACA /* alive_cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alive_cell.png; sourceTree = "<group>"; };
 		0767890B0F50D30700FEEACA /* dead_cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dead_cell.png; sourceTree = "<group>"; };
-		07678ADD0F52CB2300FEEACA /* GameProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameProtocol.h; sourceTree = "<group>"; };
 		07678AE10F52CB7B00FEEACA /* MockGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockGame.h; sourceTree = "<group>"; };
 		07678AE20F52CB7B00FEEACA /* MockGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockGame.m; sourceTree = "<group>"; };
 		078065D90F11601000F1BFA8 /* ButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonController.h; sourceTree = "<group>"; };
@@ -93,6 +92,7 @@
 		F8795B980F001372004300C2 /* GameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTest.m; sourceTree = "<group>"; };
 		F8795B9F0F0013CB004300C2 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = Classes/Game.h; sourceTree = "<group>"; };
 		F8795BA00F0013CB004300C2 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = Classes/Game.m; sourceTree = "<group>"; };
+		F8AE53070F5389B10017008D /* GameProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameProtocol.h; sourceTree = "<group>"; };
 		F8B753C10F015A4700839756 /* BoardProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoardProtocol.h; path = Classes/BoardProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,9 +120,9 @@
 		078067580F11848300F1BFA8 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				F8AE53070F5389B10017008D /* GameProtocol.h */,
 				0792AC5A0F195BE70021879E /* ButtonControllerFactoryProtocol.h */,
 				F8B753C10F015A4700839756 /* BoardProtocol.h */,
-				07678ADD0F52CB2300FEEACA /* GameProtocol.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";

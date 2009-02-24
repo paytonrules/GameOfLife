@@ -13,12 +13,4 @@
 
 @synthesize alive;
 
--(void) kill {
-	alive = false;
-}
-
--(void) resurrect {
-	alive = true;
-}
-
 @end

@@ -24,9 +24,5 @@
 	}
 }
 
--(void) start: (id<BoardProtocol>) board
-{
-	
-}
 
 @end

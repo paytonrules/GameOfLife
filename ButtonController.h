@@ -10,7 +10,9 @@
 @property(readonly) Cell *cell;
 
 -(id) initWithCell: (id) newOwner;
--(void)bringToLife: (id) sender;
--(void)kill: (id)sender;
+-(void) bringToLife: (id) sender;
+-(void) kill: (id)sender;
+-(void) makeButtonAlive;
+-(void) makeButtonDead;
 
 @end

@@ -27,11 +27,15 @@
 
 - (void) start: (id) sender
 {
-	[game start: board];
 	UIButton *button = (UIButton *)sender;
 	[button setTitle:@"Stop" forState:UIControlStateNormal];
 	[button removeTarget:self action:@selector(start:) forControlEvents:UIControlEventTouchUpInside];
 	[button addTarget:self action:@selector(stop:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void) advance: (id) sender
+{
+	[game advanceGeneration];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 

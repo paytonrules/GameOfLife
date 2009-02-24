@@ -2,6 +2,6 @@
 
 @protocol GameProtocol
 	
--(void) start:(id<BoardProtocol>) board;
+-(void) advanceGeneration;
 
 @end

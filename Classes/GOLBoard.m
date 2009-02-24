@@ -60,12 +60,12 @@
 
 -(void) bringToLifeAt: (int) x by: (int) y 
 {
-	[board[x][y] resurrect];
+	board[x][y].alive = true;
 }
 
 -(void) killCellAt: (int) x by: (int) y 
 {
-	[board[x][y] kill];
+	board[x][y].alive = false;
 }
 
 -(int)livingNeighborsAt: (int) x by: (int) y 

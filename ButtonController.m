@@ -3,14 +3,14 @@
 @implementation ButtonController
 @synthesize cell;
 
-- (id)init
+- (id )init
 {
 	[super init];
 	
 	return self;
 }
 
-- (id)initWithCell: (id) newCell 
+- (id) initWithCell: (id) newCell 
 {
 	[self init];
 	cell = newCell;
@@ -19,23 +19,35 @@
 	return self;
 }
 
-- (void)bringToLife: (id)sender 
+- (void) bringToLife: (id)sender 
 {
-	[cell resurrect];
+	cell.alive = true;
 	
+	[self makeButtonAlive];
+}
+
+- (void) makeButtonAlive
+{
 	[(UIButton *)self.view removeTarget:self action:@selector(bringToLife:) forControlEvents:UIControlEventTouchUpInside];
 	[(UIButton *)self.view addTarget:self action: @selector(kill:) forControlEvents:UIControlEventTouchUpInside];
 	[(UIButton *)self.view setImage:[UIImage imageNamed:@"alive_cell.png"] forState:UIControlStateNormal];
+	
 }
 
-- (void)kill: (id)sender 
+- (void) kill: (id)sender 
 {
-	[cell kill];
+	cell.alive = false;
 	
+	[self makeButtonDead];
+}
+
+-(void) makeButtonDead
+{
 	[(UIButton *)self.view removeTarget:self action:@selector(kill:) forControlEvents:UIControlEventTouchUpInside];
 	[(UIButton *)self.view addTarget:self action: @selector(bringToLife:) forControlEvents:UIControlEventTouchUpInside];
 	[(UIButton *)self.view setImage:[UIImage imageNamed:@"dead_cell.png"] forState:UIControlStateNormal];
-}
+}	
+	
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
@@ -43,11 +55,11 @@
 	
 	if(alive)
 	{
-		[self bringToLife:self];
+		[self makeButtonAlive];
 	}
 	else
 	{
-		[self kill: self];
+		[self makeButtonDead];
 	}
 }
 

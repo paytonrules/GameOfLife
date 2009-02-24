@@ -6,17 +6,18 @@
 -(id) init
 {
 	itsStartCalls = [[NSMutableSet alloc] init];
+	advanceGenerationCalled = false;
 	return self;
 }
 
--(bool) startedGameWith: (id<BoardProtocol>) board
+-(void) advanceGeneration
 {
-	return [itsStartCalls containsObject: [NSString stringWithFormat:@"%@", board]];;
+	advanceGenerationCalled = true;
 }
 
--(void) start: (id<BoardProtocol>) board
-{	
-	[itsStartCalls addObject:[NSString stringWithFormat:@"%@", board]];
+-(bool) advanceGenerationCalled
+{
+	return advanceGenerationCalled;
 }
 
 - (void)dealloc 

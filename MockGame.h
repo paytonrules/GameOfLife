@@ -4,8 +4,10 @@
 
 @interface MockGame : NSObject<GameProtocol> {
 	NSMutableSet *itsStartCalls;
+	bool advanceGenerationCalled;
 }
 
--(bool) startedGameWith: (id<BoardProtocol>) board;
+-(void) advanceGeneration;
+-(bool) advanceGenerationCalled;
 
 @end

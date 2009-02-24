@@ -41,6 +41,7 @@
 	[itsFactory release];
 	[itsBoard release];
 	[itsController release];
+	[itsGame release];
 }
 
 -(void) testHasAllButtons 
@@ -65,12 +66,6 @@
 	STAssertTrue(called, nil);
 }
 
--(void) testStartActionStartsGame
-{
-	[itsController start:nil];
-	
-	STAssertTrue([itsGame startedGameWith:itsBoard], nil);
-}
 
 -(void) testStartActionTurnsButtonToStop
 {
@@ -90,10 +85,15 @@
 	[itsController start:button];
 	
 	STAssertTrue([[button actionsForTarget:itsController forControlEvent:UIControlEventTouchUpInside] containsObject:@"stop:"], nil);
-	STAssertFalse([[button actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"stop:"], nil);
+	STAssertFalse([[button actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"start:"], nil);
 }
 
+-(void) testAdvanceOneGeneration
+{
+	[itsController advance:nil];
 	
+	STAssertTrue([itsGame advanceGenerationCalled], nil);
+}
 	
 
 @end
