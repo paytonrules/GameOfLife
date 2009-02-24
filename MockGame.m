@@ -7,6 +7,8 @@
 {
 	itsStartCalls = [[NSMutableSet alloc] init];
 	advanceGenerationCalled = false;
+	startCalled = false;
+	stopCalled = false;
 	return self;
 }
 
@@ -18,6 +20,26 @@
 -(bool) advanceGenerationCalled
 {
 	return advanceGenerationCalled;
+}
+
+-(bool) startCalled
+{
+	return startCalled;
+}
+
+-(void) start
+{
+	startCalled = true;
+}
+
+-(void) stop
+{
+	stopCalled = true;
+}
+
+-(bool)stopCalled
+{
+	return stopCalled;
 }
 
 - (void)dealloc 

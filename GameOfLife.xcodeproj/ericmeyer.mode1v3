@@ -284,14 +284,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>43</integer>
-									<integer>37</integer>
-									<integer>29</integer>
+									<integer>26</integer>
+									<integer>22</integer>
+									<integer>12</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {255, 1084}}</string>
+							<string>{{0, 169}, {255, 1084}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -330,7 +330,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ButtonController.h</string>
+								<string>GameOfLifeViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -338,11 +338,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ButtonController.h</string>
+										<string>GameOfLifeViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>F8AE53DD0F53932D0017008D</string>
+										<string>F8AE54340F539CEE0017008D</string>
 										<key>history</key>
 										<array>
 											<string>F862C0490EDAFB3E00EB670B</string>
@@ -358,29 +358,30 @@
 											<string>F8230E1F0F1A7BFE0097AB26</string>
 											<string>F8230E200F1A7BFE0097AB26</string>
 											<string>F8230EA10F1A7F930097AB26</string>
-											<string>F8230EA20F1A7F930097AB26</string>
 											<string>F8230EA70F1A7F930097AB26</string>
 											<string>F8AE52EE0F53898D0017008D</string>
 											<string>F8AE52F40F53898D0017008D</string>
 											<string>F8AE53120F538B210017008D</string>
 											<string>F8AE53150F538B210017008D</string>
-											<string>F8AE53160F538B210017008D</string>
-											<string>F8AE53170F538B210017008D</string>
-											<string>F8AE533A0F538B940017008D</string>
-											<string>F8AE533B0F538B940017008D</string>
-											<string>F8AE53610F538D460017008D</string>
 											<string>F8AE53690F538DBA0017008D</string>
 											<string>F8AE53740F538DF40017008D</string>
-											<string>F8AE537F0F538E840017008D</string>
 											<string>F8AE53810F538E840017008D</string>
 											<string>F8AE53910F538FE80017008D</string>
 											<string>F8AE53930F538FE80017008D</string>
 											<string>F8AE53940F538FE80017008D</string>
-											<string>F8AE539F0F53900D0017008D</string>
 											<string>F8AE53CB0F5392990017008D</string>
-											<string>F8AE53D90F53932D0017008D</string>
 											<string>F8AE53DA0F53932D0017008D</string>
-											<string>F8AE52E40F5388A40017008D</string>
+											<string>F8AE53DF0F5397490017008D</string>
+											<string>F8AE53E00F5397490017008D</string>
+											<string>F8AE53EE0F5399310017008D</string>
+											<string>F8AE53F00F5399310017008D</string>
+											<string>F8AE53FC0F5399B80017008D</string>
+											<string>F8AE54060F539B430017008D</string>
+											<string>F8AE54220F539C990017008D</string>
+											<string>F8AE54230F539C990017008D</string>
+											<string>F8AE54300F539CEE0017008D</string>
+											<string>F8AE54310F539CEE0017008D</string>
+											<string>F8AE54130F539BFB0017008D</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -481,6 +482,40 @@
 											<string>F8AE53CC0F5392990017008D</string>
 											<string>F8AE53DB0F53932D0017008D</string>
 											<string>F8AE53DC0F53932D0017008D</string>
+											<string>F8AE53E30F5397490017008D</string>
+											<string>F8AE53E40F5397490017008D</string>
+											<string>F8AE53E50F5397490017008D</string>
+											<string>F8AE53F20F5399310017008D</string>
+											<string>F8AE53F30F5399310017008D</string>
+											<string>F8AE53F40F5399310017008D</string>
+											<string>F8AE53F50F5399310017008D</string>
+											<string>F8AE53F80F53994A0017008D</string>
+											<string>F8AE53FD0F5399B80017008D</string>
+											<string>F8AE53FE0F5399B80017008D</string>
+											<string>F8AE54090F539B430017008D</string>
+											<string>F8AE540A0F539B430017008D</string>
+											<string>F8AE540B0F539B430017008D</string>
+											<string>F8AE540C0F539B430017008D</string>
+											<string>F8AE540D0F539B430017008D</string>
+											<string>F8AE540E0F539B430017008D</string>
+											<string>F8AE54180F539BFB0017008D</string>
+											<string>F8AE54190F539BFB0017008D</string>
+											<string>F8AE541A0F539BFB0017008D</string>
+											<string>F8AE541B0F539BFB0017008D</string>
+											<string>F8AE541C0F539BFB0017008D</string>
+											<string>F8AE541D0F539BFB0017008D</string>
+											<string>F8AE541E0F539BFB0017008D</string>
+											<string>F8AE54250F539C990017008D</string>
+											<string>F8AE54260F539C990017008D</string>
+											<string>F8AE54270F539C990017008D</string>
+											<string>F8AE54280F539C990017008D</string>
+											<string>F8AE54290F539C990017008D</string>
+											<string>F8AE542A0F539C990017008D</string>
+											<string>F8AE542B0F539C990017008D</string>
+											<string>F8AE542C0F539C990017008D</string>
+											<string>F8AE542D0F539C990017008D</string>
+											<string>F8AE54320F539CEE0017008D</string>
+											<string>F8AE54330F539CEE0017008D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -676,11 +711,11 @@
 	<array>
 		<string>F8AE53B20F53901C0017008D</string>
 		<string>F8AE53B30F53901C0017008D</string>
+		<string>/Users/ericmeyer/Projects/GameOfLife/GameOfLife.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>F862BFE00EDAF5EE00EB670B</string>
-		<string>/Users/ericmeyer/Projects/GameOfLife/GameOfLife.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>-1920 -36 1914 1143 -1920 -93 1920 1200 </string>
@@ -699,8 +734,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -723,6 +756,8 @@
 							<string>452pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXBuildLogShowsTranscriptDefaultKey</key>
@@ -1056,7 +1091,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

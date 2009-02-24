@@ -3,5 +3,7 @@
 @protocol GameProtocol
 	
 -(void) advanceGeneration;
+-(void) start;
+-(void) stop;
 
 @end

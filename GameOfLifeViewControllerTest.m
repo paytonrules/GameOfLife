@@ -88,6 +88,41 @@
 	STAssertFalse([[button actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"start:"], nil);
 }
 
+-(void) testStopActionTurnsButtonToStart
+{
+	UIButton *button = [[UIButton alloc] init];
+	[button setTitle:@"Stop" forState:UIControlStateNormal];
+	
+	[itsController stop: button];
+	
+	STAssertEquals(@"Start", [button titleForState:UIControlStateNormal], nil);
+}
+
+-(void) testStopActionChangesButtonActionToStart
+{
+	UIButton *button = [[UIButton alloc] init];
+	[button addTarget:itsController action:@selector(stop:) forControlEvents:UIControlEventTouchUpInside];
+	
+	[itsController stop: button];
+
+	STAssertTrue([[button actionsForTarget:itsController forControlEvent:UIControlEventTouchUpInside] containsObject:@"start:"], nil);
+	STAssertFalse([[button actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"stop:"], nil);
+}
+
+-(void) testStartActionStartsGame
+{
+	[itsController start: nil];
+	
+	STAssertTrue([itsGame startCalled], nil);
+}
+
+-(void) testStopsActionStopsGame
+{
+	[itsController stop: nil];
+	
+	STAssertTrue([itsGame stopCalled], nil);
+}
+
 -(void) testAdvanceOneGeneration
 {
 	[itsController advance:nil];

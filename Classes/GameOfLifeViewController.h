@@ -16,6 +16,7 @@
 
 + (float) calculatePositionFor: (float) rowOrColumn;
 - (void) start:(id) sender;
+- (void) stop: (id) sender;
 - (void) advance: (id) sender;
 
 

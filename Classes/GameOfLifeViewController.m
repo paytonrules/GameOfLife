@@ -27,10 +27,22 @@
 
 - (void) start: (id) sender
 {
+	[game start];
+	
 	UIButton *button = (UIButton *)sender;
 	[button setTitle:@"Stop" forState:UIControlStateNormal];
 	[button removeTarget:self action:@selector(start:) forControlEvents:UIControlEventTouchUpInside];
 	[button addTarget:self action:@selector(stop:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void) stop: (id) sender
+{
+	[game stop];
+	
+	UIButton *button = (UIButton *)sender;
+	[button setTitle:@"Start" forState:UIControlStateNormal];
+	[button removeTarget:self action:@selector(stop:) forControlEvents:UIControlEventTouchUpInside];
+	[button addTarget:self action:@selector(start:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 -(void) advance: (id) sender
