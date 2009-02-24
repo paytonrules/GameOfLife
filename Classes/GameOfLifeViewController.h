@@ -2,16 +2,20 @@
 #import <UIKit/UIKit.h>
 #import "BoardProtocol.h"
 #import "ButtonControllerFactoryProtocol.h"
+#import "GameProtocol.h"
 
 @interface GameOfLifeViewController : UIViewController {
-	IBOutlet id<BoardProtocol> board;
-	IBOutlet id<ButtonControllerFactoryProtocol>	buttonFactory;
+	IBOutlet NSObject<BoardProtocol> *board;
+	IBOutlet NSObject<ButtonControllerFactoryProtocol>	*buttonFactory;
+	IBOutlet NSObject<GameProtocol> *game;
 }
 
-@property(nonatomic, retain) id<BoardProtocol> board;
-@property(nonatomic, retain) id<ButtonControllerFactoryProtocol> buttonFactory;
+@property(nonatomic, retain) NSObject<BoardProtocol> *board;
+@property(nonatomic, retain) NSObject<ButtonControllerFactoryProtocol> *buttonFactory;
+@property(nonatomic, retain) NSObject<GameProtocol> *game;
 
 + (float) calculatePositionFor: (float) rowOrColumn;
+- (void) start:(id) sender;
 
 @end
 

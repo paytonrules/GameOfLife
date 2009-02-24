@@ -9,12 +9,14 @@
 #import "GameOfLifeViewController.h"
 #import "MockButtonControllerFactory.h"
 #import "MockBoard.h"
+#import "MockGame.h"
 #import "GTMSenTestCase.h"
 
 @interface GameOfLifeViewControllerTest : SenTestCase {
 	GameOfLifeViewController *itsController;
 	MockButtonControllerFactory *itsFactory;
 	MockBoard *itsBoard;
+	MockGame *itsGame;
 }
 @end
 
@@ -26,9 +28,11 @@
 	itsController = [[GameOfLifeViewController alloc] init];
 	itsFactory = [[MockButtonControllerFactory alloc] init];
 	itsBoard = [[MockBoard alloc] init];
+	itsGame = [[MockGame alloc] init];
 	
 	itsController.buttonFactory = itsFactory;
 	itsController.board = itsBoard;
+	itsController.game = itsGame;
 	[itsController loadView];
 }
 
@@ -60,5 +64,36 @@
 	bool called = [itsFactory calledWith:cell at:point sizeOf:rect];
 	STAssertTrue(called, nil);
 }
+
+-(void) testStartActionStartsGame
+{
+	[itsController start:nil];
+	
+	STAssertTrue([itsGame startedGameWith:itsBoard], nil);
+}
+
+-(void) testStartActionTurnsButtonToStop
+{
+	UIButton *button = [[UIButton alloc] init];
+	[button setTitle:@"Start" forState:UIControlStateNormal];
+	
+	[itsController start:button];
+	
+	STAssertEquals(@"Stop", [button titleForState: UIControlStateNormal], nil);
+}
+
+-(void) testStartActionChangesButtonActionToStop
+{
+	UIButton *button = [[UIButton alloc] init];
+	[button addTarget:itsController action:@selector(start:) forControlEvents:UIControlEventTouchUpInside];
+	
+	[itsController start:button];
+	
+	STAssertTrue([[button actionsForTarget:itsController forControlEvent:UIControlEventTouchUpInside] containsObject:@"stop:"], nil);
+	STAssertFalse([[button actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"stop:"], nil);
+}
+
+	
+	
 
 @end

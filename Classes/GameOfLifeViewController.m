@@ -2,7 +2,7 @@
 
 @implementation GameOfLifeViewController
 
-@synthesize board, buttonFactory;
+@synthesize board, buttonFactory, game;
 
 + (float) calculatePositionFor: (float) rowOrColumn 
 {
@@ -17,13 +17,21 @@
 	{
 		for (int column = 0; column < [board rows]; column++)
 		{
-			// TODO!  Refactor these out so you can mock test.
 			CGPoint point = CGPointMake([GameOfLifeViewController calculatePositionFor: row], [GameOfLifeViewController calculatePositionFor: column]);
 			CGRect rect = CGRectMake(0.0f, 0.0f, 20.0f, 20.0f);
 		  
 			[self.view addSubview: [self.buttonFactory createButtonControllerForCell:[board getCellAt:row by:column] at:point sizeOf:rect].view];
 		}
 	}
+}
+
+- (void) start: (id) sender
+{
+	[game start: board];
+	UIButton *button = (UIButton *)sender;
+	[button setTitle:@"Stop" forState:UIControlStateNormal];
+	[button removeTarget:self action:@selector(start:) forControlEvents:UIControlEventTouchUpInside];
+	[button addTarget:self action:@selector(stop:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 
@@ -37,7 +45,11 @@
 	[super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview
 }
 
-- (void)dealloc {
+- (void)dealloc 
+{
+	[game release];
+	[board release];
+	[buttonFactory release];
 	[super dealloc];
 }
 @end

@@ -23,7 +23,7 @@
 
 -(ButtonController*) createButtonControllerForCell: (id) cell at: (CGPoint) point sizeOf: (CGRect) rect	
 {
-		[itsCreateCalls addObject:[MockButtonControllerFactory createStringFrom:cell at:point sizeOf:rect]];
+	[itsCreateCalls addObject:[MockButtonControllerFactory createStringFrom:cell at:point sizeOf:rect]];
 	
 	itsViewController = [[ButtonController alloc] init];
 	

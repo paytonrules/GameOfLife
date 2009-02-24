@@ -14,7 +14,7 @@
 	id<BoardProtocol> myBoard;
 }
 
--(id<BoardProtocol>)board;
+-(id<BoardProtocol>) board;
 -(void)setBoard:(id<BoardProtocol>) board;
 -(void)advanceGeneration;
 

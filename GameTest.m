@@ -143,4 +143,9 @@
 	STAssertFalse(alive, @"");	
 }
 
+-(void)testStartExists
+{
+	[game start: board];
+}
+
 @end

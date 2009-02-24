@@ -19,7 +19,6 @@
 	return self;
 }
 
-// Duplication.  Fix.
 - (void)bringToLife: (id)sender 
 {
 	[cell resurrect];
