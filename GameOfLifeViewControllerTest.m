@@ -1,15 +1,8 @@
-//
-//  GameOfLifeViewControllerTest.m
-//  GameOfLife
-//
-//  Created by Eric Smith on 12/27/08.
-//  Copyright 2008 8th Light. All rights reserved.
-//
-
 #import "GameOfLifeViewController.h"
 #import "MockButtonControllerFactory.h"
 #import "MockBoard.h"
 #import "MockGame.h"
+#import "MockGameRunner.h"
 #import "GTMSenTestCase.h"
 
 @interface GameOfLifeViewControllerTest : SenTestCase {
@@ -17,6 +10,7 @@
 	MockButtonControllerFactory *itsFactory;
 	MockBoard *itsBoard;
 	MockGame *itsGame;
+	MockGameRunner *itsGameRunner;
 }
 @end
 
@@ -29,10 +23,12 @@
 	itsFactory = [[MockButtonControllerFactory alloc] init];
 	itsBoard = [[MockBoard alloc] init];
 	itsGame = [[MockGame alloc] init];
+	itsGameRunner = [[MockGameRunner alloc] init];
 	
 	itsController.buttonFactory = itsFactory;
 	itsController.board = itsBoard;
 	itsController.game = itsGame;
+	itsController.gameRunner = itsGameRunner;
 	[itsController loadView];
 }
 
@@ -113,14 +109,14 @@
 {
 	[itsController start: nil];
 	
-	STAssertTrue([itsGame startCalled], nil);
+	STAssertTrue([itsGameRunner isStartCalled], nil);
 }
 
 -(void) testStopsActionStopsGame
 {
 	[itsController stop: nil];
 	
-	STAssertTrue([itsGame stopCalled], nil);
+	STAssertTrue([itsGameRunner isStopCalled], nil);
 }
 
 -(void) testAdvanceOneGeneration

@@ -2,7 +2,7 @@
 
 @implementation GameOfLifeViewController
 
-@synthesize board, buttonFactory, game;
+@synthesize board, buttonFactory, game, gameRunner;
 
 + (float) calculatePositionFor: (float) rowOrColumn 
 {
@@ -27,7 +27,7 @@
 
 - (void) start: (id) sender
 {
-	[game start];
+	[gameRunner start];
 	
 	UIButton *button = (UIButton *)sender;
 	[button setTitle:@"Stop" forState:UIControlStateNormal];
@@ -37,7 +37,7 @@
 
 - (void) stop: (id) sender
 {
-	[game stop];
+	[gameRunner stop];
 	
 	UIButton *button = (UIButton *)sender;
 	[button setTitle:@"Start" forState:UIControlStateNormal];
@@ -54,7 +54,6 @@
 {
 	return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
 
 - (void)didReceiveMemoryWarning 
 {

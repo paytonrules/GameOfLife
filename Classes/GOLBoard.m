@@ -1,4 +1,3 @@
-
 #import "GOLBoard.h"
 #import "Cell.h"
 
