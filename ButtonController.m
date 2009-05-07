@@ -22,8 +22,6 @@
 - (void) bringToLife: (id)sender 
 {
 	cell.alive = true;
-	
-	[self makeButtonAlive];
 }
 
 - (void) makeButtonAlive
@@ -37,8 +35,6 @@
 - (void) kill: (id)sender 
 {
 	cell.alive = false;
-	
-	[self makeButtonDead];
 }
 
 -(void) makeButtonDead
@@ -48,7 +44,6 @@
 	[(UIButton *)self.view setImage:[UIImage imageNamed:@"dead_cell.png"] forState:UIControlStateNormal];
 }	
 	
-
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
 	bool alive = [[change objectForKey:NSKeyValueChangeNewKey] boolValue];

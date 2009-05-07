@@ -20,7 +20,8 @@
 }
 
 -(void) start {
-	timer = [[NSTimer timerWithTimeInterval: interval target:game selector:@selector(advanceGeneration) userInfo:nil repeats:true] retain];
+	timer = [[NSTimer scheduledTimerWithTimeInterval: interval target:game selector:@selector(advanceGeneration) userInfo:nil repeats:true] retain];
+	NSLog(@"%@", timer);
 }
 
 -(void) stop {

@@ -3,5 +3,4 @@
 @protocol GameProtocol
 	
 -(void) advanceGeneration;
-
 @end

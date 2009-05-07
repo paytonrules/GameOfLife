@@ -62,7 +62,6 @@
 	STAssertTrue(called, nil);
 }
 
-
 -(void) testStartActionTurnsButtonToStop
 {
 	UIButton *button = [[UIButton alloc] init];

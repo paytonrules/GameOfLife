@@ -13,14 +13,17 @@
 {
 	[super loadView];
 	
-	for (int row = 0; row < [board columns]; row++) 
+	for (int row = 0; row < [board rows]; row++) 
 	{
-		for (int column = 0; column < [board rows]; column++)
+		for (int column = 0; column < [board columns]; column++)
 		{
 			CGPoint point = CGPointMake([GameOfLifeViewController calculatePositionFor: row], [GameOfLifeViewController calculatePositionFor: column]);
 			CGRect rect = CGRectMake(0.0f, 0.0f, 20.0f, 20.0f);
-		  
-			[self.view addSubview: [self.buttonFactory createButtonControllerForCell:[board getCellAt:row by:column] at:point sizeOf:rect].view];
+		 
+			ButtonController *controller = [self.buttonFactory createButtonControllerForCell:[board getCellAt:row by:column] at:point sizeOf:rect];
+			
+			[self.view addSubview: controller.view];
+			NSLog(@"End of the for loop");
 		}
 	}
 }
@@ -28,17 +31,18 @@
 - (void) start: (id) sender
 {
 	[gameRunner start];
-	
+
 	UIButton *button = (UIButton *)sender;
-	[button setTitle:@"Stop" forState:UIControlStateNormal];
+
 	[button removeTarget:self action:@selector(start:) forControlEvents:UIControlEventTouchUpInside];
 	[button addTarget:self action:@selector(stop:) forControlEvents:UIControlEventTouchUpInside];
+	[button setTitle:@"Stop" forState:UIControlStateNormal];
 }
 
 - (void) stop: (id) sender
 {
 	[gameRunner stop];
-	
+
 	UIButton *button = (UIButton *)sender;
 	[button setTitle:@"Start" forState:UIControlStateNormal];
 	[button removeTarget:self action:@selector(stop:) forControlEvents:UIControlEventTouchUpInside];

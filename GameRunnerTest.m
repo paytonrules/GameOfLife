@@ -59,13 +59,16 @@
 
 -(void) testTimerCallsGameAdvance {
 	MockGame *mockGame = [[MockGame alloc] init];
-	
 	runner.game = mockGame;
-	
+
 	[runner start];
-	[runner.timer fire];
+	NSDate *oldFireDate = [runner.timer fireDate];
 	
-	STAssertTrue([mockGame advanceGenerationCalled], nil);
+	[[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow: 0.30]];
+	
+	NSDate *newFireDate = [runner.timer fireDate];
+	STAssertFalse([newFireDate isEqualToDate:oldFireDate], nil);
+//	STAssertEquals(0.25, [newFireDate timeIntervalSinceDate:oldFireDate], nil);
 }
 
 -(void) testStopInvalidatesTheTimer {		
