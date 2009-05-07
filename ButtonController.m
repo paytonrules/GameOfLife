@@ -29,7 +29,6 @@
 	[(UIButton *)self.view removeTarget:self action:@selector(bringToLife:) forControlEvents:UIControlEventTouchUpInside];
 	[(UIButton *)self.view addTarget:self action: @selector(kill:) forControlEvents:UIControlEventTouchUpInside];
 	[(UIButton *)self.view setImage:[UIImage imageNamed:@"alive_cell.png"] forState:UIControlStateNormal];
-	
 }
 
 - (void) kill: (id)sender 

@@ -75,12 +75,12 @@
 -(void) testStartActionChangesButtonActionToStop
 {
 	UIButton *button = [[UIButton alloc] init];
-	[button addTarget:itsController action:@selector(start:) forControlEvents:UIControlEventTouchUpInside];
+	[button addTarget:nil action:@selector(start:) forControlEvents:UIControlEventTouchUpInside];
 	
 	[itsController start:button];
 	
-	STAssertTrue([[button actionsForTarget:itsController forControlEvent:UIControlEventTouchUpInside] containsObject:@"stop:"], nil);
-	STAssertFalse([[button actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"start:"], nil);
+	STAssertTrue([[button actionsForTarget:nil forControlEvent:UIControlEventTouchUpInside] containsObject:@"stop:"], nil);
+	STAssertFalse([[button actionsForTarget:nil forControlEvent: UIControlEventTouchUpInside] containsObject:@"start:"], nil);
 }
 
 -(void) testStopActionTurnsButtonToStart
@@ -96,12 +96,12 @@
 -(void) testStopActionChangesButtonActionToStart
 {
 	UIButton *button = [[UIButton alloc] init];
-	[button addTarget:itsController action:@selector(stop:) forControlEvents:UIControlEventTouchUpInside];
+	[button addTarget:nil action:@selector(stop:) forControlEvents:UIControlEventTouchUpInside];
 	
 	[itsController stop: button];
 
-	STAssertTrue([[button actionsForTarget:itsController forControlEvent:UIControlEventTouchUpInside] containsObject:@"start:"], nil);
-	STAssertFalse([[button actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"stop:"], nil);
+	STAssertTrue([[button actionsForTarget:nil forControlEvent:UIControlEventTouchUpInside] containsObject:@"start:"], nil);
+	STAssertFalse([[button actionsForTarget: nil forControlEvent: UIControlEventTouchUpInside] containsObject:@"stop:"], nil);
 }
 
 -(void) testStartActionStartsGame

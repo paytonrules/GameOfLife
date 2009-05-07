@@ -68,7 +68,6 @@
 	
 	NSDate *newFireDate = [runner.timer fireDate];
 	STAssertFalse([newFireDate isEqualToDate:oldFireDate], nil);
-//	STAssertEquals(0.25, [newFireDate timeIntervalSinceDate:oldFireDate], nil);
 }
 
 -(void) testStopInvalidatesTheTimer {		

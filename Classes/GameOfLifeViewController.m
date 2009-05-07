@@ -23,7 +23,6 @@
 			ButtonController *controller = [self.buttonFactory createButtonControllerForCell:[board getCellAt:row by:column] at:point sizeOf:rect];
 			
 			[self.view addSubview: controller.view];
-			NSLog(@"End of the for loop");
 		}
 	}
 }
@@ -31,12 +30,12 @@
 - (void) start: (id) sender
 {
 	[gameRunner start];
-
+	
 	UIButton *button = (UIButton *)sender;
 
-	[button removeTarget:self action:@selector(start:) forControlEvents:UIControlEventTouchUpInside];
-	[button addTarget:self action:@selector(stop:) forControlEvents:UIControlEventTouchUpInside];
 	[button setTitle:@"Stop" forState:UIControlStateNormal];
+	[button removeTarget:nil action:@selector(start:) forControlEvents:UIControlEventTouchUpInside];
+	[button addTarget:nil action:@selector(stop:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void) stop: (id) sender
@@ -45,8 +44,8 @@
 
 	UIButton *button = (UIButton *)sender;
 	[button setTitle:@"Start" forState:UIControlStateNormal];
-	[button removeTarget:self action:@selector(stop:) forControlEvents:UIControlEventTouchUpInside];
-	[button addTarget:self action:@selector(start:) forControlEvents:UIControlEventTouchUpInside];
+	[button removeTarget:nil action:@selector(stop:) forControlEvents:UIControlEventTouchUpInside];
+	[button addTarget:nil action:@selector(start:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 -(void) advance: (id) sender

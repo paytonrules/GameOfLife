@@ -284,7 +284,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>41</integer>
+									<integer>39</integer>
 									<integer>35</integer>
 									<integer>25</integer>
 									<integer>0</integer>
@@ -312,7 +312,7 @@
 							<real>312</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>-1 58 1920 1119 0 0 1920 1178 </string>
+						<string>-4 59 1920 1119 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -330,7 +330,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GOLBoard.h</string>
+								<string>GameRunnerTest.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -338,11 +338,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GOLBoard.h</string>
+										<string>GameRunnerTest.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>07EB5A140FB39043008A5C3C</string>
+										<string>07EB5A760FB39774008A5C3C</string>
 										<key>history</key>
 										<array>
 											<string>070AD4EC0F06CEA800B77E82</string>
@@ -370,8 +370,6 @@
 											<string>07899C050FB38054005E748D</string>
 											<string>07899C070FB38054005E748D</string>
 											<string>07899C080FB38054005E748D</string>
-											<string>07899C090FB38054005E748D</string>
-											<string>07899C0A0FB38054005E748D</string>
 											<string>07899C0C0FB38054005E748D</string>
 											<string>07899C110FB38054005E748D</string>
 											<string>07899C120FB38054005E748D</string>
@@ -385,14 +383,16 @@
 											<string>07EB59870FB388AE008A5C3C</string>
 											<string>07EB59B90FB38BB2008A5C3C</string>
 											<string>07EB59CE0FB38C67008A5C3C</string>
-											<string>07EB59E10FB38D93008A5C3C</string>
 											<string>07EB59E20FB38D93008A5C3C</string>
 											<string>07EB59E40FB38D93008A5C3C</string>
 											<string>07EB59F30FB38DF5008A5C3C</string>
 											<string>07EB5A080FB38FC0008A5C3C</string>
-											<string>07EB5A090FB38FC0008A5C3C</string>
-											<string>07EB5A120FB39043008A5C3C</string>
-											<string>07EB59EF0FB38DD3008A5C3C</string>
+											<string>07EB5A190FB390CE008A5C3C</string>
+											<string>07EB5A3A0FB3943F008A5C3C</string>
+											<string>07EB5A6C0FB39756008A5C3C</string>
+											<string>07EB5A6D0FB39756008A5C3C</string>
+											<string>07EB5A730FB39774008A5C3C</string>
+											<string>07EB5A740FB39774008A5C3C</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -504,6 +504,29 @@
 											<string>07EB5A0D0FB38FC0008A5C3C</string>
 											<string>07EB5A0E0FB38FC0008A5C3C</string>
 											<string>07EB5A130FB39043008A5C3C</string>
+											<string>07EB5A1B0FB390CE008A5C3C</string>
+											<string>07EB5A210FB3910C008A5C3C</string>
+											<string>07EB5A270FB3915A008A5C3C</string>
+											<string>07EB5A2E0FB3927D008A5C3C</string>
+											<string>07EB5A2F0FB3927D008A5C3C</string>
+											<string>07EB5A300FB3927D008A5C3C</string>
+											<string>07EB5A310FB3927D008A5C3C</string>
+											<string>07EB5A3D0FB3943F008A5C3C</string>
+											<string>07EB5A3E0FB3943F008A5C3C</string>
+											<string>07EB5A3F0FB3943F008A5C3C</string>
+											<string>07EB5A400FB3943F008A5C3C</string>
+											<string>07EB5A410FB3943F008A5C3C</string>
+											<string>07EB5A420FB3943F008A5C3C</string>
+											<string>07EB5A4A0FB39597008A5C3C</string>
+											<string>07EB5A4B0FB39597008A5C3C</string>
+											<string>07EB5A510FB395EF008A5C3C</string>
+											<string>07EB5A560FB39628008A5C3C</string>
+											<string>07EB5A5C0FB3968B008A5C3C</string>
+											<string>07EB5A5D0FB3968B008A5C3C</string>
+											<string>07EB5A660FB3971A008A5C3C</string>
+											<string>07EB5A6E0FB39756008A5C3C</string>
+											<string>07EB5A6F0FB39756008A5C3C</string>
+											<string>07EB5A750FB39774008A5C3C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -517,7 +540,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1564, 964}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-1 58 1920 1119 0 0 1920 1178 </string>
+								<string>-4 59 1920 1119 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -537,7 +560,7 @@
 								<key>Frame</key>
 								<string>{{0, 969}, {1564, 109}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-1 58 1920 1119 0 0 1920 1178 </string>
+								<string>-4 59 1920 1119 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -697,17 +720,16 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>07EB5A100FB38FC0008A5C3C</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>07EB59420FB38334008A5C3C</string>
 		<string>07EB59400FB38331008A5C3C</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>07C1C4E50F06C99E0088EA4C</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>07C1C4E50F06C99E0088EA4C</string>
 		<string>/Users/eric/Projects-not-8thlight/Cocoa/iPhone/GameOfLife/GameOfLife.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>-1 58 1920 1119 0 0 1920 1178 </string>
+	<string>-4 59 1920 1119 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -723,12 +745,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>GameOfLifeViewControllerTest.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -745,8 +769,6 @@
 							<string>579pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXBuildLogShowsTranscriptDefaultKey</key>
@@ -1047,7 +1069,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1296, 633}}</string>
 								<key>RubberWindowFrame</key>
-								<string>437 497 1296 674 0 0 1920 1178 </string>
+								<string>77 439 1296 674 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -1076,7 +1098,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>437 497 1296 674 0 0 1920 1178 </string>
+			<string>77 439 1296 674 0 0 1920 1178 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>

@@ -12,7 +12,6 @@
 
 -(ButtonController*) createButtonControllerForCell: (id) cell at: (CGPoint) point sizeOf: (CGRect) rect;
 {
-	NSLog(@"I am in createButtonControllerForCell");
 	ButtonController *controller = [[ButtonController alloc] initWithCell:cell];
 	
 	UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
