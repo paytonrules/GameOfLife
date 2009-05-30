@@ -5,6 +5,7 @@
 }
 @end
 
+
 @implementation MemoryCheckerTest
 
 -(void) testNoFailureWhenNoMemoryAllocation
@@ -18,8 +19,8 @@
 {
 	[MemoryChecker start];
 	
-	[NSObject alloc];
-	
+	[[NSObject alloc] init];
+		
 	STAssertThrowsSpecificNamed([MemoryChecker stop], NSException, @"SenTestFailureException", nil);
 }
 
@@ -27,8 +28,8 @@
 {
 	[MemoryChecker start];
 	
-	NSString *string = [NSString alloc];
-	[string release];
+	NSObject *object = [[NSObject alloc] init];
+	[object release];
 	
 	STAssertNoThrow([MemoryChecker stop], nil);
 }
@@ -37,7 +38,7 @@
 {
 	[MemoryChecker start];
 
-	NSObject *object = [NSObject alloc];
+	NSObject *object = [[NSObject alloc] init];
 	[object retain];
 	[object release];
 	
@@ -48,13 +49,43 @@
 {
 	[MemoryChecker start];
 	
-	NSObject *object = [NSObject alloc];
+	NSObject *object = [[NSObject alloc] init];
 	[object retain];
 	[object release];
 	[object release];
 	
 	STAssertNoThrow([MemoryChecker stop], nil);
 }
+
+-(void) testShouldWorkWithObjectsOtherThanNSObject
+{
+	[MemoryChecker start];
+	
+	MemoryCheckerTest *test = [[MemoryCheckerTest alloc] init];
+	
+	STAssertThrowsSpecificNamed([MemoryChecker stop], NSException, @"SenTestFailureException", nil);
+}
+
+-(void) testShouldWorkWithObjectsOtherThanNSObjectNoLeak
+{
+	[MemoryChecker start];
+	
+	MemoryCheckerTest *test = [[MemoryCheckerTest alloc] init];
+	[test release];
+	
+	STAssertNoThrow([MemoryChecker stop], nil);
+}
+
+//-(void) testShouldCatchMemoryLeaksOnCopy
+//{
+//	[MemoryChecker start];
+//	
+//	MemoryCheckerTest *test1 = [[MemoryCheckerTest alloc] init];
+//	MemoryCheckerTest *test2 = [test1 copy];
+//	[test1 release];
+//
+//	STAssertThrowsSpecificNamed([MemoryChecker stop], NSException, @"SenTestFailureException", nil);
+//}
 
 //-(void) testShouldNotBeConfusedByManyObjects
 //{
@@ -65,8 +96,7 @@
 //	
 //	NSObject *object2 = [NSObject alloc];
 //	[MemoryChecker stop];
-//	STAssertNotEqualObjects(object1, object2, nil);
-////	STAssertThrowsSpecificNamed([MemoryChecker stop], NSException, @"SenTestFailureException", nil);
+//	STAssertThrowsSpecificNamed([MemoryChecker stop], NSException, @"SenTestFailureException", nil);
 //}
 	
 @end

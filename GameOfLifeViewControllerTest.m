@@ -4,6 +4,7 @@
 #import "MockGame.h"
 #import "MockGameRunner.h"
 #import "GTMSenTestCase.h"
+#import "MemoryChecker.h"
 
 @interface GameOfLifeViewControllerTest : SenTestCase {
 	GameOfLifeViewController *itsController;

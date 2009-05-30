@@ -7,24 +7,16 @@ static MemoryChecker *checker = nil;
 
 + (id)myAllocWithZone:(NSZone *)zone 
 {
-	id object = [NSObject myAllocWithZone:zone];
+	id object = [[self class] myAllocWithZone:zone];
 	[checker bumpAllocCount: object];
 	return object;
 }
 
-- (void)myRelease
+- (void)myDealloc
 {
 	[checker decreaseAllocCount: self];
 	
-	return [self myRelease];
-}
-
-// I just realized I'm reimplementing ref counting.  Should I?
--(id)myRetain
-{
-	[checker bumpAllocCount:self];
-	
-	return [self myRetain];
+	return [self myDealloc];
 }
 
 @end
@@ -45,7 +37,7 @@ static MemoryChecker *checker = nil;
 	
 	if(isLeak)
 	{
-		STFail(@"Memory Leak detected in test: testFailureWhenAllocWithoutRelease");
+		STFail(@"Memory Leak detected in test");
 	}
 }
 
@@ -60,6 +52,7 @@ static MemoryChecker *checker = nil;
 	return false;
 }
 
+// Duplication duplication - ick.	
 -(void) exchangeAllocMethods
 {
 	originalAllocMethod = class_getClassMethod([NSObject class], @selector(allocWithZone:));	
@@ -68,20 +61,12 @@ static MemoryChecker *checker = nil;
 	method_exchangeImplementations(originalAllocMethod, newAllocMethod);
 }
 
--(void) exchangeReleaseMethods
+-(void) exchangeDeallocMethods
 {
-	originalReleaseMethod = class_getInstanceMethod([NSObject class], @selector(release));		
-	newReleaseMethod = class_getInstanceMethod([NSObject class], @selector(myRelease));
+	originalDeallocMethod = class_getInstanceMethod([NSObject class], @selector(dealloc));		
+	newDeallocMethod = class_getInstanceMethod([NSObject class], @selector(myDealloc));
 	
-	method_exchangeImplementations(originalReleaseMethod, newReleaseMethod);	
-}
-
--(void) exchangeRetainMethods
-{
-	originalRetainMethod = class_getInstanceMethod([NSObject class], @selector(retain));		
-	newRetainMethod = class_getInstanceMethod([NSObject class], @selector(myRetain));
-	
-	method_exchangeImplementations(originalRetainMethod, newRetainMethod);	
+	method_exchangeImplementations(originalDeallocMethod, newDeallocMethod);	
 }
 
 -(id) init 
@@ -90,11 +75,10 @@ static MemoryChecker *checker = nil;
 	{
 		objectsAllocated = [NSMutableDictionary dictionaryWithCapacity:5];
 		[self exchangeAllocMethods];
-		[self exchangeReleaseMethods];
-		[self exchangeRetainMethods];
+		[self exchangeDeallocMethods];
 	}
-		
-		return self;
+	
+	return self;
 }
 
 -(void) bumpAllocCount: (id) object
@@ -118,8 +102,7 @@ static MemoryChecker *checker = nil;
 -(void) resetImplementations
 {
 	method_exchangeImplementations(originalAllocMethod, newAllocMethod);
-	method_exchangeImplementations(originalReleaseMethod, newReleaseMethod);
-	method_exchangeImplementations(originalRetainMethod, newRetainMethod);
+	method_exchangeImplementations(originalDeallocMethod, newDeallocMethod);
 }
 
 @end

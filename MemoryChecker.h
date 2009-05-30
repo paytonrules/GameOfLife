@@ -4,10 +4,8 @@
 @interface MemoryChecker : NSObject {
 	Method originalAllocMethod;
 	Method newAllocMethod;
-	Method originalReleaseMethod;
-	Method newReleaseMethod;
-	Method originalRetainMethod;
-	Method newRetainMethod;
+	Method originalDeallocMethod;
+	Method newDeallocMethod;
 	NSMutableDictionary *objectsAllocated;
 }
 
