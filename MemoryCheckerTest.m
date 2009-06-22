@@ -1,5 +1,7 @@
 #import "GTMSenTestCase.h"
 #import "MemoryChecker.h"
+#import "ButtonController.h"
+#import "Cell.h"
 
 @interface MemoryCheckerTest : SenTestCase {
 }
@@ -61,7 +63,7 @@
 {
 	[MemoryChecker start];
 	
-	MemoryCheckerTest *test = [[MemoryCheckerTest alloc] init];
+	[[MemoryCheckerTest alloc] init];
 	
 	STAssertThrowsSpecificNamed([MemoryChecker stop], NSException, @"SenTestFailureException", nil);
 }
@@ -74,6 +76,16 @@
 	[test release];
 	
 	STAssertNoThrow([MemoryChecker stop], nil);
+}
+
+-(void) testErrorsWithObservers
+{
+	[MemoryChecker start];
+	
+	NSObject *myObjectToObserve = [[NSObject alloc] init];
+	[myObjectToObserve addObserver:self forKeyPath:@"alive" options:NSKeyValueObservingOptionNew context:NULL];
+	
+	STAssertThrowsSpecificNamed([MemoryChecker stop], NSException, @"SenTestFailureException", nil);
 }
 
 //-(void) testShouldCatchMemoryLeaksOnCopy

@@ -83,20 +83,20 @@ static MemoryChecker *checker = nil;
 
 -(void) bumpAllocCount: (id) object
 {
-	NSInteger numAllocsForObject = [[objectsAllocated valueForKey: [object description]] integerValue];
+	NSInteger numAllocsForObject = [[objectsAllocated valueForKey: @"TestKey"] integerValue];
 		
 	numAllocsForObject++;
 	
-	[objectsAllocated setValue: [NSNumber numberWithInt:numAllocsForObject] forKey: [object description]];
+	[objectsAllocated setValue: [NSNumber numberWithInt:numAllocsForObject] forKey: @"TestKey"];
 }
 
 -(void) decreaseAllocCount: (id) object
 {
-	NSInteger numAllocsForObject = [[objectsAllocated valueForKey: [object description]] integerValue];
+	NSInteger numAllocsForObject = [[objectsAllocated valueForKey: @"TestKey"] integerValue];
 	
 	numAllocsForObject--;
 	
-	[objectsAllocated setValue: [NSNumber numberWithInt:numAllocsForObject] forKey: [object description]];
+	[objectsAllocated setValue: [NSNumber numberWithInt:numAllocsForObject] forKey: @"TestKey"];
 }
 
 -(void) resetImplementations
