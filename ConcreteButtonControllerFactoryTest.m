@@ -17,7 +17,6 @@
 
 -(void) setUp 
 {
-//	[MemoryChecker start];
 	itsFactory = [[ConcreteButtonControllerFactory alloc] init];
 	itsPoint = CGPointMake(1.0f, 2.0f);
 	itsRect = CGRectMake(0.0f, 0.0f, 20.0f, 20.0f);
@@ -30,7 +29,6 @@
 	[itsFactory release];
 	[itsController release];
 	[itsCell release];
-	//[MemoryChecker stop];
 }
 
 -(void)testCanBeCreated 

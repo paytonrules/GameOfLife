@@ -5,7 +5,7 @@ static MemoryChecker *checker = nil;
 
 @implementation NSObject ( MemoryChecking )
 
-+ (id)myAllocWithZone:(NSZone *)zone 
++ (id)myAllocWithZone:(NSZone *)zone
 {
 	id object = [[self class] myAllocWithZone:zone];
 	[checker bumpAllocCount: object];
@@ -25,20 +25,22 @@ static MemoryChecker *checker = nil;
 
 +(void) start
 {
-	checker = [[MemoryChecker alloc] init];
+	if (checker == nil)
+	{
+		checker = [[MemoryChecker alloc] init];
+	}
+	[checker reset];
 }
 
 +(void) stop
 {
-	bool isLeak = [checker isLeak];
 	[checker resetImplementations];
-	[checker release];
-	checker = nil;
-	
-	if(isLeak)
-	{
-		STFail(@"Memory Leak detected in test");
-	}
+	[checker cleanupAutoReleasePool];
+}
+
++(bool) hasLeaks
+{
+	return [checker isLeak];
 }
 
 -(bool) isLeak
@@ -69,34 +71,41 @@ static MemoryChecker *checker = nil;
 	method_exchangeImplementations(originalDeallocMethod, newDeallocMethod);	
 }
 
--(id) init 
+-(void) reset 
 {
-	if (self = [super init])
+	if(objectsAllocated != nil)
 	{
-		objectsAllocated = [NSMutableDictionary dictionaryWithCapacity:5];
-		[self exchangeAllocMethods];
-		[self exchangeDeallocMethods];
+		objectsAllocated = nil;
 	}
 	
-	return self;
+	objectsAllocated = [NSMutableDictionary dictionaryWithCapacity:5];
+	[self exchangeAllocMethods];
+	[self exchangeDeallocMethods];
+}
+
+-(void) cleanupAutoReleasePool
+{
+//	[pool release];
 }
 
 -(void) bumpAllocCount: (id) object
 {
-	NSInteger numAllocsForObject = [[objectsAllocated valueForKey: @"TestKey"] integerValue];
+	NSString *location = [[NSString alloc] initWithFormat: @"%ld", object];
+	NSInteger numAllocsForObject = [[objectsAllocated valueForKey: location] integerValue];
 		
 	numAllocsForObject++;
 	
-	[objectsAllocated setValue: [NSNumber numberWithInt:numAllocsForObject] forKey: @"TestKey"];
+	[objectsAllocated setValue: [NSNumber numberWithInt:numAllocsForObject] forKey: location];
 }
 
 -(void) decreaseAllocCount: (id) object
 {
-	NSInteger numAllocsForObject = [[objectsAllocated valueForKey: @"TestKey"] integerValue];
+	NSString *location = [[NSString alloc] initWithFormat: @"%ld", object];
+	NSInteger numAllocsForObject = [[objectsAllocated valueForKey:location] integerValue];
 	
 	numAllocsForObject--;
 	
-	[objectsAllocated setValue: [NSNumber numberWithInt:numAllocsForObject] forKey: @"TestKey"];
+	[objectsAllocated setValue: [NSNumber numberWithInt:numAllocsForObject] forKey: location];
 }
 
 -(void) resetImplementations

@@ -10,20 +10,63 @@
 
 @implementation MemoryCheckerTest
 
+-(void) assertHasException
+{
+	@try
+	{
+		MEMORY_CHECKER_STOP;
+		STFail(@"There was no error");
+	}
+	@catch (NSException *e) 
+	{
+		NSRange range = [[e reason] rangeOfString: @"Memory Leak"];
+		STAssertNotEquals((NSUInteger) NSNotFound, range.location, nil);
+	}
+}
+
+-(void) assertNoException
+{
+	@try
+	{
+		MEMORY_CHECKER_STOP
+	}
+	@catch (NSException *e) {
+		STFail(@"There should not be an exception");
+	}	
+}
+
 -(void) testNoFailureWhenNoMemoryAllocation
 {
 	[MemoryChecker start];
 	
-	STAssertNoThrow([MemoryChecker stop], nil);
+	[self assertNoException];
+}
+
+-(void)	testFailureIsAtTheStopLocation
+{
+	[MemoryChecker start];
+	[[NSObject alloc] init];
+	@try
+	{
+		MEMORY_CHECKER_STOP;
+		STFail(@"There was no error");
+	}
+	@catch (NSException *e)
+	{
+		NSString *errorString = [NSString stringWithFormat:@"%s:%d: error: Memory Leak detected in test", __FILE__, (__LINE__ - 5)];
+		STAssertEqualStrings(errorString, [e reason], nil); // Seriously hate this test, but I need to test the line and file this is on. 
+	}
 }
 
 -(void) testFailureWhenAllocWithoutRelease
 {
 	[MemoryChecker start];
 	
-	[[NSObject alloc] init];
-		
-	STAssertThrowsSpecificNamed([MemoryChecker stop], NSException, @"SenTestFailureException", nil);
+	NSObject *object = [[NSObject alloc] init];
+	
+	[self assertHasException];
+	
+	[object release];
 }
 
 -(void) testNoFailureWhenAllocAndReleased
@@ -33,7 +76,7 @@
 	NSObject *object = [[NSObject alloc] init];
 	[object release];
 	
-	STAssertNoThrow([MemoryChecker stop], nil);
+	[self assertNoException];
 }
 
 -(void) testFailureWhenAllocRetainAndOneRelease
@@ -44,7 +87,9 @@
 	[object retain];
 	[object release];
 	
-	STAssertThrowsSpecificNamed([MemoryChecker stop], NSException, @"SenTestFailureException", nil);
+	[self assertHasException];
+
+	[object release];
 }
 
 -(void) testNoFailureWhenAllocRetainReleasedReleased
@@ -56,26 +101,18 @@
 	[object release];
 	[object release];
 	
-	STAssertNoThrow([MemoryChecker stop], nil);
+	[self assertNoException];
 }
 
 -(void) testShouldWorkWithObjectsOtherThanNSObject
 {
 	[MemoryChecker start];
 	
-	[[MemoryCheckerTest alloc] init];
+	MemoryChecker *checker = [[MemoryCheckerTest alloc] init];
 	
-	STAssertThrowsSpecificNamed([MemoryChecker stop], NSException, @"SenTestFailureException", nil);
-}
-
--(void) testShouldWorkWithObjectsOtherThanNSObjectNoLeak
-{
-	[MemoryChecker start];
+	[self assertHasException];
 	
-	MemoryCheckerTest *test = [[MemoryCheckerTest alloc] init];
-	[test release];
-	
-	STAssertNoThrow([MemoryChecker stop], nil);
+	[checker release];
 }
 
 -(void) testErrorsWithObservers
@@ -85,20 +122,59 @@
 	NSObject *myObjectToObserve = [[NSObject alloc] init];
 	[myObjectToObserve addObserver:self forKeyPath:@"alive" options:NSKeyValueObservingOptionNew context:NULL];
 	
-	STAssertThrowsSpecificNamed([MemoryChecker stop], NSException, @"SenTestFailureException", nil);
+	[self assertHasException];
+	
+	[myObjectToObserve removeObserver:self forKeyPath: @"alive"];
+	[myObjectToObserve release];
 }
+
+-(void) testShouldWorkWithObjectsOtherThanNSObjectNoLeak
+{
+	[MemoryChecker start];
+	
+	MemoryCheckerTest *test = [[MemoryCheckerTest alloc] init];
+	[test release];
+	
+	[self assertNoException];
+}
+
+//-(void) testShouldNotRaiseOnItemsInTheAutoReleasePool
+//{
+//	[MemoryChecker start];
+//	
+//	[[[NSObject alloc] init] autorelease];
+//	
+//	@try
+//	{
+//		MEMORY_CHECKER_STOP;
+//	}
+//	@catch (NSException *e) 
+//	{
+//		STFail(@"There should be no memory leaks");
+//	}
+//}
 
 //-(void) testShouldCatchMemoryLeaksOnCopy
 //{
 //	[MemoryChecker start];
 //	
-//	MemoryCheckerTest *test1 = [[MemoryCheckerTest alloc] init];
-//	MemoryCheckerTest *test2 = [test1 copy];
+//	NSObject *test1 = [[NSObject alloc] init];
+//	NSObject *test2 = [test1 copy];
 //	[test1 release];
 //
-//	STAssertThrowsSpecificNamed([MemoryChecker stop], NSException, @"SenTestFailureException", nil);
+//	@try
+//	{
+//		MEMORY_CHECKER_STOP;
+//		STFail(@"There was no error");
+//	}
+//	@catch (NSException *e) 
+//	{
+//		STAssertEqualStrings(@"SenTestFailureException", [e name], nil);
+//	}
+//	
+//	[test2 release];
 //}
-
+//
 //-(void) testShouldNotBeConfusedByManyObjects
 //{
 //	[MemoryChecker start];
@@ -110,5 +186,5 @@
 //	[MemoryChecker stop];
 //	STAssertThrowsSpecificNamed([MemoryChecker stop], NSException, @"SenTestFailureException", nil);
 //}
-	
+//	
 @end
