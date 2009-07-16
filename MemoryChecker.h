@@ -7,6 +7,7 @@
 	Method originalDeallocMethod;
 	Method newDeallocMethod;
 	NSMutableDictionary *objectsAllocated;
+	NSAutoreleasePool *pool;
 }
 
 +(void) start;

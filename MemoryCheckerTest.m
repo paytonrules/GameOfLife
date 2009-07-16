@@ -138,21 +138,23 @@
 	[self assertNoException];
 }
 
-//-(void) testShouldNotRaiseOnItemsInTheAutoReleasePool
-//{
-//	[MemoryChecker start];
-//	
-//	[[[NSObject alloc] init] autorelease];
-//	
-//	@try
-//	{
-//		MEMORY_CHECKER_STOP;
-//	}
-//	@catch (NSException *e) 
-//	{
-//		STFail(@"There should be no memory leaks");
-//	}
-//}
+-(void) testShouldNotRaiseOnItemsInTheAutoReleasePool
+{
+	[MemoryChecker start];
+	
+	[[[NSObject alloc] init] autorelease];
+	
+	[self assertNoException];
+}
+
+-(void) testShouldNotRaiseOnAPerformSelector
+{
+	[MemoryChecker start];
+	
+	[self performSelector:@selector(testShouldNotRaiseOnItemsInTheAutoReleasePool)];
+	
+	[self assertNoException];
+}
 
 //-(void) testShouldCatchMemoryLeaksOnCopy
 //{

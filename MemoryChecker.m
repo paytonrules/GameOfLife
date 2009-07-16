@@ -29,13 +29,14 @@ static MemoryChecker *checker = nil;
 	{
 		checker = [[MemoryChecker alloc] init];
 	}
+	
 	[checker reset];
 }
 
 +(void) stop
 {
-	[checker resetImplementations];
 	[checker cleanupAutoReleasePool];
+	[checker resetImplementations];
 }
 
 +(bool) hasLeaks
@@ -79,13 +80,16 @@ static MemoryChecker *checker = nil;
 	}
 	
 	objectsAllocated = [NSMutableDictionary dictionaryWithCapacity:5];
+	
 	[self exchangeAllocMethods];
 	[self exchangeDeallocMethods];
+	pool = [[NSAutoreleasePool alloc] init];
 }
 
 -(void) cleanupAutoReleasePool
 {
-//	[pool release];
+	[pool release];
+	pool = nil;
 }
 
 -(void) bumpAllocCount: (id) object
