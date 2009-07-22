@@ -1,15 +1,17 @@
-#import "GTMSenTestCase.h"
+#import <SenTestingKit/SenTestingKit.h>
+#import <objc/runtime.h>
+#import <OCMock/OCMock.h>
 #import "ButtonController.h"
 #import "Cell.h"
+#import "ImageFactory.h"
 
 @interface ButtonControllerTest : SenTestCase 
 {
 	ButtonController	*itsController;
 	Cell							*itsCell;
-	UIButton					*itsButton;
+	OCMockObject			*itsButton;
 }
 @end
-
 
 @implementation ButtonControllerTest
 
@@ -17,8 +19,9 @@
 {
 	itsCell = [[Cell alloc] init];
 	itsController = [[ButtonController alloc] initWithCell: itsCell];
-	itsButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-	itsController.view = itsButton;
+	itsButton = [OCMockObject niceMockForClass:[UIButton class]];
+
+	itsController.view =	(UIButton *)itsButton;
 }
 
 -(void) tearDown 
@@ -41,9 +44,10 @@
 
 -(void) testBringToLifeChangesButtonsActionToKill 
 {
+	[[itsButton expect] addTarget:itsController action:@selector(kill:) forControlEvents:UIControlEventTouchUpInside];
 	[itsController bringToLife: nil];
 	
-	STAssertTrue([[itsButton actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"kill:"], nil);
+	[itsButton verify];
 }
 
 -(void) testKillCallsKill 
@@ -55,60 +59,84 @@
 
 -(void) testKillSwitchesActionToBringToLife 
 {
+	[[itsButton expect] addTarget: itsController action:@selector(bringToLife:) forControlEvents: UIControlEventTouchUpInside ];
 	[itsController kill : nil];
 	
-	STAssertTrue([[itsButton actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"bringToLife:"], nil);
+	[itsButton verify];
 }
 
 -(void) testObserveValueForKeyPathSwitchesButtonAction
 {
+	[[itsButton expect] addTarget: itsController action:@selector(bringToLife:) forControlEvents: UIControlEventTouchUpInside];
+	
 	NSDictionary *dictionary = [NSDictionary dictionaryWithObject: [NSNumber numberWithBool:false] forKey: NSKeyValueChangeNewKey];
 	
 	[itsController observeValueForKeyPath:@"alive" ofObject: itsCell change: dictionary context:nil];
 
-	STAssertTrue([[itsButton actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"bringToLife:"], nil);
+	[itsButton verify];
 }
 
 -(void) testObserveValueForKeyPathSwitchesButtonActionToKill
 {
+	[[itsButton expect] addTarget: itsController action:@selector(kill:) forControlEvents: UIControlEventTouchUpInside];
+	
 	itsCell.alive = false;
 	NSDictionary *dictionary = [NSDictionary dictionaryWithObject: [NSNumber numberWithBool:true] forKey: NSKeyValueChangeNewKey];
 	
 	[itsController observeValueForKeyPath:@"alive" ofObject: itsCell change: dictionary context:nil];
-	
-	STAssertTrue([[itsButton actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"kill:"], nil);
+
+	[itsButton verify];
 }
 
 -(void) testObservingValueOfCellAlive
 {
+	[[itsButton expect] addTarget: itsController action:@selector(bringToLife:) forControlEvents: UIControlEventTouchUpInside];
 	[itsCell setAlive: false];
+	[itsButton verify];
 	
-	STAssertTrue([[itsButton actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"bringToLife:"], nil);
-	
+	[[itsButton expect] addTarget: itsController action:@selector(kill:) forControlEvents: UIControlEventTouchUpInside];	
 	[itsCell setAlive: true];
-	
-	STAssertTrue([[itsButton actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"kill:"], nil);
+	[itsButton verify];
 }
 
--(void) testKillChangesButtonsBackgroundImage
+-(void) testKillLoadsTheDeadCell
 {
-	[itsCell setAlive: false];
-
-	UIImage *image = [UIImage imageNamed:@"dead_cell.png"];
-	UIImage *imageReal = [itsButton imageForState:UIControlStateNormal];
+	OCMockObject *mockImageFactory = [OCMockObject mockForProtocol:@protocol(ImageFactory)];
+	itsController.imageFactory =(NSObject *)mockImageFactory;
 	
-	STAssertEqualObjects(image, imageReal, nil);
+	[[mockImageFactory expect] createFromName:@"dead_cell.png"];
+	
+	[itsController kill: nil];
+	
+	[mockImageFactory verify];
 }
 
--(void) testRessurectChangesButtonsBackgroundImage
+-(void) testKillChangesTheButtonBackgroundImageToTheDeadCell
 {
-	[itsCell setAlive: true];
+	id mockImage = [OCMockObject niceMockForClass:[UIButton class]];
+	OCMockObject *mockImageFactory = [OCMockObject mockForProtocol:@protocol(ImageFactory)];
+	[[[mockImageFactory stub] andReturn:mockImage] createFromName:@"dead_cell.png"];
+	itsController.imageFactory =(NSObject *)mockImageFactory;
+
+	[[itsButton expect] setImage:mockImage forState:UIControlStateNormal];
 	
-	UIImage *image = [UIImage imageNamed:@"alive_cell.png"];
-	UIImage *imageReal = [itsButton imageForState:UIControlStateNormal];
-	
-	STAssertEqualObjects(image, imageReal, nil);
+	[itsController kill: nil];
+
+	[itsButton verify];
 }
 
+-(void) testBringToLifeChangesButtonsBackgroundImage
+{
+	id mockImage = [OCMockObject niceMockForClass:[UIButton class]];
+	OCMockObject *mockImageFactory = [OCMockObject mockForProtocol:@protocol(ImageFactory)];
+	[[[mockImageFactory stub] andReturn:mockImage] createFromName:@"alive_cell.png"];
+	itsController.imageFactory =(NSObject *)mockImageFactory;
+	
+	[[itsButton expect] setImage:mockImage forState:UIControlStateNormal];
+	
+	[itsController bringToLife: nil];
+	
+	[itsButton verify];
+}
 
 @end

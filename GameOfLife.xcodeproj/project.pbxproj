@@ -9,13 +9,30 @@
 /* Begin PBXBuildFile section */
 		070AD5970F072F3500B77E82 /* GameOfLifeViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */; };
 		070AD5C70F07F22400B77E82 /* GameOfLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GameOfLifeViewController.m */; };
+		07221081100FDA9D0037BA66 /* GameOfLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GameOfLifeViewController.m */; };
+		07221082100FDA9D0037BA66 /* GameOfLifeViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */; };
+		07221087100FDA9D0037BA66 /* GOLBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F862C0280EDAF95100EB670B /* GOLBoard.m */; };
+		07221089100FDA9D0037BA66 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795BA00F0013CB004300C2 /* Game.m */; };
+		0722108A100FDA9D0037BA66 /* ButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078065DA0F11601000F1BFA8 /* ButtonController.m */; };
+		0722108B100FDA9D0037BA66 /* ConcreteButtonControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E84D820F119BFF005ACE54 /* ConcreteButtonControllerFactory.m */; };
+		0722108E100FDA9D0037BA66 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AAA30F192B870021879E /* Cell.m */; };
+		07221090100FDA9D0037BA66 /* MockButtonControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AC6D0F195CB20021879E /* MockButtonControllerFactory.m */; };
+		07221091100FDA9D0037BA66 /* MockBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 073644670F225F87005E020C /* MockBoard.m */; };
+		07221092100FDA9D0037BA66 /* MockGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 07678AE20F52CB7B00FEEACA /* MockGame.m */; };
+		07221094100FDA9D0037BA66 /* GameRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D520D60F68880F00164A46 /* GameRunner.m */; };
+		07221095100FDA9D0037BA66 /* MockGameRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 078DBE7A0F977E85003921DE /* MockGameRunner.m */; };
+		07221097100FDA9D0037BA66 /* MemoryChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 076238FC0FC3A89800B636CD /* MemoryChecker.m */; };
+		072210C4100FDDD60037BA66 /* GOLBoardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F862C00D0EDAF7EF00EB670B /* GOLBoardTest.m */; };
+		072210C5100FDDD60037BA66 /* GameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795B980F001372004300C2 /* GameTest.m */; };
+		072210C6100FDDD60037BA66 /* ConcreteButtonControllerFactoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E84DAE0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m */; };
+		072210C7100FDDD60037BA66 /* ButtonControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F421D0F12CF63005FE2AC /* ButtonControllerTest.m */; };
+		072210C8100FDDD60037BA66 /* GameRunnerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D520D10F6887CD00164A46 /* GameRunnerTest.m */; };
+		072210C9100FDDD60037BA66 /* MemoryCheckerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 076238F40FC3A7F000B636CD /* MemoryCheckerTest.m */; };
 		073644680F225F87005E020C /* MockBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 073644670F225F87005E020C /* MockBoard.m */; };
 		076238F60FC3A7F000B636CD /* MemoryCheckerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 076238F40FC3A7F000B636CD /* MemoryCheckerTest.m */; };
 		076238FE0FC3A89800B636CD /* MemoryChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 076238FC0FC3A89800B636CD /* MemoryChecker.m */; };
 		076788AF0F50C79400FEEACA /* alive_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 076788AE0F50C79400FEEACA /* alive_cell.png */; };
-		076788E90F50CF5E00FEEACA /* alive_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 076788AE0F50C79400FEEACA /* alive_cell.png */; };
 		0767890C0F50D30700FEEACA /* dead_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0767890B0F50D30700FEEACA /* dead_cell.png */; };
-		0767890D0F50D30700FEEACA /* dead_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0767890B0F50D30700FEEACA /* dead_cell.png */; };
 		07678AE30F52CB7B00FEEACA /* MockGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 07678AE20F52CB7B00FEEACA /* MockGame.m */; };
 		07678AE40F52CB7B00FEEACA /* MockGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 07678AE20F52CB7B00FEEACA /* MockGame.m */; };
 		078065DB0F11601000F1BFA8 /* ButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078065DA0F11601000F1BFA8 /* ButtonController.m */; };
@@ -26,6 +43,7 @@
 		0792AAA90F192BD80021879E /* CellTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AAA70F192BD80021879E /* CellTest.m */; };
 		0792AC6E0F195CB20021879E /* MockButtonControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AC6D0F195CB20021879E /* MockButtonControllerFactory.m */; };
 		079F421E0F12CF63005FE2AC /* ButtonControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F421D0F12CF63005FE2AC /* ButtonControllerTest.m */; };
+		07B1813C1010D09400B1985E /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B1813B1010D09400B1985E /* OCMock.framework */; };
 		07D520D20F6887CD00164A46 /* GameRunnerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D520D10F6887CD00164A46 /* GameRunnerTest.m */; };
 		07D520D70F68880F00164A46 /* GameRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D520D60F68880F00164A46 /* GameRunner.m */; };
 		07D520D80F68880F00164A46 /* GameRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D520D60F68880F00164A46 /* GameRunner.m */; };
@@ -40,9 +58,6 @@
 		2899E5220DE3E06400AC0155 /* GameOfLifeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* GameOfLifeViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* GameOfLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GameOfLifeViewController.m */; };
-		F862BFFC0EDAF65300EB670B /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F862BFF80EDAF65300EB670B /* GTMIPhoneUnitTestDelegate.m */; };
-		F862BFFD0EDAF65300EB670B /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F862BFF90EDAF65300EB670B /* GTMIPhoneUnitTestMain.m */; };
-		F862BFFE0EDAF65300EB670B /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F862BFFB0EDAF65300EB670B /* GTMSenTestCase.m */; };
 		F862C00E0EDAF7EF00EB670B /* GOLBoardTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F862C00D0EDAF7EF00EB670B /* GOLBoardTest.m */; };
 		F862C0290EDAF95100EB670B /* GOLBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F862C0280EDAF95100EB670B /* GOLBoard.m */; };
 		F862C02A0EDAF95100EB670B /* GOLBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = F862C0280EDAF95100EB670B /* GOLBoard.m */; };
@@ -53,6 +68,9 @@
 
 /* Begin PBXFileReference section */
 		070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeViewControllerTest.m; sourceTree = "<group>"; };
+		071FAEB1101246D200EE17EB /* ImageFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFactory.h; sourceTree = "<group>"; };
+		0722107C100FDA860037BA66 /* OCUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0722107D100FDA860037BA66 /* OCUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCUnitTests-Info.plist"; sourceTree = "<group>"; };
 		073644660F225F87005E020C /* MockBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockBoard.h; sourceTree = "<group>"; };
 		073644670F225F87005E020C /* MockBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockBoard.m; sourceTree = "<group>"; };
 		076238F40FC3A7F000B636CD /* MemoryCheckerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryCheckerTest.m; sourceTree = "<group>"; };
@@ -74,6 +92,7 @@
 		0792AC6C0F195CB20021879E /* MockButtonControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockButtonControllerFactory.h; sourceTree = "<group>"; };
 		0792AC6D0F195CB20021879E /* MockButtonControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockButtonControllerFactory.m; sourceTree = "<group>"; };
 		079F421D0F12CF63005FE2AC /* ButtonControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonControllerTest.m; sourceTree = "<group>"; };
+		07B1813B1010D09400B1985E /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Frameworks/OCMock.framework; sourceTree = "<group>"; };
 		07D520D10F6887CD00164A46 /* GameRunnerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameRunnerTest.m; sourceTree = "<group>"; };
 		07D520D50F68880F00164A46 /* GameRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRunner.h; sourceTree = "<group>"; };
 		07D520D60F68880F00164A46 /* GameRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameRunner.m; sourceTree = "<group>"; };
@@ -95,12 +114,6 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F862BFF10EDAF62700EB670B /* UnitTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F862BFF30EDAF62700EB670B /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
-		F862BFF70EDAF65300EB670B /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMIPhoneUnitTestDelegate.h; sourceTree = "<group>"; };
-		F862BFF80EDAF65300EB670B /* GTMIPhoneUnitTestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestDelegate.m; sourceTree = "<group>"; };
-		F862BFF90EDAF65300EB670B /* GTMIPhoneUnitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMIPhoneUnitTestMain.m; sourceTree = "<group>"; };
-		F862BFFA0EDAF65300EB670B /* GTMSenTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMSenTestCase.h; sourceTree = "<group>"; };
-		F862BFFB0EDAF65300EB670B /* GTMSenTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMSenTestCase.m; sourceTree = "<group>"; };
-		F862BFFF0EDAF66500EB670B /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 		F862C00D0EDAF7EF00EB670B /* GOLBoardTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GOLBoardTest.m; sourceTree = "<group>"; };
 		F862C0270EDAF95100EB670B /* GOLBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GOLBoard.h; path = Classes/GOLBoard.h; sourceTree = "<group>"; };
 		F862C0280EDAF95100EB670B /* GOLBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GOLBoard.m; path = Classes/GOLBoard.m; sourceTree = "<group>"; };
@@ -112,6 +125,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		07221079100FDA860037BA66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07B1813C1010D09400B1985E /* OCMock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,6 +160,7 @@
 				0792AC5A0F195BE70021879E /* ButtonControllerFactoryProtocol.h */,
 				F8B753C10F015A4700839756 /* BoardProtocol.h */,
 				078DBE7C0F977EE8003921DE /* GameRunnerProtocol.h */,
+				071FAEB1101246D200EE17EB /* ImageFactory.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -234,6 +256,7 @@
 			children = (
 				1D6058910D05DD3D006BFB54 /* GameOfLife.app */,
 				F862BFF10EDAF62700EB670B /* UnitTests.app */,
+				0722107C100FDA860037BA66 /* OCUnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -250,6 +273,7 @@
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				F862BFF30EDAF62700EB670B /* UnitTests-Info.plist */,
+				0722107D100FDA860037BA66 /* OCUnitTests-Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -278,6 +302,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07B1813B1010D09400B1985E /* OCMock.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
@@ -298,12 +323,6 @@
 		F862C00F0EDAF80800EB670B /* Unit Test Framework */ = {
 			isa = PBXGroup;
 			children = (
-				F862BFFF0EDAF66500EB670B /* GTMDefines.h */,
-				F862BFF70EDAF65300EB670B /* GTMIPhoneUnitTestDelegate.h */,
-				F862BFF80EDAF65300EB670B /* GTMIPhoneUnitTestDelegate.m */,
-				F862BFF90EDAF65300EB670B /* GTMIPhoneUnitTestMain.m */,
-				F862BFFA0EDAF65300EB670B /* GTMSenTestCase.h */,
-				F862BFFB0EDAF65300EB670B /* GTMSenTestCase.m */,
 				076238FB0FC3A89800B636CD /* MemoryChecker.h */,
 				076238FC0FC3A89800B636CD /* MemoryChecker.m */,
 			);
@@ -313,6 +332,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0722107B100FDA860037BA66 /* OCUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07221080100FDA870037BA66 /* Build configuration list for PBXNativeTarget "OCUnitTests" */;
+			buildPhases = (
+				07221077100FDA860037BA66 /* Resources */,
+				07221078100FDA860037BA66 /* Sources */,
+				07221079100FDA860037BA66 /* Frameworks */,
+				0722107A100FDA860037BA66 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCUnitTests;
+			productName = OCUnitTests;
+			productReference = 0722107C100FDA860037BA66 /* OCUnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		1D6058900D05DD3D006BFB54 /* GameOfLife */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "GameOfLife" */;
@@ -362,11 +399,19 @@
 			targets = (
 				1D6058900D05DD3D006BFB54 /* GameOfLife */,
 				F862BFF00EDAF62700EB670B /* UnitTests */,
+				0722107B100FDA860037BA66 /* OCUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		07221077100FDA860037BA66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,14 +427,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				076788E90F50CF5E00FEEACA /* alive_cell.png in Resources */,
-				0767890D0F50D30700FEEACA /* dead_cell.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0722107A100FDA860037BA66 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 		F862C0010EDAF66F00EB670B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -406,6 +462,32 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		07221078100FDA860037BA66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07221082100FDA9D0037BA66 /* GameOfLifeViewControllerTest.m in Sources */,
+				072210C4100FDDD60037BA66 /* GOLBoardTest.m in Sources */,
+				072210C5100FDDD60037BA66 /* GameTest.m in Sources */,
+				072210C6100FDDD60037BA66 /* ConcreteButtonControllerFactoryTest.m in Sources */,
+				072210C7100FDDD60037BA66 /* ButtonControllerTest.m in Sources */,
+				072210C8100FDDD60037BA66 /* GameRunnerTest.m in Sources */,
+				072210C9100FDDD60037BA66 /* MemoryCheckerTest.m in Sources */,
+				07221081100FDA9D0037BA66 /* GameOfLifeViewController.m in Sources */,
+				07221087100FDA9D0037BA66 /* GOLBoard.m in Sources */,
+				07221089100FDA9D0037BA66 /* Game.m in Sources */,
+				0722108A100FDA9D0037BA66 /* ButtonController.m in Sources */,
+				0722108B100FDA9D0037BA66 /* ConcreteButtonControllerFactory.m in Sources */,
+				0722108E100FDA9D0037BA66 /* Cell.m in Sources */,
+				07221090100FDA9D0037BA66 /* MockButtonControllerFactory.m in Sources */,
+				07221091100FDA9D0037BA66 /* MockBoard.m in Sources */,
+				07221092100FDA9D0037BA66 /* MockGame.m in Sources */,
+				07221094100FDA9D0037BA66 /* GameRunner.m in Sources */,
+				07221095100FDA9D0037BA66 /* MockGameRunner.m in Sources */,
+				07221097100FDA9D0037BA66 /* MemoryChecker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -429,9 +511,6 @@
 			files = (
 				070AD5C70F07F22400B77E82 /* GameOfLifeViewController.m in Sources */,
 				070AD5970F072F3500B77E82 /* GameOfLifeViewControllerTest.m in Sources */,
-				F862BFFC0EDAF65300EB670B /* GTMIPhoneUnitTestDelegate.m in Sources */,
-				F862BFFD0EDAF65300EB670B /* GTMIPhoneUnitTestMain.m in Sources */,
-				F862BFFE0EDAF65300EB670B /* GTMSenTestCase.m in Sources */,
 				F862C00E0EDAF7EF00EB670B /* GOLBoardTest.m in Sources */,
 				F862C0290EDAF95100EB670B /* GOLBoard.m in Sources */,
 				F8795B990F001372004300C2 /* GameTest.m in Sources */,
@@ -456,6 +535,62 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		0722107E100FDA870037BA66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "OCUnitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = OCUnitTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0722107F100FDA870037BA66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "OCUnitTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = OCUnitTests;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -561,6 +696,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		07221080100FDA870037BA66 /* Build configuration list for PBXNativeTarget "OCUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0722107E100FDA870037BA66 /* Debug */,
+				0722107F100FDA870037BA66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "GameOfLife" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

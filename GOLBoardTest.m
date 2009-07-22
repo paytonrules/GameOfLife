@@ -1,6 +1,5 @@
 #import "GOLBoard.h"
-#import "GTMSenTestCase.h"
-
+#import <SenTestingKit/SenTestingKit.h>
 @interface GOLBoardTest : SenTestCase {
 	GOLBoard *itsBoard;
 }

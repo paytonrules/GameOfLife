@@ -1,9 +1,9 @@
+#import <SenTestingKit/SenTestingKit.h>
 #import "GameOfLifeViewController.h"
 #import "MockButtonControllerFactory.h"
 #import "MockBoard.h"
 #import "MockGame.h"
 #import "MockGameRunner.h"
-#import "GTMSenTestCase.h"
 #import "MemoryChecker.h"
 
 @interface GameOfLifeViewControllerTest : SenTestCase {

@@ -1,5 +1,4 @@
 #import "MemoryChecker.h"
-#import "GTMSenTestCase.h"
 
 static MemoryChecker *checker = nil;
 

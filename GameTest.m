@@ -1,4 +1,4 @@
-#import "GTMSenTestCase.h"
+#import <SenTestingKit/SenTestingKit.h>
 #import "GOLBoard.h"
 #import "Game.h"
 

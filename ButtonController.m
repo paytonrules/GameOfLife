@@ -2,6 +2,7 @@
 
 @implementation ButtonController
 @synthesize cell;
+@synthesize imageFactory;
 
 - (id )init
 {
@@ -28,7 +29,7 @@
 {
 	[(UIButton *)self.view removeTarget:self action:@selector(bringToLife:) forControlEvents:UIControlEventTouchUpInside];
 	[(UIButton *)self.view addTarget:self action: @selector(kill:) forControlEvents:UIControlEventTouchUpInside];
-	[(UIButton *)self.view setImage:[UIImage imageNamed:@"alive_cell.png"] forState:UIControlStateNormal];
+	[(UIButton *)self.view setImage:[imageFactory createFromName:@"alive_cell.png"] forState:UIControlStateNormal];
 }
 
 - (void) kill: (id)sender 
@@ -40,7 +41,7 @@
 {
 	[(UIButton *)self.view removeTarget:self action:@selector(kill:) forControlEvents:UIControlEventTouchUpInside];
 	[(UIButton *)self.view addTarget:self action: @selector(bringToLife:) forControlEvents:UIControlEventTouchUpInside];
-	[(UIButton *)self.view setImage:[UIImage imageNamed:@"dead_cell.png"] forState:UIControlStateNormal];
+	[(UIButton *)self.view setImage:[imageFactory createFromName:@"dead_cell.png"] forState:UIControlStateNormal];
 }	
 	
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
@@ -68,6 +69,7 @@
 {
 	[cell removeObserver:self forKeyPath:@"alive"];
 	[cell release];
+	[imageFactory release];
 	[super dealloc];
 }
 
