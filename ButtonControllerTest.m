@@ -18,7 +18,7 @@
 -(void) setUp 
 {
 	itsCell = [[Cell alloc] init];
-	itsController = [[ButtonController alloc] initWithCell: itsCell];
+	itsController = [[ButtonController alloc] initWithCell: itsCell at: CGPointMake(0.0, 0.0) sizeOf: CGRectMake(0.0, 0.0, 0.0, 0.0)];
 	itsButton = [OCMockObject niceMockForClass:[UIButton class]];
 
 	itsController.view =	(UIButton *)itsButton;
@@ -28,6 +28,12 @@
 {
 	[itsCell release];
 	[itsController release];
+}
+
+-(void) testButtonCreated
+{
+
+	STAssertNotNil(itsController.view, nil);
 }
 
 -(void) testCustomInit 
@@ -88,6 +94,7 @@
 	[itsButton verify];
 }
 
+// Not sure this belongs here.  
 -(void) testObservingValueOfCellAlive
 {
 	[[itsButton expect] addTarget: itsController action:@selector(bringToLife:) forControlEvents: UIControlEventTouchUpInside];
@@ -99,44 +106,27 @@
 	[itsButton verify];
 }
 
--(void) testKillLoadsTheDeadCell
-{
-	OCMockObject *mockImageFactory = [OCMockObject mockForProtocol:@protocol(ImageFactory)];
-	itsController.imageFactory =(NSObject *)mockImageFactory;
+-(void) testKillSwitchesTheViewToTheDeadCell
+{	
+	id deadCell = [OCMockObject niceMockForClass:[UIImage class]];
+	[itsController setValue:deadCell forKey:@"deadCell"];
 	
-	[[mockImageFactory expect] createFromName:@"dead_cell.png"];
-	
-	[itsController kill: nil];
-	
-	[mockImageFactory verify];
-}
+	[[itsButton expect] setImage:deadCell forState:UIControlStateNormal];
 
--(void) testKillChangesTheButtonBackgroundImageToTheDeadCell
-{
-	id mockImage = [OCMockObject niceMockForClass:[UIButton class]];
-	OCMockObject *mockImageFactory = [OCMockObject mockForProtocol:@protocol(ImageFactory)];
-	[[[mockImageFactory stub] andReturn:mockImage] createFromName:@"dead_cell.png"];
-	itsController.imageFactory =(NSObject *)mockImageFactory;
-
-	[[itsButton expect] setImage:mockImage forState:UIControlStateNormal];
-	
-	[itsController kill: nil];
-
-	[itsButton verify];
-}
-
--(void) testBringToLifeChangesButtonsBackgroundImage
-{
-	id mockImage = [OCMockObject niceMockForClass:[UIButton class]];
-	OCMockObject *mockImageFactory = [OCMockObject mockForProtocol:@protocol(ImageFactory)];
-	[[[mockImageFactory stub] andReturn:mockImage] createFromName:@"alive_cell.png"];
-	itsController.imageFactory =(NSObject *)mockImageFactory;
-	
-	[[itsButton expect] setImage:mockImage forState:UIControlStateNormal];
-	
-	[itsController bringToLife: nil];
+	[itsController kill:nil];
 	
 	[itsButton verify];
 }
 
+-(void) testBringToLifeSwitchesTheViewToTheAliveCell
+{	
+	id aliveCell = [OCMockObject niceMockForClass:[UIImage class]];
+	[itsController setValue:aliveCell forKey:@"aliveCell"];
+
+	[[itsButton expect] setImage:aliveCell forState:UIControlStateNormal];
+	
+	[itsController bringToLife:nil];
+	
+	[itsButton verify];
+}
 @end

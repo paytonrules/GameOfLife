@@ -29,6 +29,7 @@
 		072210C8100FDDD60037BA66 /* GameRunnerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D520D10F6887CD00164A46 /* GameRunnerTest.m */; };
 		072210C9100FDDD60037BA66 /* MemoryCheckerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 076238F40FC3A7F000B636CD /* MemoryCheckerTest.m */; };
 		073644680F225F87005E020C /* MockBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 073644670F225F87005E020C /* MockBoard.m */; };
+		0738A94E101A03E90019EF0A /* ButtonControllerRealButtonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0738A94D101A03E90019EF0A /* ButtonControllerRealButtonTest.m */; };
 		076238F60FC3A7F000B636CD /* MemoryCheckerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 076238F40FC3A7F000B636CD /* MemoryCheckerTest.m */; };
 		076238FE0FC3A89800B636CD /* MemoryChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 076238FC0FC3A89800B636CD /* MemoryChecker.m */; };
 		076788AF0F50C79400FEEACA /* alive_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 076788AE0F50C79400FEEACA /* alive_cell.png */; };
@@ -73,6 +74,7 @@
 		0722107D100FDA860037BA66 /* OCUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCUnitTests-Info.plist"; sourceTree = "<group>"; };
 		073644660F225F87005E020C /* MockBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockBoard.h; sourceTree = "<group>"; };
 		073644670F225F87005E020C /* MockBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockBoard.m; sourceTree = "<group>"; };
+		0738A94D101A03E90019EF0A /* ButtonControllerRealButtonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonControllerRealButtonTest.m; sourceTree = "<group>"; };
 		076238F40FC3A7F000B636CD /* MemoryCheckerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryCheckerTest.m; sourceTree = "<group>"; };
 		076238FB0FC3A89800B636CD /* MemoryChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryChecker.h; sourceTree = "<group>"; };
 		076238FC0FC3A89800B636CD /* MemoryChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryChecker.m; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */,
 				07E84DAE0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m */,
 				079F421D0F12CF63005FE2AC /* ButtonControllerTest.m */,
+				0738A94D101A03E90019EF0A /* ButtonControllerRealButtonTest.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				07221094100FDA9D0037BA66 /* GameRunner.m in Sources */,
 				07221095100FDA9D0037BA66 /* MockGameRunner.m in Sources */,
 				07221097100FDA9D0037BA66 /* MemoryChecker.m in Sources */,
+				0738A94E101A03E90019EF0A /* ButtonControllerRealButtonTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -37,33 +37,19 @@
 {
 	STAssertNotNil(itsFactory, nil);
 }
-//
-//-(void)testCreatesButtonController 
-//{
-//	STAssertNotNil(itsController, nil);
-//}
-//
-//-(void)testAssignsItsView 
-//{
-//	UIButton *button = (UIButton *)itsController.view;
-//	
-//	STAssertEquals(button.frame.size.width, 20.0f,nil);
-//	STAssertEquals(button.frame.size.height, 20.0f,nil);
-//	STAssertEquals(button.center.x, 1.0f, nil);
-//	STAssertEquals(button.center.y, 2.0f, nil);
-//}
-//
-//-(void)testAssignsActionToView 
-//{
-//	UIButton *button = (UIButton *)itsController.view;
-//	
-//	STAssertTrue([[button actionsForTarget: itsController forControlEvent: UIControlEventTouchUpInside] containsObject:@"bringToLife:"], nil);
-//}
-//
-//-(void)testViewSetToDead
-//{
-//	UIButton *button = (UIButton *)itsController.view;
-//	
-//	STAssertEqualObjects([UIImage imageNamed:@"dead_cell.png"], [button imageForState:UIControlStateNormal], nil);
-//}
+
+-(void)testCreatesButtonController 
+{
+	STAssertNotNil(itsController, nil);
+}
+
+-(void)testSetsThePropertiesOfTheButton 
+{
+	UIButton *button = (UIButton *)itsController.view;
+	
+	STAssertEquals(button.frame.size.width, 20.0f,nil);
+	STAssertEquals(button.frame.size.height, 20.0f,nil);
+	STAssertEquals(button.center.x, 1.0f, nil);
+	STAssertEquals(button.center.y, 2.0f, nil);
+}
 @end
