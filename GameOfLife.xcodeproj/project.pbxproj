@@ -10,8 +10,6 @@
 		070AD5970F072F3500B77E82 /* GameOfLifeViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */; };
 		070AD5C70F07F22400B77E82 /* GameOfLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GameOfLifeViewController.m */; };
 		073644680F225F87005E020C /* MockBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 073644670F225F87005E020C /* MockBoard.m */; };
-		076238F60FC3A7F000B636CD /* MemoryCheckerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 076238F40FC3A7F000B636CD /* MemoryCheckerTest.m */; };
-		076238FE0FC3A89800B636CD /* MemoryChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 076238FC0FC3A89800B636CD /* MemoryChecker.m */; };
 		076788AF0F50C79400FEEACA /* alive_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 076788AE0F50C79400FEEACA /* alive_cell.png */; };
 		076788E90F50CF5E00FEEACA /* alive_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 076788AE0F50C79400FEEACA /* alive_cell.png */; };
 		0767890C0F50D30700FEEACA /* dead_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0767890B0F50D30700FEEACA /* dead_cell.png */; };
@@ -55,9 +53,6 @@
 		070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeViewControllerTest.m; sourceTree = "<group>"; };
 		073644660F225F87005E020C /* MockBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockBoard.h; sourceTree = "<group>"; };
 		073644670F225F87005E020C /* MockBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockBoard.m; sourceTree = "<group>"; };
-		076238F40FC3A7F000B636CD /* MemoryCheckerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryCheckerTest.m; sourceTree = "<group>"; };
-		076238FB0FC3A89800B636CD /* MemoryChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryChecker.h; sourceTree = "<group>"; };
-		076238FC0FC3A89800B636CD /* MemoryChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryChecker.m; sourceTree = "<group>"; };
 		076788AE0F50C79400FEEACA /* alive_cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alive_cell.png; sourceTree = "<group>"; };
 		0767890B0F50D30700FEEACA /* dead_cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dead_cell.png; sourceTree = "<group>"; };
 		07678AE10F52CB7B00FEEACA /* MockGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockGame.h; sourceTree = "<group>"; };
@@ -288,7 +283,6 @@
 		F862BFEC0EDAF60F00EB670B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				076238F40FC3A7F000B636CD /* MemoryCheckerTest.m */,
 				079F421B0F12CEDE005FE2AC /* Models */,
 				079F421A0F12CEC7005FE2AC /* ViewControllers */,
 			);
@@ -304,8 +298,6 @@
 				F862BFF90EDAF65300EB670B /* GTMIPhoneUnitTestMain.m */,
 				F862BFFA0EDAF65300EB670B /* GTMSenTestCase.h */,
 				F862BFFB0EDAF65300EB670B /* GTMSenTestCase.m */,
-				076238FB0FC3A89800B636CD /* MemoryChecker.h */,
-				076238FC0FC3A89800B636CD /* MemoryChecker.m */,
 			);
 			name = "Unit Test Framework";
 			sourceTree = "<group>";
@@ -448,8 +440,6 @@
 				07D520D20F6887CD00164A46 /* GameRunnerTest.m in Sources */,
 				07D520D70F68880F00164A46 /* GameRunner.m in Sources */,
 				078DBE7B0F977E85003921DE /* MockGameRunner.m in Sources */,
-				076238F60FC3A7F000B636CD /* MemoryCheckerTest.m in Sources */,
-				076238FE0FC3A89800B636CD /* MemoryChecker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
