@@ -50,6 +50,7 @@
 		F8795B990F001372004300C2 /* GameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795B980F001372004300C2 /* GameTest.m */; };
 		F8795BA10F0013CB004300C2 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795BA00F0013CB004300C2 /* Game.m */; };
 		F8795BA20F0013CB004300C2 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795BA00F0013CB004300C2 /* Game.m */; };
+		F8BD043E1046E789005B7EA7 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = F8BD043D1046E789005B7EA7 /* background2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +112,7 @@
 		F8795BA00F0013CB004300C2 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = Classes/Game.m; sourceTree = "<group>"; };
 		F8AE53070F5389B10017008D /* GameProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameProtocol.h; sourceTree = "<group>"; };
 		F8B753C10F015A4700839756 /* BoardProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoardProtocol.h; path = Classes/BoardProtocol.h; sourceTree = "<group>"; };
+		F8BD043D1046E789005B7EA7 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +270,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F8BD043D1046E789005B7EA7 /* background2.png */,
 				F8502E9B10460F9300256977 /* icon.tiff */,
 				0767890B0F50D30700FEEACA /* dead_cell.png */,
 				076788AE0F50C79400FEEACA /* alive_cell.png */,
@@ -379,6 +382,7 @@
 				076788AF0F50C79400FEEACA /* alive_cell.png in Resources */,
 				0767890C0F50D30700FEEACA /* dead_cell.png in Resources */,
 				F8502E9C10460F9300256977 /* icon.tiff in Resources */,
+				F8BD043E1046E789005B7EA7 /* background2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
