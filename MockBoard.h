@@ -5,6 +5,8 @@
 @interface MockBoard : NSObject<BoardProtocol> 
 {
 	Cell	*itsCell;
+	BOOL	clearCalled;
 }
+@property BOOL clearCalled;
 
 @end

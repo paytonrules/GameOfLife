@@ -1,10 +1,13 @@
 #import "MockBoard.h"
 @implementation MockBoard
 
+@synthesize clearCalled;
+
 -(id) init
 {
 	[super init];
 	itsCell = [[Cell alloc] init];
+	clearCalled = false;
 	return self;
 }	
 
@@ -23,6 +26,11 @@
 
 -(void) killCellAt: (int) x by: (int) y 
 {
+}
+
+-(void) clear
+{
+	clearCalled = true;
 }
 
 -(int) livingNeighborsAt: (int) x by: (int) y 

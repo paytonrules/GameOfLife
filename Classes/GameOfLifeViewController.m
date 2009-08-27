@@ -17,7 +17,7 @@
 	{
 		for (int column = 0; column < [board columns]; column++)
 		{
-			CGPoint point = CGPointMake([GameOfLifeViewController calculatePositionFor: row], [GameOfLifeViewController calculatePositionFor: column]);
+			CGPoint point = CGPointMake([GameOfLifeViewController calculatePositionFor: row], [GameOfLifeViewController calculatePositionFor: column]+50.0f);
 			CGRect rect = CGRectMake(0.0f, 0.0f, 20.0f, 20.0f);
 		 
 			ButtonController *controller = [self.buttonFactory createButtonControllerForCell:[board getCellAt:row by:column] at:point sizeOf:rect];
@@ -51,6 +51,11 @@
 -(void) advance: (id) sender
 {
 	[game advanceGeneration];
+}
+
+- (void) clear: (id) sender
+{
+	[board clear];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 

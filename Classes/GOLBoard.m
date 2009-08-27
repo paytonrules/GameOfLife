@@ -67,6 +67,17 @@
 	board[x][y].alive = false;
 }
 
+-(void) clear
+{
+	for(int x=0; x < [self columns]; x++) 
+	{
+		for(int y=0; y < [self rows] ; y++) 
+		{
+			[self killCellAt: x by: y];
+		}
+	}
+}
+
 -(int)livingNeighborsAt: (int) x by: (int) y 
 {
 	int living_neighbors = 0;

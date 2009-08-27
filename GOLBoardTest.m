@@ -202,4 +202,16 @@
 	STAssertEquals(COLUMNS, [itsBoard columns], nil);
 }
 
+-(void)testClearBoard {
+	[itsBoard bringToLifeAt:0 by:0];
+	[itsBoard bringToLifeAt:1 by:2];
+	[itsBoard clear];
+	
+	bool firstAlive = [itsBoard isCellAliveAt: 0 by: 0];
+	bool secondAlive = [itsBoard isCellAliveAt: 1 by: 2];
+	
+	STAssertFalse(firstAlive, @"");
+	STAssertFalse(secondAlive, @"");
+}
+
 @end

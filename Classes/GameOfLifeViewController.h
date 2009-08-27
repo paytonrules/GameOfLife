@@ -21,6 +21,7 @@
 - (void) start:(id) sender;
 - (void) stop: (id) sender;
 - (void) advance: (id) sender;
+- (void) clear: (id) sender;
 
 
 @end
