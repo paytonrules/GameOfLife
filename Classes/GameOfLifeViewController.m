@@ -53,6 +53,11 @@
 	[game advanceGeneration];
 }
 
+- (void) clear: (id) sender
+{
+	[board clear];
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation 
 {
 	return (interfaceOrientation == UIInterfaceOrientationPortrait);

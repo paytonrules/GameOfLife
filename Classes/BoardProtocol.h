@@ -9,6 +9,7 @@
 	-(Cell*) getCellAt: (int) x by: (int) y;
 	-(int) rows;
 	-(int) columns;
+	-(void) clear;
 @end
 
 

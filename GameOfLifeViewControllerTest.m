@@ -125,6 +125,13 @@
 	
 	STAssertTrue([itsGame advanceGenerationCalled], nil);
 }
+
+-(void) testClearCallsClear
+{
+	[itsController clear: nil];
 	
+	STAssertTrue(itsBoard.clearCalled, @"");
+	
+}
 
 @end
