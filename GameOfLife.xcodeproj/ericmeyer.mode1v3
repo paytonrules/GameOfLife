@@ -287,14 +287,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>49</integer>
-									<integer>46</integer>
-									<integer>36</integer>
+									<integer>7</integer>
+									<integer>6</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 317}, {255, 760}}</string>
+							<string>{{0, 0}, {255, 760}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -331,7 +330,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GameOfLifeViewController.h</string>
+								<string>GTMDefines.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -339,11 +338,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GameOfLifeViewController.h</string>
+										<string>GTMDefines.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>F8502E9910460F5B00256977</string>
+										<string>F898042B104702A7000C0D24</string>
 										<key>history</key>
 										<array>
 											<string>F8D15E970F05D1FC008A8974</string>
@@ -359,7 +358,6 @@
 											<string>F8AE53120F538B210017008D</string>
 											<string>F8AE53DA0F53932D0017008D</string>
 											<string>F8AE53DF0F5397490017008D</string>
-											<string>F8AE53EE0F5399310017008D</string>
 											<string>F8AE53FC0F5399B80017008D</string>
 											<string>F8AE54220F539C990017008D</string>
 											<string>F8AE54230F539C990017008D</string>
@@ -367,7 +365,6 @@
 											<string>F83B68D80F5D7A63008D333D</string>
 											<string>F85718520F601F2100B48002</string>
 											<string>F85B1CCA0F64372F00692B1A</string>
-											<string>F85B1CCB0F64372F00692B1A</string>
 											<string>F85B1CCC0F64372F00692B1A</string>
 											<string>F85B1CCD0F64372F00692B1A</string>
 											<string>F85B1CCE0F64372F00692B1A</string>
@@ -383,7 +380,9 @@
 											<string>F8502E8810460EFE00256977</string>
 											<string>F8502E9510460F5B00256977</string>
 											<string>F8502E9610460F5B00256977</string>
-											<string>F8502E8910460EFE00256977</string>
+											<string>F8980427104702A7000C0D24</string>
+											<string>F8980428104702A7000C0D24</string>
+											<string>F85B1CCB0F64372F00692B1A</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -424,31 +423,10 @@
 											<string>F8AE53CC0F5392990017008D</string>
 											<string>F85B1CD40F64372F00692B1A</string>
 											<string>F85B1CD50F64372F00692B1A</string>
-											<string>F8502E6610460E0D00256977</string>
-											<string>F8502E6710460E0D00256977</string>
-											<string>F8502E6810460E0D00256977</string>
-											<string>F8502E6910460E0D00256977</string>
-											<string>F8502E6A10460E0D00256977</string>
-											<string>F8502E6B10460E0D00256977</string>
 											<string>F8502E6C10460E0D00256977</string>
-											<string>F8502E6D10460E0D00256977</string>
-											<string>F8502E6E10460E0D00256977</string>
-											<string>F8502E6F10460E0D00256977</string>
-											<string>F8502E7010460E0D00256977</string>
-											<string>F8502E7110460E0D00256977</string>
-											<string>F8502E7210460E0D00256977</string>
-											<string>F8502E7310460E0D00256977</string>
 											<string>F8502E7410460E0D00256977</string>
-											<string>F8502E7510460E0D00256977</string>
-											<string>F8502E8B10460EFE00256977</string>
-											<string>F8502E8C10460EFE00256977</string>
-											<string>F8502E8D10460EFE00256977</string>
-											<string>F8502E8E10460EFE00256977</string>
-											<string>F8502E8F10460EFE00256977</string>
-											<string>F8502E9010460EFE00256977</string>
-											<string>F8502E9110460EFE00256977</string>
-											<string>F8502E9710460F5B00256977</string>
-											<string>F8502E9810460F5B00256977</string>
+											<string>F8980429104702A7000C0D24</string>
+											<string>F898042A104702A7000C0D24</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -506,9 +484,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>F8502E4410460B4B00256977</string>
+				<string>F898042C104702A7000C0D24</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>F8502E4510460B4B00256977</string>
+				<string>F898042D104702A7000C0D24</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -642,8 +620,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>F862BFE00EDAF5EE00EB670B</string>
 		<string>/Users/ericmeyer/Projects/iPhone/GameOfLife/GameOfLife.xcodeproj</string>
 	</array>
@@ -664,14 +640,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GameOfLifeViewControllerTest.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -688,6 +662,8 @@
 							<string>379pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXBuildLogShowsTranscriptDefaultKey</key>
@@ -729,7 +705,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>F862BFE00EDAF5EE00EB670B</string>
-				<string>F8502E4610460B4B00256977</string>
+				<string>F8980426104702A7000C0D24</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

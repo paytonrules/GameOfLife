@@ -44,9 +44,9 @@
 	};
 	078065DA0F11601000F1BFA8 /* ButtonController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1165, 1134}}";
-			sepNavSelRange = "{363, 0}";
-			sepNavVisRange = "{214, 226}";
+			sepNavIntBoundsRect = "{{0, 0}, {1102, 1064}}";
+			sepNavSelRange = "{437, 0}";
+			sepNavVisRange = "{167, 1318}";
 			sepNavWindowFrame = "{{84, 139}, {1054, 671}}";
 		};
 	};
@@ -136,8 +136,8 @@
 	};
 	28D7ACF60DDB3853001CB0EB /* GameOfLifeViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1102, 616}}";
-			sepNavSelRange = "{219, 8}";
+			sepNavIntBoundsRect = "{{0, 0}, {1102, 639}}";
+			sepNavSelRange = "{847, 0}";
 			sepNavVisRange = "{0, 870}";
 			sepNavWindowFrame = "{{15, 202}, {1054, 671}}";
 		};
@@ -151,9 +151,9 @@
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
-		activeExecutable = F862BFD30EDAF5E300EB670B /* GameOfLife */;
+		activeExecutable = F862BFF20EDAF62700EB670B /* UnitTests */;
 		activeSDKPreference = iphoneos3.0;
-		activeTarget = 1D6058900D05DD3D006BFB54 /* GameOfLife */;
+		activeTarget = F862BFF00EDAF62700EB670B /* UnitTests */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* GameOfLife */,
 		);
@@ -237,8 +237,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 273080880;
-			PBXWorkspaceStateSaveDate = 273080880;
+			PBXPerProjectTemplateStateSaveDate = 273089132;
+			PBXWorkspaceStateSaveDate = 273089132;
 		};
 		perUserProjectItems = {
 			F8230E170F1A7BFE0097AB26 = F8230E170F1A7BFE0097AB26 /* PBXTextBookmark */;
@@ -354,6 +354,11 @@
 			F8795BBB0F0013EC004300C2 = F8795BBB0F0013EC004300C2 /* PBXTextBookmark */;
 			F8795BC10F0015BD004300C2 = F8795BC10F0015BD004300C2 /* PBXTextBookmark */;
 			F87BA7230F003DF200310F64 = F87BA7230F003DF200310F64 /* PBXTextBookmark */;
+			F8980427104702A7000C0D24 /* PBXTextBookmark */ = F8980427104702A7000C0D24 /* PBXTextBookmark */;
+			F8980428104702A7000C0D24 /* PBXTextBookmark */ = F8980428104702A7000C0D24 /* PBXTextBookmark */;
+			F8980429104702A7000C0D24 /* PBXTextBookmark */ = F8980429104702A7000C0D24 /* PBXTextBookmark */;
+			F898042A104702A7000C0D24 /* PBXTextBookmark */ = F898042A104702A7000C0D24 /* PBXTextBookmark */;
+			F898042B104702A7000C0D24 /* PBXTextBookmark */ = F898042B104702A7000C0D24 /* PBXTextBookmark */;
 			F89C4C9B0EDB00D10060BB11 = F89C4C9B0EDB00D10060BB11 /* PBXTextBookmark */;
 			F89C4C9D0EDB00D10060BB11 = F89C4C9D0EDB00D10060BB11 /* PBXTextBookmark */;
 			F8AE53120F538B210017008D = F8AE53120F538B210017008D /* PBXTextBookmark */;
@@ -1523,9 +1528,9 @@
 	};
 	F862BFFF0EDAF66500EB670B /* GTMDefines.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1576, 2338}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1102, 3528}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{2943, 2411}";
+			sepNavVisRange = "{0, 1707}";
 		};
 	};
 	F862C00D0EDAF7EF00EB670B /* GOLBoardTest.m */ = {
@@ -1658,6 +1663,56 @@
 		rLoc = 0;
 		rType = 0;
 		vrLen = 1130;
+		vrLoc = 0;
+	};
+	F8980427104702A7000C0D24 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* GameOfLifeViewController.h */;
+		name = "GameOfLifeViewController.h: 24";
+		rLen = 0;
+		rLoc = 847;
+		rType = 0;
+		vrLen = 870;
+		vrLoc = 0;
+	};
+	F8980428104702A7000C0D24 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 078065DA0F11601000F1BFA8 /* ButtonController.m */;
+		name = "ButtonController.m: 29";
+		rLen = 0;
+		rLoc = 437;
+		rType = 0;
+		vrLen = 1318;
+		vrLoc = 167;
+	};
+	F8980429104702A7000C0D24 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* GameOfLifeViewController.h */;
+		name = "GameOfLifeViewController.h: 24";
+		rLen = 0;
+		rLoc = 847;
+		rType = 0;
+		vrLen = 870;
+		vrLoc = 0;
+	};
+	F898042A104702A7000C0D24 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 078065DA0F11601000F1BFA8 /* ButtonController.m */;
+		name = "ButtonController.m: 29";
+		rLen = 0;
+		rLoc = 437;
+		rType = 0;
+		vrLen = 1318;
+		vrLoc = 167;
+	};
+	F898042B104702A7000C0D24 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F862BFFF0EDAF66500EB670B /* GTMDefines.h */;
+		name = "GTMDefines.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1707;
 		vrLoc = 0;
 	};
 	F89C4C9B0EDB00D10060BB11 /* PBXTextBookmark */ = {
@@ -1858,7 +1913,7 @@
 		rLen = 0;
 		rLoc = 437;
 		rType = 0;
-		vrLen = 1641;
+		vrLen = 1585;
 		vrLoc = 167;
 	};
 	F8AE53FC0F5399B80017008D /* PBXTextBookmark */ = {
