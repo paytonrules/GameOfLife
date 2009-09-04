@@ -2,11 +2,16 @@
 
 @implementation GameOfLifeViewController
 
-@synthesize board, buttonFactory, game, gameRunner, rulesView;
+@synthesize board, buttonFactory, game, gameRunner, rulesView, gameView;
 
 + (float) calculatePositionFor: (float) rowOrColumn 
 {
 	return 10.0f + (20.0f * rowOrColumn);
+}
+
+- (void)viewDidLoad
+{
+	[self.view insertSubview:gameView atIndex:0];
 }
 
 - (void)loadView 
@@ -22,7 +27,7 @@
 		 
 			ButtonController *controller = [self.buttonFactory createButtonControllerForCell:[board getCellAt:row by:column] at:point sizeOf:rect];
 			
-			[self.view addSubview: controller.view];
+			[gameView addSubview: controller.view];
 		}
 	}
 }
@@ -65,12 +70,14 @@
 
 -(IBAction) showRules: (id) sender
 {
+	[self.gameView removeFromSuperview];
 	[self.view insertSubview:rulesView atIndex: 0];
 }
 
 - (void)dealloc 
 {
 	[rulesView release];
+	[gameView release];
 	[game release];
 	[board release];
 	[buttonFactory release];

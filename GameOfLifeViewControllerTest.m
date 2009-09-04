@@ -30,7 +30,11 @@
 	itsController.board = itsBoard;
 	itsController.game = itsGame;
 	itsController.gameRunner = itsGameRunner;
+	UIView *gameView = [[UIView alloc] init];
+	itsController.gameView = gameView;
+	[gameView release];
 	[itsController loadView];
+	[itsController viewDidLoad];
 }
 
 -(void) tearDown 
@@ -43,7 +47,7 @@
 
 -(void) testHasAllButtons 
 {
-	NSArray *subviews = [itsController.view subviews];
+	NSArray *subviews = [itsController.gameView subviews];
 	
 	int count = [subviews count];
 	
@@ -61,6 +65,11 @@
 	Cell *cell = [itsController.board getCellAt:0 by: 0];
 	bool called = [itsFactory calledWith:cell at:point sizeOf:rect];
 	STAssertTrue(called, nil);
+}
+
+-(void) testGameViewIsInitialSubview
+{
+	STAssertEqualObjects([itsController.view.subviews objectAtIndex:0], itsController.gameView, nil);
 }
 
 -(void) testStartActionTurnsButtonToStop
@@ -126,13 +135,20 @@
 	STAssertTrue(itsBoard.clearCalled, @"");	
 }
 
--(void) testShowRules
+-(void) testShowRulesAddsRuleView
 {
 	UIView *rulesView = [[[UIView alloc] init] autorelease];
 	itsController.rulesView = rulesView;
 	[itsController showRules: nil];
 	
 	STAssertEquals([itsController.view.subviews objectAtIndex:0], rulesView, nil);
+}
+
+-(void) testShowRulesRemovesFromGameViewFromSuperView
+{
+	[itsController showRules:nil];
+	
+	STAssertNil(itsController.gameView.superview, nil);
 }
 
 @end

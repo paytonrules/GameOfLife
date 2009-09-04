@@ -11,6 +11,7 @@
 	IBOutlet NSObject<GameProtocol> *game;
 	IBOutlet NSObject<GameRunnerProtocol> *gameRunner;
 	IBOutlet UIView *rulesView;
+	IBOutlet UIView *gameView;
 }
 
 @property(nonatomic, retain) NSObject<BoardProtocol> *board;
@@ -18,6 +19,7 @@
 @property(nonatomic, retain) NSObject<GameProtocol> *game;
 @property(nonatomic, retain) NSObject<GameRunnerProtocol> *gameRunner;
 @property(nonatomic, retain) UIView *rulesView;
+@property(nonatomic, retain) UIView *gameView;
 
 + (float) calculatePositionFor: (float) rowOrColumn;
 - (void) start:(id) sender;
