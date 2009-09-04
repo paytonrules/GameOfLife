@@ -130,9 +130,9 @@
 {
 	UIView *rulesView = [[[UIView alloc] init] autorelease];
 	itsController.rulesView = rulesView;
-	[itsController showRules: nil	];
+	[itsController showRules: nil];
 	
-	STAssertEquals(itsController.view, rulesView, nil);
+	STAssertEquals([itsController.view.subviews objectAtIndex:0], rulesView, nil);
 }
 
 @end

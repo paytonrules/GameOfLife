@@ -65,7 +65,7 @@
 
 -(IBAction) showRules: (id) sender
 {
-	self.view = rulesView;
+	[self.view insertSubview:rulesView atIndex: 0];
 }
 
 - (void)dealloc 
