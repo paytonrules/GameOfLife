@@ -119,19 +119,20 @@
 	STAssertTrue([itsGameRunner isStopCalled], nil);
 }
 
--(void) testAdvanceOneGeneration
-{
-	[itsController advance:nil];
-	
-	STAssertTrue([itsGame advanceGenerationCalled], nil);
-}
-
 -(void) testClearCallsClear
 {
 	[itsController clear: nil];
 	
-	STAssertTrue(itsBoard.clearCalled, @"");
+	STAssertTrue(itsBoard.clearCalled, @"");	
+}
+
+-(void) testShowRules
+{
+	UIView *rulesView = [[[UIView alloc] init] autorelease];
+	itsController.rulesView = rulesView;
+	[itsController showRules: nil	];
 	
+	STAssertEquals(itsController.view, rulesView, nil);
 }
 
 @end

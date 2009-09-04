@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0709D9FE104F213B00655E6D /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 0709D9FD104F213B00655E6D /* splash.png */; };
 		070AD5970F072F3500B77E82 /* GameOfLifeViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */; };
 		070AD5C70F07F22400B77E82 /* GameOfLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GameOfLifeViewController.m */; };
+		072E9FCC10507D97008F8625 /* background3.png in Resources */ = {isa = PBXBuildFile; fileRef = 072E9FCB10507D97008F8625 /* background3.png */; };
 		073644680F225F87005E020C /* MockBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 073644670F225F87005E020C /* MockBoard.m */; };
 		076788AF0F50C79400FEEACA /* alive_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 076788AE0F50C79400FEEACA /* alive_cell.png */; };
 		076788E90F50CF5E00FEEACA /* alive_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 076788AE0F50C79400FEEACA /* alive_cell.png */; };
@@ -48,12 +50,22 @@
 		F8795B990F001372004300C2 /* GameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795B980F001372004300C2 /* GameTest.m */; };
 		F8795BA10F0013CB004300C2 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795BA00F0013CB004300C2 /* Game.m */; };
 		F8795BA20F0013CB004300C2 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795BA00F0013CB004300C2 /* Game.m */; };
-		F8BD043E1046E789005B7EA7 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = F8BD043D1046E789005B7EA7 /* background2.png */; };
-		F8BFBC73104B0DA300DC040E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F8BFBC72104B0DA300DC040E /* Default.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		072E9FD6105139E6008F8625 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F862BFF00EDAF62700EB670B /* UnitTests */;
+			remoteInfo = UnitTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0709D9FD104F213B00655E6D /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeViewControllerTest.m; sourceTree = "<group>"; };
+		072E9FCB10507D97008F8625 /* background3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background3.png; sourceTree = "<group>"; };
 		073644660F225F87005E020C /* MockBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockBoard.h; sourceTree = "<group>"; };
 		073644670F225F87005E020C /* MockBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockBoard.m; sourceTree = "<group>"; };
 		076788AE0F50C79400FEEACA /* alive_cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alive_cell.png; sourceTree = "<group>"; };
@@ -108,8 +120,6 @@
 		F8795BA00F0013CB004300C2 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = Classes/Game.m; sourceTree = "<group>"; };
 		F8AE53070F5389B10017008D /* GameProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameProtocol.h; sourceTree = "<group>"; };
 		F8B753C10F015A4700839756 /* BoardProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoardProtocol.h; path = Classes/BoardProtocol.h; sourceTree = "<group>"; };
-		F8BD043D1046E789005B7EA7 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
-		F8BFBC72104B0DA300DC040E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,8 +277,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F8BFBC72104B0DA300DC040E /* Default.png */,
-				F8BD043D1046E789005B7EA7 /* background2.png */,
+				072E9FCB10507D97008F8625 /* background3.png */,
+				0709D9FD104F213B00655E6D /* splash.png */,
 				F8502E9B10460F9300256977 /* icon.tiff */,
 				0767890B0F50D30700FEEACA /* dead_cell.png */,
 				076788AE0F50C79400FEEACA /* alive_cell.png */,
@@ -325,6 +335,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				072E9FD7105139E6008F8625 /* PBXTargetDependency */,
 			);
 			name = GameOfLife;
 			productName = GameOfLife;
@@ -377,8 +388,8 @@
 				076788AF0F50C79400FEEACA /* alive_cell.png in Resources */,
 				0767890C0F50D30700FEEACA /* dead_cell.png in Resources */,
 				F8502E9C10460F9300256977 /* icon.tiff in Resources */,
-				F8BD043E1046E789005B7EA7 /* background2.png in Resources */,
-				F8BFBC73104B0DA300DC040E /* Default.png in Resources */,
+				0709D9FE104F213B00655E6D /* splash.png in Resources */,
+				072E9FCC10507D97008F8625 /* background3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +467,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		072E9FD7105139E6008F8625 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F862BFF00EDAF62700EB670B /* UnitTests */;
+			targetProxy = 072E9FD6105139E6008F8625 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {

@@ -2,7 +2,7 @@
 
 @implementation GameOfLifeViewController
 
-@synthesize board, buttonFactory, game, gameRunner;
+@synthesize board, buttonFactory, game, gameRunner, rulesView;
 
 + (float) calculatePositionFor: (float) rowOrColumn 
 {
@@ -27,7 +27,7 @@
 	}
 }
 
-- (void) start: (id) sender
+- (IBAction) start: (id) sender
 {
 	[gameRunner start];
 	
@@ -38,7 +38,7 @@
 	[button addTarget:nil action:@selector(stop:) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void) stop: (id) sender
+- (IBAction)stop: (id) sender
 {
 	[gameRunner stop];
 
@@ -48,12 +48,7 @@
 	[button addTarget:nil action:@selector(start:) forControlEvents:UIControlEventTouchUpInside];
 }
 
--(void) advance: (id) sender
-{
-	[game advanceGeneration];
-}
-
-- (void) clear: (id) sender
+- (IBAction)clear: (id) sender
 {
 	[board clear];
 }
@@ -68,8 +63,14 @@
 	[super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview
 }
 
+-(IBAction) showRules: (id) sender
+{
+	self.view = rulesView;
+}
+
 - (void)dealloc 
 {
+	[rulesView release];
 	[game release];
 	[board release];
 	[buttonFactory release];
