@@ -18,6 +18,11 @@
 		0767890D0F50D30700FEEACA /* dead_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0767890B0F50D30700FEEACA /* dead_cell.png */; };
 		07678AE30F52CB7B00FEEACA /* MockGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 07678AE20F52CB7B00FEEACA /* MockGame.m */; };
 		07678AE40F52CB7B00FEEACA /* MockGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 07678AE20F52CB7B00FEEACA /* MockGame.m */; };
+		07718A64105925DB008A4952 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07718A63105925DB008A4952 /* OCMock.framework */; };
+		07718AFD105952BC008A4952 /* RulesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07718AFB105952BC008A4952 /* RulesController.m */; };
+		07718AFE105952BC008A4952 /* RulesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07718AFC105952BC008A4952 /* RulesController.xib */; };
+		07718AFF105952BC008A4952 /* RulesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07718AFB105952BC008A4952 /* RulesController.m */; };
+		07718B00105952BC008A4952 /* RulesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07718AFC105952BC008A4952 /* RulesController.xib */; };
 		078065DB0F11601000F1BFA8 /* ButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078065DA0F11601000F1BFA8 /* ButtonController.m */; };
 		078065DC0F11601000F1BFA8 /* ButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078065DA0F11601000F1BFA8 /* ButtonController.m */; };
 		078DBE7B0F977E85003921DE /* MockGameRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 078DBE7A0F977E85003921DE /* MockGameRunner.m */; };
@@ -72,6 +77,10 @@
 		0767890B0F50D30700FEEACA /* dead_cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dead_cell.png; sourceTree = "<group>"; };
 		07678AE10F52CB7B00FEEACA /* MockGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockGame.h; sourceTree = "<group>"; };
 		07678AE20F52CB7B00FEEACA /* MockGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockGame.m; sourceTree = "<group>"; };
+		07718A63105925DB008A4952 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Frameworks/OCMock.framework; sourceTree = "<group>"; };
+		07718AFA105952BC008A4952 /* RulesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RulesController.h; sourceTree = "<group>"; };
+		07718AFB105952BC008A4952 /* RulesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RulesController.m; sourceTree = "<group>"; };
+		07718AFC105952BC008A4952 /* RulesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RulesController.xib; sourceTree = "<group>"; };
 		078065D90F11601000F1BFA8 /* ButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonController.h; sourceTree = "<group>"; };
 		078065DA0F11601000F1BFA8 /* ButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonController.m; sourceTree = "<group>"; };
 		078DBE790F977E85003921DE /* MockGameRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockGameRunner.h; sourceTree = "<group>"; };
@@ -137,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07718A64105925DB008A4952 /* OCMock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +183,8 @@
 		079F42190F12CE80005FE2AC /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				07718AFA105952BC008A4952 /* RulesController.h */,
+				07718AFB105952BC008A4952 /* RulesController.m */,
 				1D3623240D0F684500981E51 /* GameOfLifeAppDelegate.h */,
 				1D3623250D0F684500981E51 /* GameOfLifeAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* GameOfLifeViewController.h */,
@@ -283,6 +295,7 @@
 				0767890B0F50D30700FEEACA /* dead_cell.png */,
 				076788AE0F50C79400FEEACA /* alive_cell.png */,
 				2899E5210DE3E06400AC0155 /* GameOfLifeViewController.xib */,
+				07718AFC105952BC008A4952 /* RulesController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 			);
@@ -293,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				07718A63105925DB008A4952 /* OCMock.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 			);
@@ -390,6 +404,7 @@
 				F8502E9C10460F9300256977 /* icon.tiff in Resources */,
 				0709D9FE104F213B00655E6D /* splash.png in Resources */,
 				072E9FCC10507D97008F8625 /* background3.png in Resources */,
+				07718AFE105952BC008A4952 /* RulesController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +414,7 @@
 			files = (
 				076788E90F50CF5E00FEEACA /* alive_cell.png in Resources */,
 				0767890D0F50D30700FEEACA /* dead_cell.png in Resources */,
+				07718B00105952BC008A4952 /* RulesController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +451,7 @@
 				0792AAA40F192B870021879E /* Cell.m in Sources */,
 				07678AE30F52CB7B00FEEACA /* MockGame.m in Sources */,
 				07D520D80F68880F00164A46 /* GameRunner.m in Sources */,
+				07718AFD105952BC008A4952 /* RulesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +480,7 @@
 				07D520D20F6887CD00164A46 /* GameRunnerTest.m in Sources */,
 				07D520D70F68880F00164A46 /* GameRunner.m in Sources */,
 				078DBE7B0F977E85003921DE /* MockGameRunner.m in Sources */,
+				07718AFF105952BC008A4952 /* RulesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +500,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -496,6 +518,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = GameOfLife_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
@@ -536,6 +562,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -561,6 +591,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";

@@ -5,6 +5,7 @@
 #import "MockGameRunner.h"
 #import "GTMSenTestCase.h"
 #import "MemoryChecker.h"
+#import <OCMock/OCMock.h>
 
 @interface GameOfLifeViewControllerTest : SenTestCase {
 	GameOfLifeViewController *itsController;
@@ -30,11 +31,7 @@
 	itsController.board = itsBoard;
 	itsController.game = itsGame;
 	itsController.gameRunner = itsGameRunner;
-	UIView *gameView = [[UIView alloc] init];
-	itsController.gameView = gameView;
-	[gameView release];
 	[itsController loadView];
-	[itsController viewDidLoad];
 }
 
 -(void) tearDown 
@@ -47,7 +44,7 @@
 
 -(void) testHasAllButtons 
 {
-	NSArray *subviews = [itsController.gameView subviews];
+	NSArray *subviews = [itsController.view subviews];
 	
 	int count = [subviews count];
 	
@@ -65,11 +62,6 @@
 	Cell *cell = [itsController.board getCellAt:0 by: 0];
 	bool called = [itsFactory calledWith:cell at:point sizeOf:rect];
 	STAssertTrue(called, nil);
-}
-
--(void) testGameViewIsInitialSubview
-{
-	STAssertEqualObjects([itsController.view.subviews objectAtIndex:0], itsController.gameView, nil);
 }
 
 -(void) testStartActionTurnsButtonToStop
@@ -128,27 +120,25 @@
 	STAssertTrue([itsGameRunner isStopCalled], nil);
 }
 
--(void) testClearCallsClear
+-(void) testClearCallsClear	
 {
 	[itsController clear: nil];
 	
 	STAssertTrue(itsBoard.clearCalled, @"");	
 }
 
--(void) testShowRulesAddsRuleView
+// This test is ridiculous - but for some reason presentModalViewController does not set any of its properties in a test
+-(void) testPresentsRulesControllerOnShowRules
 {
-	UIView *rulesView = [[[UIView alloc] init] autorelease];
-	itsController.rulesView = rulesView;
-	[itsController showRules: nil];
+	UIViewController *rulesViewController = [[[UIViewController alloc] init] autorelease];
+	itsController.rulesViewController = rulesViewController;
 	
-	STAssertEquals([itsController.view.subviews objectAtIndex:0], rulesView, nil);
-}
-
--(void) testShowRulesRemovesFromGameViewFromSuperView
-{
+	id partialMock = [OCMockObject partialMockForObject:itsController];
+	[[partialMock expect] presentModalViewController:rulesViewController animated:YES];
+	
 	[itsController showRules:nil];
 	
-	STAssertNil(itsController.gameView.superview, nil);
+	[partialMock verify];
 }
 
 @end
