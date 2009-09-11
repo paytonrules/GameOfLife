@@ -56,7 +56,7 @@
 	// Mock board should have 1 one button]
 	// Duplication - me no like
 	// Figured it out - this should be a seperate class
-	CGPoint point = CGPointMake([GameOfLifeViewController calculatePositionFor: 0], [GameOfLifeViewController calculatePositionFor: 0] + 50.0f);
+	CGPoint point = CGPointMake([GameOfLifeViewController calculatePositionFor: 0], [GameOfLifeViewController calculatePositionFor: 0] + TOP_OFFSET);
 	CGRect rect = CGRectMake(0.0f, 0.0f, 20.0f, 20.0f);
 
 	Cell *cell = [itsController.board getCellAt:0 by: 0];

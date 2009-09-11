@@ -1,11 +1,3 @@
-//
-//  ButtonFactory.m
-//  GameOfLife
-//
-//  Created by Eric Smith on 1/4/09.
-//  Copyright 2009 8th Light. All rights reserved.
-//
-
 #import "ConcreteButtonControllerFactory.h"
 
 @implementation ConcreteButtonControllerFactory

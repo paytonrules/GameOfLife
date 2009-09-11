@@ -5,6 +5,8 @@
 #import "GameProtocol.h"
 #import "GameRunnerProtocol.h"
 
+#define TOP_OFFSET 65.0f
+
 @interface GameOfLifeViewController : UIViewController {
 	IBOutlet NSObject<BoardProtocol> *board;
 	IBOutlet NSObject<ButtonControllerFactoryProtocol>	*buttonFactory;

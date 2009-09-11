@@ -17,7 +17,7 @@
 	{
 		for (int column = 0; column < [board columns]; column++)
 		{
-			CGPoint point = CGPointMake([GameOfLifeViewController calculatePositionFor: row], [GameOfLifeViewController calculatePositionFor: column]+50.0f);
+			CGPoint point = CGPointMake([GameOfLifeViewController calculatePositionFor: row], [GameOfLifeViewController calculatePositionFor: column] + TOP_OFFSET);
 			CGRect rect = CGRectMake(0.0f, 0.0f, 20.0f, 20.0f);
 		 
 			ButtonController *controller = [self.buttonFactory createButtonControllerForCell:[board getCellAt:row by:column] at:point sizeOf:rect];

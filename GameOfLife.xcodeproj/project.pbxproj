@@ -23,6 +23,7 @@
 		07718AFE105952BC008A4952 /* RulesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07718AFC105952BC008A4952 /* RulesController.xib */; };
 		07718AFF105952BC008A4952 /* RulesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07718AFB105952BC008A4952 /* RulesController.m */; };
 		07718B00105952BC008A4952 /* RulesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07718AFC105952BC008A4952 /* RulesController.xib */; };
+		077F6AC0105955C9008840CC /* RulesControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 077F6ABF105955C9008840CC /* RulesControllerTest.m */; };
 		078065DB0F11601000F1BFA8 /* ButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078065DA0F11601000F1BFA8 /* ButtonController.m */; };
 		078065DC0F11601000F1BFA8 /* ButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078065DA0F11601000F1BFA8 /* ButtonController.m */; };
 		078DBE7B0F977E85003921DE /* MockGameRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 078DBE7A0F977E85003921DE /* MockGameRunner.m */; };
@@ -31,6 +32,7 @@
 		0792AAA90F192BD80021879E /* CellTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AAA70F192BD80021879E /* CellTest.m */; };
 		0792AC6E0F195CB20021879E /* MockButtonControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AC6D0F195CB20021879E /* MockButtonControllerFactory.m */; };
 		079F421E0F12CF63005FE2AC /* ButtonControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F421D0F12CF63005FE2AC /* ButtonControllerTest.m */; };
+		07C3CE1F105AD483008E6B26 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 07C3CE1E105AD483008E6B26 /* Default.png */; };
 		07D520D20F6887CD00164A46 /* GameRunnerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D520D10F6887CD00164A46 /* GameRunnerTest.m */; };
 		07D520D70F68880F00164A46 /* GameRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D520D60F68880F00164A46 /* GameRunner.m */; };
 		07D520D80F68880F00164A46 /* GameRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D520D60F68880F00164A46 /* GameRunner.m */; };
@@ -57,16 +59,6 @@
 		F8795BA20F0013CB004300C2 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795BA00F0013CB004300C2 /* Game.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		072E9FD6105139E6008F8625 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F862BFF00EDAF62700EB670B;
-			remoteInfo = UnitTests;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		0709D9FD104F213B00655E6D /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOfLifeViewControllerTest.m; sourceTree = "<group>"; };
@@ -81,6 +73,8 @@
 		07718AFA105952BC008A4952 /* RulesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RulesController.h; sourceTree = "<group>"; };
 		07718AFB105952BC008A4952 /* RulesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RulesController.m; sourceTree = "<group>"; };
 		07718AFC105952BC008A4952 /* RulesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RulesController.xib; sourceTree = "<group>"; };
+		077F6ABE105955C9008840CC /* RulesControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RulesControllerTest.h; sourceTree = "<group>"; };
+		077F6ABF105955C9008840CC /* RulesControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RulesControllerTest.m; sourceTree = "<group>"; };
 		078065D90F11601000F1BFA8 /* ButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonController.h; sourceTree = "<group>"; };
 		078065DA0F11601000F1BFA8 /* ButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonController.m; sourceTree = "<group>"; };
 		078DBE790F977E85003921DE /* MockGameRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockGameRunner.h; sourceTree = "<group>"; };
@@ -93,6 +87,7 @@
 		0792AC6C0F195CB20021879E /* MockButtonControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockButtonControllerFactory.h; sourceTree = "<group>"; };
 		0792AC6D0F195CB20021879E /* MockButtonControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockButtonControllerFactory.m; sourceTree = "<group>"; };
 		079F421D0F12CF63005FE2AC /* ButtonControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonControllerTest.m; sourceTree = "<group>"; };
+		07C3CE1E105AD483008E6B26 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		07D520D10F6887CD00164A46 /* GameRunnerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameRunnerTest.m; sourceTree = "<group>"; };
 		07D520D50F68880F00164A46 /* GameRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRunner.h; sourceTree = "<group>"; };
 		07D520D60F68880F00164A46 /* GameRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameRunner.m; sourceTree = "<group>"; };
@@ -203,6 +198,8 @@
 			children = (
 				079F421C0F12CF0F005FE2AC /* Mocks */,
 				070AD54A0F0728CC00B77E82 /* GameOfLifeViewControllerTest.m */,
+				077F6ABE105955C9008840CC /* RulesControllerTest.h */,
+				077F6ABF105955C9008840CC /* RulesControllerTest.m */,
 				07E84DAE0F119DCB005ACE54 /* ConcreteButtonControllerFactoryTest.m */,
 				079F421D0F12CF63005FE2AC /* ButtonControllerTest.m */,
 			);
@@ -289,6 +286,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				07C3CE1E105AD483008E6B26 /* Default.png */,
 				072E9FCB10507D97008F8625 /* background3.png */,
 				0709D9FD104F213B00655E6D /* splash.png */,
 				F8502E9B10460F9300256977 /* icon.tiff */,
@@ -349,7 +347,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				072E9FD7105139E6008F8625 /* PBXTargetDependency */,
 			);
 			name = GameOfLife;
 			productName = GameOfLife;
@@ -405,6 +402,7 @@
 				0709D9FE104F213B00655E6D /* splash.png in Resources */,
 				072E9FCC10507D97008F8625 /* background3.png in Resources */,
 				07718AFE105952BC008A4952 /* RulesController.xib in Resources */,
+				07C3CE1F105AD483008E6B26 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,18 +479,11 @@
 				07D520D70F68880F00164A46 /* GameRunner.m in Sources */,
 				078DBE7B0F977E85003921DE /* MockGameRunner.m in Sources */,
 				07718AFF105952BC008A4952 /* RulesController.m in Sources */,
+				077F6AC0105955C9008840CC /* RulesControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		072E9FD7105139E6008F8625 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F862BFF00EDAF62700EB670B /* UnitTests */;
-			targetProxy = 072E9FD6105139E6008F8625 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
