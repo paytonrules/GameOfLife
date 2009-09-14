@@ -31,6 +31,7 @@
 		0792AAA50F192B870021879E /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AAA30F192B870021879E /* Cell.m */; };
 		0792AAA90F192BD80021879E /* CellTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AAA70F192BD80021879E /* CellTest.m */; };
 		0792AC6E0F195CB20021879E /* MockButtonControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0792AC6D0F195CB20021879E /* MockButtonControllerFactory.m */; };
+		079A0EAB105D451300940334 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 079A0EAA105D451300940334 /* icon.png */; };
 		079F421E0F12CF63005FE2AC /* ButtonControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 079F421D0F12CF63005FE2AC /* ButtonControllerTest.m */; };
 		07C3CE1F105AD483008E6B26 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 07C3CE1E105AD483008E6B26 /* Default.png */; };
 		07D520D20F6887CD00164A46 /* GameRunnerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D520D10F6887CD00164A46 /* GameRunnerTest.m */; };
@@ -47,7 +48,6 @@
 		2899E5220DE3E06400AC0155 /* GameOfLifeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* GameOfLifeViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* GameOfLifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* GameOfLifeViewController.m */; };
-		F8502E9C10460F9300256977 /* icon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F8502E9B10460F9300256977 /* icon.tiff */; };
 		F862BFFC0EDAF65300EB670B /* GTMIPhoneUnitTestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F862BFF80EDAF65300EB670B /* GTMIPhoneUnitTestDelegate.m */; };
 		F862BFFD0EDAF65300EB670B /* GTMIPhoneUnitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F862BFF90EDAF65300EB670B /* GTMIPhoneUnitTestMain.m */; };
 		F862BFFE0EDAF65300EB670B /* GTMSenTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F862BFFB0EDAF65300EB670B /* GTMSenTestCase.m */; };
@@ -86,6 +86,7 @@
 		0792AC5A0F195BE70021879E /* ButtonControllerFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonControllerFactoryProtocol.h; sourceTree = "<group>"; };
 		0792AC6C0F195CB20021879E /* MockButtonControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockButtonControllerFactory.h; sourceTree = "<group>"; };
 		0792AC6D0F195CB20021879E /* MockButtonControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockButtonControllerFactory.m; sourceTree = "<group>"; };
+		079A0EAA105D451300940334 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		079F421D0F12CF63005FE2AC /* ButtonControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonControllerTest.m; sourceTree = "<group>"; };
 		07C3CE1E105AD483008E6B26 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		07D520D10F6887CD00164A46 /* GameRunnerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameRunnerTest.m; sourceTree = "<group>"; };
@@ -107,7 +108,6 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* GameOfLife_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOfLife_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8502E9B10460F9300256977 /* icon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = icon.tiff; sourceTree = "<group>"; };
 		F862BFF10EDAF62700EB670B /* UnitTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F862BFF30EDAF62700EB670B /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		F862BFF70EDAF65300EB670B /* GTMIPhoneUnitTestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMIPhoneUnitTestDelegate.h; sourceTree = "<group>"; };
@@ -286,10 +286,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				079A0EAA105D451300940334 /* icon.png */,
 				07C3CE1E105AD483008E6B26 /* Default.png */,
 				072E9FCB10507D97008F8625 /* background3.png */,
 				0709D9FD104F213B00655E6D /* splash.png */,
-				F8502E9B10460F9300256977 /* icon.tiff */,
 				0767890B0F50D30700FEEACA /* dead_cell.png */,
 				076788AE0F50C79400FEEACA /* alive_cell.png */,
 				2899E5210DE3E06400AC0155 /* GameOfLifeViewController.xib */,
@@ -398,11 +398,11 @@
 				2899E5220DE3E06400AC0155 /* GameOfLifeViewController.xib in Resources */,
 				076788AF0F50C79400FEEACA /* alive_cell.png in Resources */,
 				0767890C0F50D30700FEEACA /* dead_cell.png in Resources */,
-				F8502E9C10460F9300256977 /* icon.tiff in Resources */,
 				0709D9FE104F213B00655E6D /* splash.png in Resources */,
 				072E9FCC10507D97008F8625 /* background3.png in Resources */,
 				07718AFE105952BC008A4952 /* RulesController.xib in Resources */,
 				07C3CE1F105AD483008E6B26 /* Default.png in Resources */,
+				079A0EAB105D451300940334 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +486,65 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		079A0E8D105C1A0200940334 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphonesimulator2.0;
+			};
+			name = Distribution;
+		};
+		079A0E8E105C1A0200940334 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: 8th Light";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GameOfLife_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				PRODUCT_NAME = GameOfLife;
+			};
+			name = Distribution;
+		};
+		079A0E8F105C1A0200940334 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "UnitTests-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = UnitTests;
+				SDKROOT = iphoneos2.1;
+				ZERO_LINK = NO;
+			};
+			name = Distribution;
+		};
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -612,6 +671,7 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+				079A0E8E105C1A0200940334 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -621,6 +681,7 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+				079A0E8D105C1A0200940334 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -630,6 +691,7 @@
 			buildConfigurations = (
 				F862BFF40EDAF62800EB670B /* Debug */,
 				F862BFF50EDAF62800EB670B /* Release */,
+				079A0E8F105C1A0200940334 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
