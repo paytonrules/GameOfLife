@@ -13,6 +13,7 @@
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>icon.png</string>
+		<string>icon_retina.png</string>
 	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.yourcompany.gameoflife</string>
