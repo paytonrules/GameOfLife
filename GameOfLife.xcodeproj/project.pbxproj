@@ -97,7 +97,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* GameOfLifeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOfLifeAppDelegate.h; path = Classes/GameOfLifeAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* GameOfLifeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameOfLifeAppDelegate.m; path = Classes/GameOfLifeAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* GameOfLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Conway's Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conway's Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E5210DE3E06400AC0155 /* GameOfLifeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameOfLifeViewController.xib; sourceTree = "<group>"; };
@@ -259,7 +259,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* GameOfLife.app */,
+				1D6058910D05DD3D006BFB54 /* Conway's Life.app */,
 				F862BFF10EDAF62700EB670B /* UnitTests.app */,
 			);
 			name = Products;
@@ -396,7 +396,7 @@
 			);
 			name = GameOfLife;
 			productName = GameOfLife;
-			productReference = 1D6058910D05DD3D006BFB54 /* GameOfLife.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* Conway's Life.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F862BFF00EDAF62700EB670B /* UnitTests */ = {
@@ -548,6 +548,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				PRODUCT_NAME = "Conway's Life";
 				SDKROOT = iphonesimulator3.2;
 			};
 			name = Distribution;
@@ -565,7 +566,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = GameOfLife_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = GameOfLife;
+				PRODUCT_NAME = "Conway's Life";
 				SDKROOT = iphoneos4.3;
 			};
 			name = Distribution;
@@ -621,7 +622,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = GameOfLife_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = GameOfLife;
+				PRODUCT_NAME = "Conway's Life";
 				SDKROOT = iphoneos4.3;
 			};
 			name = Debug;
@@ -638,7 +639,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = GameOfLife_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				PRODUCT_NAME = GameOfLife;
+				PRODUCT_NAME = "Conway's Life";
 				SDKROOT = iphoneos4.3;
 			};
 			name = Release;
@@ -653,6 +654,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
+				PRODUCT_NAME = "Conway's Life";
 				SDKROOT = iphonesimulator3.2;
 			};
 			name = Debug;
@@ -666,6 +668,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				PRODUCT_NAME = "Conway's Life";
 				SDKROOT = iphonesimulator3.2;
 			};
 			name = Release;
