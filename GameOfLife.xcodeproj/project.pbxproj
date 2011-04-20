@@ -18,7 +18,6 @@
 		0767890D0F50D30700FEEACA /* dead_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0767890B0F50D30700FEEACA /* dead_cell.png */; };
 		07678AE30F52CB7B00FEEACA /* MockGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 07678AE20F52CB7B00FEEACA /* MockGame.m */; };
 		07678AE40F52CB7B00FEEACA /* MockGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 07678AE20F52CB7B00FEEACA /* MockGame.m */; };
-		07718A64105925DB008A4952 /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07718A63105925DB008A4952 /* OCMock.framework */; };
 		07718AFD105952BC008A4952 /* RulesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07718AFB105952BC008A4952 /* RulesController.m */; };
 		07718AFE105952BC008A4952 /* RulesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07718AFC105952BC008A4952 /* RulesController.xib */; };
 		07718AFF105952BC008A4952 /* RulesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07718AFB105952BC008A4952 /* RulesController.m */; };
@@ -57,6 +56,7 @@
 		F8795B990F001372004300C2 /* GameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795B980F001372004300C2 /* GameTest.m */; };
 		F8795BA10F0013CB004300C2 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795BA00F0013CB004300C2 /* Game.m */; };
 		F8795BA20F0013CB004300C2 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = F8795BA00F0013CB004300C2 /* Game.m */; };
+		F8C1C3B6135F6D9A0073E942 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C1C3AD135F6D9A0073E942 /* libOCMock.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +69,6 @@
 		0767890B0F50D30700FEEACA /* dead_cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dead_cell.png; sourceTree = "<group>"; };
 		07678AE10F52CB7B00FEEACA /* MockGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockGame.h; sourceTree = "<group>"; };
 		07678AE20F52CB7B00FEEACA /* MockGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockGame.m; sourceTree = "<group>"; };
-		07718A63105925DB008A4952 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMock.framework; path = Frameworks/OCMock.framework; sourceTree = "<group>"; };
 		07718AFA105952BC008A4952 /* RulesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RulesController.h; sourceTree = "<group>"; };
 		07718AFB105952BC008A4952 /* RulesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RulesController.m; sourceTree = "<group>"; };
 		07718AFC105952BC008A4952 /* RulesController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RulesController.xib; sourceTree = "<group>"; };
@@ -124,6 +123,14 @@
 		F8795BA00F0013CB004300C2 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = Classes/Game.m; sourceTree = "<group>"; };
 		F8AE53070F5389B10017008D /* GameProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameProtocol.h; sourceTree = "<group>"; };
 		F8B753C10F015A4700839756 /* BoardProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoardProtocol.h; path = Classes/BoardProtocol.h; sourceTree = "<group>"; };
+		F8C1C3A9135F6C290073E942 /* OCMock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCMock.framework; sourceTree = "<group>"; };
+		F8C1C3AD135F6D9A0073E942 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		F8C1C3B0135F6D9A0073E942 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		F8C1C3B1135F6D9A0073E942 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		F8C1C3B2135F6D9A0073E942 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		F8C1C3B3135F6D9A0073E942 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		F8C1C3B4135F6D9A0073E942 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		F8C1C3B5135F6D9A0073E942 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07718A64105925DB008A4952 /* OCMock.framework in Frameworks */,
+				F8C1C3B6135F6D9A0073E942 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +268,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				F8C1C3AB135F6D7D0073E942 /* Libraries */,
 				078067580F11848300F1BFA8 /* Protocols */,
 				F862C00F0EDAF80800EB670B /* Unit Test Framework */,
 				F862BFEC0EDAF60F00EB670B /* Tests */,
@@ -303,8 +311,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F8C1C3A9135F6C290073E942 /* OCMock.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
-				07718A63105925DB008A4952 /* OCMock.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 			);
@@ -331,6 +339,44 @@
 				F862BFFB0EDAF65300EB670B /* GTMSenTestCase.m */,
 			);
 			name = "Unit Test Framework";
+			sourceTree = "<group>";
+		};
+		F8C1C3AB135F6D7D0073E942 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				F8C1C3AC135F6D870073E942 /* OCMock */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		F8C1C3AC135F6D870073E942 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				F8C1C3AD135F6D9A0073E942 /* libOCMock.a */,
+				F8C1C3AE135F6D9A0073E942 /* Headers */,
+			);
+			name = OCMock;
+			sourceTree = "<group>";
+		};
+		F8C1C3AE135F6D9A0073E942 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				F8C1C3AF135F6D9A0073E942 /* OCMock */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		F8C1C3AF135F6D9A0073E942 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				F8C1C3B0135F6D9A0073E942 /* NSNotificationCenter+OCMAdditions.h */,
+				F8C1C3B1135F6D9A0073E942 /* OCMArg.h */,
+				F8C1C3B2135F6D9A0073E942 /* OCMConstraint.h */,
+				F8C1C3B3135F6D9A0073E942 /* OCMock.h */,
+				F8C1C3B4135F6D9A0073E942 /* OCMockObject.h */,
+				F8C1C3B5135F6D9A0073E942 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,7 +424,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "GameOfLife" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -495,7 +548,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphonesimulator2.0;
+				SDKROOT = iphonesimulator3.2;
 			};
 			name = Distribution;
 		};
@@ -513,6 +566,7 @@
 				GCC_PREFIX_HEADER = GameOfLife_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = GameOfLife;
+				SDKROOT = iphoneos4.3;
 			};
 			name = Distribution;
 		};
@@ -526,21 +580,29 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
 				INFOPLIST_FILE = "UnitTests-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
 					"-framework",
 					UIKit,
+					"-ObjC",
+					"-force_load",
+					"\"$(SRCROOT)/libOCMock.a\"",
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = UnitTests;
-				SDKROOT = iphoneos2.1;
+				SDKROOT = iphoneos4.3;
 				ZERO_LINK = NO;
 			};
 			name = Distribution;
@@ -560,6 +622,7 @@
 				GCC_PREFIX_HEADER = GameOfLife_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = GameOfLife;
+				SDKROOT = iphoneos4.3;
 			};
 			name = Debug;
 		};
@@ -576,6 +639,7 @@
 				GCC_PREFIX_HEADER = GameOfLife_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = GameOfLife;
+				SDKROOT = iphoneos4.3;
 			};
 			name = Release;
 		};
@@ -589,7 +653,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = iphonesimulator2.0;
+				SDKROOT = iphonesimulator3.2;
 			};
 			name = Debug;
 		};
@@ -602,7 +666,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphonesimulator2.0;
+				SDKROOT = iphonesimulator3.2;
 			};
 			name = Release;
 		};
@@ -615,6 +679,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -622,15 +687,22 @@
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
 				INFOPLIST_FILE = "UnitTests-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
 					"-framework",
 					UIKit,
+					"-ObjC",
+					"-force_load",
+					"\"$(SRCROOT)/libOCMock.a\"",
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = UnitTests;
-				SDKROOT = iphoneos2.1;
+				SDKROOT = iphoneos4.3;
 			};
 			name = Debug;
 		};
@@ -644,21 +716,29 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Frameworks\"",
+					"\"$(SRCROOT)\"",
 				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
 				INFOPLIST_FILE = "UnitTests-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,
 					"-framework",
 					UIKit,
+					"-ObjC",
+					"-force_load",
+					"\"$(SRCROOT)/libOCMock.a\"",
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = UnitTests;
-				SDKROOT = iphoneos2.1;
+				SDKROOT = iphoneos4.3;
 				ZERO_LINK = NO;
 			};
 			name = Release;
